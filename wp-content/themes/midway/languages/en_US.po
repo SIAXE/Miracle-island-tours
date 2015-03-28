@@ -1,0 +1,2215 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: midway/framework/widgets/themex_twitter_widget.php:1
+msgid "A widget that displays your latest tweets."
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.widgetiser.php:1
+#: midway/framework/classes/themex.widgetiser.php:204
+msgid "Add Category"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add Columns Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+msgid "Add Field"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add New"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add New Day"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add New Destination"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add New Gallery"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add New Gallery Category"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add New Slide"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add New Testimonial"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add New Tour"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add New Type"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.widgetiser.php:1
+#: midway/framework/classes/themex.widgetiser.php:204
+msgid "Add Page"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.widgetiser.php:1
+msgid "Add Sidebar"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add Tab"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add images for this gallery."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add images for this tour."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Add tracking analytics code here."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Align"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.shortcoder.php:1
+msgid "All"
+msgstr ""
+
+#. Text in function
+#: midway/framework/widgets/themex_posts_widget.php:106
+#: midway/framework/classes/themex.interface.php:1
+#: midway/framework/classes/themex.shortcoder.php:1
+msgid "All Categories"
+msgstr ""
+
+#. Text in echo
+#: midway/module-search.php:30
+#: midway/module-search.php:31
+#: midway/framework/config.php:1
+msgid "All Destinations"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "All Gallery Categories"
+msgstr ""
+
+#. Text in echo
+#: midway/module-search.php:45
+#: midway/module-search.php:46
+#: midway/framework/config.php:1
+msgid "All Types"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/classes/themex.core.php:1
+msgid "All changes have been saved."
+msgstr ""
+
+#. Text in echo
+#: midway/framework/classes/themex.core.php:1
+msgid "All options have been reset."
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:102
+msgid "April"
+msgstr ""
+
+#. Text in function
+#: midway/module-search.php:1
+msgid "Arrival Date"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+#: midway/loop-list-tour.php:48
+msgid "Arrives"
+msgstr ""
+
+#. Text in echo
+#: midway/loop-list-tour.php:65
+msgid "Ask a Question"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:106
+msgid "August"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Australian"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Australian Dollar"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Background Image"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Background Pattern"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Background Type"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Block Background"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Block Content"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Blogger Link"
+msgstr ""
+
+#. Text in echo
+#: midway/loop-list-tour.php:60
+#: midway/loop-list-tour.php:62
+msgid "Book Now"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Booking"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Booking Form"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Booking Link"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Booking Payment"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Bottom"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Brazilian Real"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "British Pound"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+msgid "Browse"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Button Color"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Button Size"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Button Text"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Button URL"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Canadian Dollar"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+msgid "Cancel"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Categories"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Check this to disable booking form."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Check this to disable question form."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Check this to use tiled background instead of full width image."
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Checkbox"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Chinese"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Choose from the default patterns or upload your own image."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Choose the date format for all post types and comments."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Column Content"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Column Width"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Columns Number"
+msgstr ""
+
+#. Text in function
+#: midway/comments.php:20
+msgid "Comment"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/widgets/themex_posts_widget.php:129
+#: midway/comments.php:3
+msgid "Comments"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Contact Form"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Content Font"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+msgid "Continue"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Copyright Text"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Currency Position"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Custom"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Custom CSS"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Czech Koruna"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Danish Krone"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Daparts"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/widgets/themex_posts_widget.php:127
+#: midway/framework/classes/themex.form.php:1
+#: midway/framework/config.php:1
+msgid "Date"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Date Format"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Day Content"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Day Image"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Day Title"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:110
+msgid "December"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Default"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+msgid "Delete"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+msgid "Delete Permanently"
+msgstr ""
+
+#. Text in echo
+#: midway/loop-list-tour.php:47
+msgid "Departs"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:1
+msgid "Departure Date"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Description"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+#: midway/loop-list-tour.php:45
+msgid "Destination"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Destinations"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Disable Booking"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Disable Questions"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+#: midway/loop-list-tour.php:46
+msgid "Duration"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Edit Destination"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Edit Gallery"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Edit Gallery Category"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Edit Slide"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Edit Testimonial"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Edit Tour"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Edit Type"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+#: midway/framework/functions.php:56
+msgid "Email"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/widgets/themex_subscribe_widget.php:33
+msgid "Email Address"
+msgstr ""
+
+#. Text in function
+#: midway/framework/widgets/themex_subscribe_widget.php:35
+msgid "Email address is incorrect."
+msgstr ""
+
+#. Text in function
+#: midway/framework/widgets/themex_subscribe_widget.php:35
+msgid "Email field is required."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Enable Booking Payment"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Enable Captcha Protection"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "English"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Enter in comma separated options."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Enter in the booking fee amount."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Enter in your PayPal account email address."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Enter the comma separated tab titles."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Enter the copyright text to be displayed in the footer."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Enter the text for your site logo."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Enter the text to be displayed at the social links."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Euro"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Facebook Link"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Fade Slider"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:100
+msgid "February"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Feedback"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Field Label"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Field Options"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Field Type"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Five Twelfths"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Five Twelfths Last"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Flickr Link"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Footer Menu"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Form Description"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Form Title"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Four"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:97
+msgid "Fr"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "French"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/framework/functions.php:56
+msgid "Friday"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Galleries"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Galleries Caption"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Galleries Category"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Galleries Layout"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Galleries Number"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Galleries Order"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Galleries Per Page"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Gallery"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Gallery Caption"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Gallery Categories"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Gallery Category"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Gallery Images"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Gallery Options"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "General"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "German"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Google Link"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Grey"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Grid"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Header"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Header Layout"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Header Text"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Heading Font"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Height"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Hidden"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Hide Date Fields"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Hide Destination Field"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Hide Price Field"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Hide Related Tours"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Hide Type Field"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Hong Kong Dollar"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Horizontal"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Hungarian Forint"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Image"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Image Link"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Image URL"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Block Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Button Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Columns Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Contact Form Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Galleries Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Image Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Itinerary Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Map Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Posts Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Search Form Shortcode"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/extensions/themex-shortcoder/popup.php:27
+msgid "Insert Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Sidebar Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Tabs Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Testimonials Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+msgid "Insert This Item"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Title Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Toggle Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Insert Tours Shortcode"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Israeli Shekel"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Italian"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:99
+msgid "January"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Japanese"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Japanese Yen"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:105
+msgid "July"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:104
+msgid "June"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+msgid "Label"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Large"
+msgstr ""
+
+#. Text in function
+#: midway/framework/widgets/themex_posts_widget.php:1
+msgid "Latest Posts"
+msgstr ""
+
+#. Text in function
+#: midway/framework/widgets/themex_twitter_widget.php:1
+msgid "Latest Tweets"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Latitude"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Left"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Link URL"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Link for the slide image."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Link to book the tour."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "LinkedIn Link"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "List"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "List Style"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "List of the week days."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Login Logo Image"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Longitude"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Mailing List"
+msgstr ""
+
+#. Text in function
+#: midway/framework/widgets/themex_subscribe_widget.php:1
+msgid "Mailing list subscription form."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Main Menu"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Malaysian Ringgit"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:101
+msgid "March"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:103
+msgid "May"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Medium"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Message"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Mexican Peso"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:93
+msgid "Mo"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/framework/functions.php:56
+msgid "Monday"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Motion Slider"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+msgid "Move to Trash"
+msgstr ""
+
+#. Text in function
+#: midway/framework/functions.php:56
+#: midway/framework/config.php:1
+msgid "Name"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "New Destination Name"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "New Gallery"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "New Gallery Category Name"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "New Slide"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "New Taiwan Dollar"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "New Testimonial"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "New Tour"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "New Type Name"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "New Zealand Dollar"
+msgstr ""
+
+#. Text in function
+#: midway/framework/widgets/themex_subscribe_widget.php:1
+msgid "Newsletter"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "No"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "No Galleries Found"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "No Galleries Found in Trash"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "No Slides Found"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "No Slides Found in Trash"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "No Testimonials Found"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "No Testimonials Found in Trash"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "No Tours Found"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "No Tours Found in Trash"
+msgstr ""
+
+#. Text in echo
+#: midway/template-blog.php:41
+msgid "No posts found. Try a different search?"
+msgstr ""
+
+#. Text in echo
+#: midway/template-tours.php:62
+msgid "No tours found. Try a different search?"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "None"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Norwegian Krone"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:109
+msgid "November"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Number"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:108
+msgid "October"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "One Fourth"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "One Fourth Last"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "One Half"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "One Half Last"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "One Sixth"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "One Sixth Last"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "One Third"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "One Third Last"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/widgets/themex_posts_widget.php:125
+msgid "Order By"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Page Background"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Page Options"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Parent Destination"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Parent Gallery Category"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Parent Type"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Paste embedded video code here."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "PayPal Account"
+msgstr ""
+
+#. Text in function
+#: midway/framework/functions.php:56
+msgid "Payer Email"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Payment Amount"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Payment Currency"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Payment Language"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Philippine Peso"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Polish"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Polish Zloty"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Posts Category"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/widgets/themex_posts_widget.php:105
+msgid "Posts Category:"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/widgets/themex_posts_widget.php:101
+#: midway/framework/config.php:1
+msgid "Posts Number"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Posts Order"
+msgstr ""
+
+#. Text in function
+#: midway/framework/widgets/themex_posts_widget.php:1
+msgid "Posts from selected category."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+#: midway/loop-list-tour.php:50
+msgid "Price"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Price Currency"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Primary Theme Color"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Question"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Question Form"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "RSS Link"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/widgets/themex_posts_widget.php:128
+#: midway/framework/config.php:1
+msgid "Random"
+msgstr ""
+
+#. Text in echo
+#: midway/loop-post.php:16
+#: midway/framework/extensions/themex-shortcoder/shortcodes.php:1
+msgid "Read More"
+msgstr ""
+
+#. Text in echo
+#: midway/module-related.php:2
+msgid "Related Tours"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Related Tours Order"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/framework/classes/themex.shortcoder.php:1
+msgid "Remove"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.widgetiser.php:1
+#: midway/framework/classes/themex.widgetiser.php:204
+msgid "Remove Sidebar"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/admin/layout.php:15
+msgid "Reset Options"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Right"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+#: midway/loop-list-tour.php:49
+msgid "Runs On"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:98
+msgid "Sa"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/framework/functions.php:56
+msgid "Saturday"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/admin/layout.php:4
+#: midway/framework/admin/layout.php:16
+msgid "Save Changes"
+msgstr ""
+
+#. Text in echo
+#: midway/searchform.php:2
+msgid "Search"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Search Destinations"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Search Form"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Search Galleries"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Search Gallery Categories"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Search Slides"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Search Testimonials"
+msgstr ""
+
+#. Text in echo
+#: midway/module-search.php:87
+#: midway/framework/config.php:1
+msgid "Search Tours"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Search Types"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Secondary Theme Color"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Select"
+msgstr ""
+
+#. Text in function
+#: midway/framework/widgets/themex_posts_widget.php:1
+msgid "Selected Posts"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:107
+msgid "September"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Set price currency symbol."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Seven Twelfths"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Seven Twelfths Last"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.widgetiser.php:1
+#: midway/framework/classes/themex.widgetiser.php:204
+msgid "Sidebar Name"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Sidebars"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Singapore Dollar"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Site Favicon"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Site Logo Image"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Site Logo Text"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Site Logo Type"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Skype Link"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Slide"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Slide Options"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Slider"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Slider Pause"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Slider Type"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Slides"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Small"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Social Links"
+msgstr ""
+
+#. Text in echo
+#: midway/template-blog.php:42
+msgid "Sorry, no posts matched your search. Try again with some different keywords."
+msgstr ""
+
+#. Text in echo
+#: midway/template-tours.php:63
+msgid "Sorry, no tours matched your search."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Spanish"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "StumbleUpon Link"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Styling"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:92
+msgid "Su"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Submit"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Success Message"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/framework/functions.php:56
+msgid "Sunday"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Swedish Krona"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Swiss Franc"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tab Content"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tab Titles"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tabs Type"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Testimonial"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Testimonials"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Testimonials Number"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Testimonials Order"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/widgets/themex_subscribe_widget.php:85
+#: midway/framework/classes/themex.form.php:1
+#: midway/framework/config.php:1
+msgid "Text"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:96
+msgid "Th"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Thai Baht"
+msgstr ""
+
+#. Text in function
+#: midway/framework/widgets/themex_subscribe_widget.php:35
+msgid "Thank you for subscribing!"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "The verification code you entered is incorrect"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/framework/admin/layout.php:3
+msgid "Theme Options"
+msgstr ""
+
+#. Text in function
+#: midway/framework/widgets/themex_subscribe_widget.php:35
+msgid "This email is already in the list."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "This is the list of subcribers from Newsletter Widget."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Three"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Three Fourths"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Three Fourths Last"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/framework/functions.php:56
+msgid "Thursday"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tiled Background"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/widgets/themex_subscribe_widget.php:81
+#: midway/framework/widgets/themex_posts_widget.php:97
+#: midway/framework/config.php:1
+#: midway/framework/widgets/themex_twitter_widget.php:54
+msgid "Title"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Title Text"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Toggle Content"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Toggle Title"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Top"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+#: midway/framework/config.php:1
+msgid "Tour"
+msgstr ""
+
+#. Text in echo
+#: midway/module-forms.php:21
+msgid "Tour Booking"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tour Options"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tour arrival date."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tour departure date."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tour duration (days)."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tour minimum price."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tours"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tours Destination"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tours Layout"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tours Number"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tours Order"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tours Per Page"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tours Type"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tours View"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tracking Code"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Transition Speed"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:94
+msgid "Tu"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/framework/functions.php:56
+msgid "Tuesday"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Tumblr Link"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Turkish Lira"
+msgstr ""
+
+#. Text in echo
+#: midway/framework/widgets/themex_twitter_widget.php:62
+msgid "Tweets Number"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Twitter Link"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Two Thirds"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Two Thirds Last"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Type"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Types"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+msgid "URL"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+msgid "Undo"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "United States Dollar"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Update Destination"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Update Gallery Category"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Update Type"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Upload an image for your site favicon."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Upload an image for your site logo."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Upload an image to show on the login page."
+msgstr ""
+
+#. Text in echo
+#: midway/framework/widgets/themex_twitter_widget.php:58
+msgid "Username"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Vertical"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Video Code"
+msgstr ""
+
+#. Text in echo
+#: midway/template-tours.php:63
+msgid "View"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "View Gallery"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "View Slide"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "View Testimonial"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "View Tour"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Vimeo Link"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Visible"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/module-search.php:95
+msgid "We"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+#: midway/framework/functions.php:56
+msgid "Wednesday"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Write CSS rules here to overwrite the default styles."
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "Yes"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.interface.php:1
+msgid "You are about to delete <strong>%s</strong>."
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "You have entered an invalid email address"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "YouTube Link"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.core.php:1
+msgid "Your PHP version is too old, this theme requires PHP 5.0 and higher."
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "Zoom"
+msgstr ""
+
+#. Text in echo
+#: midway/template-tours.php:63
+msgid "all tours"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "categories"
+msgstr ""
+
+#. Text in function
+#: midway/framework/functions.php:56
+msgid "day"
+msgstr ""
+
+#. Text in function
+#: midway/framework/functions.php:56
+msgid "days"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "destinations"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "field can only contain numbers"
+msgstr ""
+
+#. Text in function
+#: midway/framework/classes/themex.form.php:1
+msgid "field is required"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "gallery"
+msgstr ""
+
+#. Text in echo
+#: midway/single.php:37
+msgid "in"
+msgstr ""
+
+#. Text in echo
+#: midway/template-tours.php:63
+msgid "or try adjusting the search parameters"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "tour"
+msgstr ""
+
+#. Text in function
+#: midway/framework/config.php:1
+msgid "types"
+msgstr ""

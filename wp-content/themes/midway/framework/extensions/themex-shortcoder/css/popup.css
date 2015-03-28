@@ -1,0 +1,165 @@
+/* -----------------------GLOBAL--------------------------- */
+
+#themex-popup {
+	width: 560px;
+	font: 12px/20px Arial, Helvetica, sans-serif;
+	overflow: hidden;
+}
+#themex-popup * {
+	font: 12px/20px Arial, Helvetica, sans-serif;	
+}
+#themex-shortcode-form-wrap {
+	width: 550px;
+	float: left;
+}
+
+/* -----------------------SHORTCODE SETTINGS--------------------------- */
+
+#themex-shortcode-form-wrap #themex-shortcode-form-head {
+	width: 530px;
+	padding: 15px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 1;
+	background-color: #444;
+}
+#themex-shortcode-form-wrap #themex-shortcode-form {
+	width: 490px;
+	padding: 15px;
+}
+
+/* -----------------------CHILD SHORTCODE--------------------------- */
+
+#themex-shortcode-form-table .has-child #form-child-add {
+	display: block;
+	width: 520px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 0;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+}
+#themex-shortcode-form-table .has-child .child-clone-rows {
+	display: block;
+}
+#themex-shortcode-form-table .has-child .child-clone-rows .child-clone-row {
+	padding: 8px 15px;
+	background: #f7f7f7;
+	border: solid 1px #e0e0e0;
+	margin-bottom: 10px;
+	cursor: move;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#themex-shortcode-form-table .has-child .sortable-placeholder {
+	border: dashed 2px #e0e0e0;
+	margin-bottom: 10px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #f7f7f7;
+	height: 40px;
+}
+#themex-shortcode-form-table .has-child .child-clone-rows .child-clone-row .child-clone-row-form {
+	display: block;
+}
+#themex-shortcode-form-table .has-child .child-clone-rows .child-clone-row .child-clone-row-form .child-clone-row-form-row {
+	display: block;
+	padding: 7px 0;
+	border-bottom: solid 1px #ddd;
+}
+#themex-shortcode-form-table .has-child .child-clone-rows .child-clone-row .child-clone-row-form .child-clone-row-form-row .child-clone-row-label label {
+	display: block;
+	font-weight: bold;
+	font-style: italic;
+	padding-bottom: 7px;
+	line-height: 1;
+}
+#themex-shortcode-form-table .has-child .child-clone-rows .child-clone-row .child-clone-row-remove {
+	color: #FF0000;
+	padding: 1px;
+}
+#themex-shortcode-form-table .has-child .child-clone-rows .child-clone-row .child-clone-row-remove:hover {
+	color: #fff;
+	background: #FF0000;
+}
+
+/* -----------------------INTERFACE--------------------------- */
+
+#themex-shortcode-form-table tbody tr.form-row .themex_form-text,
+#themex-shortcode-form-table tbody tr.form-row .themex_form-textarea,
+#themex-shortcode-form-table tbody tr.form-row .themex_form-select,
+#themex-shortcode-form-table select#themex_type,
+#themex-shortcode-form-table select#themex_destination,
+#themex-shortcode-form-table select#themex_page,
+#themex-shortcode-form-table select#themex_category {
+	width: 350px;
+	padding: 5px 10px;
+	background: #f7f7f7;
+	border: none;
+	border-left: solid 1px #ddd;
+	border-top: solid 1px #ddd;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#themex-shortcode-form-table tbody tr.form-row.has-child .themex_form-text,
+#themex-shortcode-form-table tbody tr.form-row.has-child .themex_form-textarea,
+#themex-shortcode-form-table tbody tr.form-row.has-child .themex_form-select {
+	background: #fff;
+	width: 485px;
+}
+
+#themex-shortcode-form-table tbody tr.form-row .themex_form-textarea {
+	height: 120px;
+}
+#themex-shortcode-form-table tbody tr.form-row.has-child .themex_form-textarea {
+	height: 100px;
+}
+
+#themex-shortcode-form-table tbody tr.form-row .themex_form-select {
+	display: block;
+	height: 25px;
+}
+#themex-shortcode-form-table tbody tr.form-row.has-child .themex_form-select {
+	width: auto;
+	height: 25px;
+}
+
+#themex-shortcode-form-table tbody tr.form-row .field .themex_form-desc,
+#themex-shortcode-form-table tbody tr.form-row .child-clone-row-desc {
+	display: block;
+	font-size:  12px;
+	color: #aaa;
+	font-style: italic;
+	padding-top: 3px;
+}
+
+/* -----------------------FORMS--------------------------- */
+
+#themex-shortcode-form-table {
+	width: 520px;
+}
+#themex-shortcode-form-table tbody tr.form-row {
+	display: block;
+	padding: 5px 0;
+	border-bottom: solid 1px #eaeaea;
+}
+#themex-shortcode-form-table tbody:last-child tr.form-row {
+	border-bottom: none;
+}
+#themex-shortcode-form-table tbody tr.form-row .label {
+	width: 130px;
+	text-align: right;
+	vertical-align: top;
+	line-height: 35px;
+	padding-right: 20px;
+}
+#themex-shortcode-form-table tbody tr.form-row .field {
+	width: 370px;
+}
+#themex-shortcode-form-table tbody tr.form-row .themex-insert {
+	color: #fff;
+}
