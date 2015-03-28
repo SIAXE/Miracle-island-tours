@@ -1,11 +1,11 @@
 <?php
 //Site Logo
-function themex_logo() {
-	$logo_type=get_option('themex_logo_type');
-	if($logo_type=='image' && get_option('themex_logo_image')) {
-		$out='<img src="'.get_option('themex_logo_image').'" alt="">';
-	} else if($logo_type=='text' && get_option('themex_logo_text')) {
-		$out=get_option('themex_logo_text');
+function Themex_logo() {
+	$logo_type=get_option('Themex_logo_type');
+	if($logo_type=='image' && get_option('Themex_logo_image')) {
+		$out='<img src="'.get_option('Themex_logo_image').'" alt="">';
+	} else if($logo_type=='text' && get_option('Themex_logo_text')) {
+		$out=get_option('Themex_logo_text');
 	} else {
 		$out='<img src="'.THEME_URI.'images/logo.png" alt="" />';
 	}
@@ -13,24 +13,24 @@ function themex_logo() {
 }
 
 //Login Logo
-add_action('login_head', 'themex_login_logo');
-function themex_login_logo() {
-	$logo_url=get_option('themex_login_logo');
+add_action('login_head', 'Themex_login_logo');
+function Themex_login_logo() {
+	$logo_url=get_option('Themex_login_logo');
 	if($logo_url) {
 		echo '<style type="text/css">h1 a { background-image:url('.$logo_url.') !important; }</style>';
 	}
 }
 
 //Tracking Code
-function themex_footer() {
-	if(get_option('themex_tracking_code')) {
-		echo themex_html(ThemexCore::getOption('tracking_code'));
+function Themex_footer() {
+	if(get_option('Themex_tracking_code')) {
+		echo Themex_html(ThemexCore::getOption('tracking_code'));
 	}
 }
-add_action('wp_footer','themex_footer');
+add_action('wp_footer','Themex_footer');
 
 //Custom Comments
-function themex_comment($comment, $args, $depth) {
+function Themex_comment($comment, $args, $depth) {
 	$GLOBALS['comment'] = $comment;
 	global $date_format;
 	if(!isset($date_format)) {
@@ -57,16 +57,16 @@ function themex_comment($comment, $args, $depth) {
 }
 
 //Custom Comments Form
-function themex_comment_form_fields($fields) {
+function Themex_comment_form_fields($fields) {
 	unset($fields['url']);
-	$fields['author']='<div class="column sixcol"><div class="field-wrapper"><input id="author" name="author" type="text" value="" placeholder="'.__('Name','miracleisland').'" size="30" aria-required="true" /></div></div>';
-	$fields['email']='<div class="column sixcol last"><div class="field-wrapper"><input id="email" name="email" type="text" value="" placeholder="'.__('Email','miracleisland').'" size="30" aria-required="true" /></div></div><div class="clear"></div>';
+	$fields['author']='<div class="column sixcol"><div class="field-wrapper"><input id="author" name="author" type="text" value="" placeholder="'.__('Name','Travel2').'" size="30" aria-required="true" /></div></div>';
+	$fields['email']='<div class="column sixcol last"><div class="field-wrapper"><input id="email" name="email" type="text" value="" placeholder="'.__('Email','Travel2').'" size="30" aria-required="true" /></div></div><div class="clear"></div>';
 	return $fields;
 }
-add_filter('comment_form_default_fields','themex_comment_form_fields');
+add_filter('comment_form_default_fields','Themex_comment_form_fields');
 
 //Custom Pagination
-function themex_pagination() {
+function Themex_pagination() {
 	global $wp_query, $wp_rewrite;
 	$query=$wp_query;
 	$max = $query->max_num_pages;
@@ -88,7 +88,7 @@ function themex_pagination() {
 }
 
 //Custom Excerpt
-function themex_excerpt($excerpt='') {
+function Themex_excerpt($excerpt='') {
 	global $post;
 	
 	$paragraphs=explode('</p>',$excerpt);
@@ -102,7 +102,7 @@ function themex_excerpt($excerpt='') {
 }
 
 //Detect Post Type
-function themex_is_post_type($types) {
+function Themex_is_post_type($types) {
 	global $post;
 	foreach($types as $type) {
 		if($type==$post->post_type) {
@@ -113,7 +113,7 @@ function themex_is_post_type($types) {
 }
 
 //Detect Slider Page
-function themex_is_slider_page() {
+function Themex_is_slider_page() {
 	$posts=get_posts(array(
 		'post_type'=>'slide',
 		'numberposts'=>1
@@ -127,21 +127,21 @@ function themex_is_slider_page() {
 }
 
 //Show Tour Duration
-function themex_duration($id) {
+function Themex_duration($id) {
 	$duration=intval(get_post_meta($id,'_tour_duration',true));
 	$out='';
 	if($duration!='' && $duration!='0') {
 		if($duration==1) {
-			$out=$duration.' '.__('day','miracleisland');
+			$out=$duration.' '.__('day','Travel2');
 		} else {
-			$out=$duration.' '.__('days','miracleisland');
+			$out=$duration.' '.__('days','Travel2');
 		}
 	}
 	return $out;
 }
 
 //Show Tour Categories
-function themex_category($id, $slug='') {
+function Themex_category($id, $slug='') {
 	$categories_array=wp_get_post_terms($id,'tour_'.$slug);
 	$categories_list='';
 	foreach($categories_array as $item) {
@@ -156,7 +156,7 @@ function themex_category($id, $slug='') {
 }
 
 //Show Formatted Date
-function themex_date($date, $format) {	
+function Themex_date($date, $format) {	
 	if(isset($date) && $date!='') {
 		$timestamp=strtotime(str_replace('/','.',$date));
 		$date=date($format, $timestamp);
@@ -167,7 +167,7 @@ function themex_date($date, $format) {
 }
 
 //Show Tour Days
-function themex_days($days) {
+function Themex_days($days) {
 	parse_str($days, $days_arr);
 	$out='';
 	
@@ -176,13 +176,13 @@ function themex_days($days) {
 		
 		foreach($days_arr as $day_name) {	
 			switch ($day_name) {				
-				case '1' : $out.=__('Monday','miracleisland').', '; break;
-				case '2' : $out.=__('Tuesday','miracleisland').', '; break;
-				case '3' : $out.=__('Wednesday','miracleisland').', '; break;
-				case '4' : $out.=__('Thursday','miracleisland').', '; break;
-				case '5' : $out.=__('Friday','miracleisland').', '; break;
-				case '6' : $out.=__('Saturday','miracleisland').', '; break;
-				case '7' : $out.=__('Sunday','miracleisland').', '; break;
+				case '1' : $out.=__('Monday','Travel2').', '; break;
+				case '2' : $out.=__('Tuesday','Travel2').', '; break;
+				case '3' : $out.=__('Wednesday','Travel2').', '; break;
+				case '4' : $out.=__('Thursday','Travel2').', '; break;
+				case '5' : $out.=__('Friday','Travel2').', '; break;
+				case '6' : $out.=__('Saturday','Travel2').', '; break;
+				case '7' : $out.=__('Sunday','Travel2').', '; break;
 			}
 		}
 		
@@ -195,7 +195,7 @@ function themex_days($days) {
 }
 
 //Tours Query
-function themex_tours_query() {
+function Themex_tours_query() {
 	global $post;
 	global $wp_query;
 	
@@ -230,8 +230,8 @@ function themex_tours_query() {
 		$args['tour_destination']=is_null($term=get_term( $destination, 'tour_destination' )) || is_wp_error($term)? null : $term->slug;
 		$args['tour_type']=is_null($term=get_term( $type, 'tour_type' )) || is_wp_error($term)? null : $term->slug;
 		
-		$date_dep=isset($_GET['date_dep'])?themex_timestamp($_GET['date_dep']):0;
-		$date_arr=isset($_GET['date_arr'])?themex_timestamp($_GET['date_arr']):0;
+		$date_dep=isset($_GET['date_dep'])?Themex_timestamp($_GET['date_dep']):0;
+		$date_arr=isset($_GET['date_arr'])?Themex_timestamp($_GET['date_arr']):0;
 		$date_range=floor(($date_arr-$date_dep)/86400)+1;
 		
 		$price_min=isset($_GET['price_min'])?intval($_GET['price_min']):0;
@@ -245,7 +245,7 @@ function themex_tours_query() {
 			if($filtered) {
 				$item_ids[]=$item_id;
 			} else {
-				$meta=themex_get_post_meta($item_id, array(
+				$meta=Themex_get_post_meta($item_id, array(
 					'_tour_price'=>'',
 					'_tour_duration'=>'',
 					'_tour_days'=>'',
@@ -298,8 +298,8 @@ function themex_tours_query() {
 }
 
 //Filter search query
-add_action('template_redirect', 'themex_search_query');
-function themex_search_query() {
+add_action('template_redirect', 'Themex_search_query');
+function Themex_search_query() {
     if (isset($_GET['s']) && empty($_GET['s'])) {
         global $wp_query;		
         $wp_query->is_404=false;
@@ -307,7 +307,7 @@ function themex_search_query() {
 }
 
 //Get all post meta
-function themex_get_post_meta($post_id, $defaults=array()){
+function Themex_get_post_meta($post_id, $defaults=array()){
     global $wpdb;
     $data   =   array();
     $wpdb->query("
@@ -330,7 +330,7 @@ function themex_get_post_meta($post_id, $defaults=array()){
 }
 
 //Date Timestamp
-function themex_timestamp($date) {
+function Themex_timestamp($date) {
 	$date=str_replace('/','.',$date);
 	if(ThemexCore::getOption('date_format','m/d/Y')=='m/d/Y') {
 		$date_arr=explode('.',$date);
@@ -343,7 +343,7 @@ function themex_timestamp($date) {
 }
 
 //Get Boundary Prices
-function themex_boundary_prices() {
+function Themex_boundary_prices() {
 	global $wpdb;
     $prices = $wpdb->get_col( $wpdb->prepare( "
         SELECT pm.meta_value FROM {$wpdb->postmeta} pm
@@ -369,7 +369,7 @@ function themex_boundary_prices() {
 }
 
 //Get Formatted Price
-function themex_price($id=null, $before='', $after='') {
+function Themex_price($id=null, $before='', $after='') {
 	$price_format=ThemexCore::getOption('tours_currency_position','left');
 	$price_currency=ThemexCore::getOption('tours_currency','$');
 	$price=get_post_meta($id,'_tour_price',true);
@@ -392,29 +392,29 @@ function themex_price($id=null, $before='', $after='') {
 }
 
 //Background Image
-function themex_background($default='', $class='') {
+function Themex_background($default='', $class='') {
 	global $post;
 	
 	$background='';
 	if(isset($post) && ($page_background=get_post_meta($post->ID,'_page_background',true))!='') {
 		$background=$page_background;
-	} else if($site_background=get_option('themex_background_image')) {
+	} else if($site_background=get_option('Themex_background_image')) {
 		$background=$site_background;
-	} else if($site_pattern=get_option('themex_background_pattern')) {
+	} else if($site_pattern=get_option('Themex_background_pattern')) {
 		$background=$site_pattern;
 	} else {
 		$background=THEME_URI.'images/patterns/pattern_1.jpg';
 	}
 	
-	if($background!='' && get_option('themex_background_fullwidth')!='true') {
+	if($background!='' && get_option('Themex_background_fullwidth')!='true') {
 		echo '<div class="substrate '.$class.'"><img src="'.$background.'" class="fullwidth" alt="" /></div>';
 	}
 }
 
 //Payment Security
-add_action('init','themex_payment_security');
-function themex_payment_security() {
-	if(get_option('themex_booking_payment')=='true') {
+add_action('init','Themex_payment_security');
+function Themex_payment_security() {
+	if(get_option('Themex_booking_payment')=='true') {
 		if(!session_id()) {
 			session_start();
 		}
@@ -425,9 +425,9 @@ function themex_payment_security() {
 }
 
 //Verify Payment
-function themex_verify_payment() {
+function Themex_verify_payment() {
 	if(isset($_GET['payment_id']) && $_GET['payment_id']==$_SESSION['payment_id'] && isset($_POST['verify_sign'])) {	
-		$message=$_SESSION['payment_message'].__('Payer Email', 'miracleisland').': '.$_POST['payer_email'];
+		$message=$_SESSION['payment_message'].__('Payer Email', 'Travel2').': '.$_POST['payer_email'];
 		ThemexForm::refresh();
 		ThemexForm::sendEmail($message, 'booking_form');	
 		session_destroy();
@@ -437,19 +437,19 @@ function themex_verify_payment() {
 }
 
 //Output HTML
-function themex_html($string) {
-	return do_shortcode(html_entity_decode(themex_stripslashes($string)));
+function Themex_html($string) {
+	return do_shortcode(html_entity_decode(Themex_stripslashes($string)));
 }
 
 //Strip Slashes
-function themex_stripslashes($string) {
+function Themex_stripslashes($string) {
 	return stripslashes(stripslashes($string));
 }
 
 //Admin JS Variables
-add_action( 'admin_head', 'themex_js_admin_vars' );
-function themex_js_admin_vars() {
-	echo '<script type="text/javascript">var themexUri="'.THEMEX_URI.'";</script>';
+add_action( 'admin_head', 'Themex_js_admin_vars' );
+function Themex_js_admin_vars() {
+	echo '<script type="text/javascript">var ThemexUri="'.Themex_URI.'";</script>';
 }
 
 //Process Shortcodes

@@ -1,6 +1,6 @@
 <?php
-$destinations=themex_category($post->ID, 'destination');
-$duration=themex_duration($post->ID);
+$destinations=Themex_category($post->ID, 'destination');
+$duration=Themex_duration($post->ID);
 ?>
 <div class="column <?php echo $GLOBALS['row_class']; ?>col <?php echo $GLOBALS['counter']==$GLOBALS['row_limit'] ? 'last' : ''; ?>">
 	<div class="tour-thumb-container">

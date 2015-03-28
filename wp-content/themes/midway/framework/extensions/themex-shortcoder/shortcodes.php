@@ -1,89 +1,89 @@
 <?php
 //Columns
 
-add_shortcode('one_sixth', 'themex_one_sixth');
-function themex_one_sixth( $atts, $content = null ) {
+add_shortcode('one_sixth', 'Themex_one_sixth');
+function Themex_one_sixth( $atts, $content = null ) {
    return '<div class="twocol column">'.do_shortcode($content).'</div>';
 }
 
-add_shortcode('one_sixth_last', 'themex_one_sixth_last');
-function themex_one_sixth_last( $atts, $content = null ) {
+add_shortcode('one_sixth_last', 'Themex_one_sixth_last');
+function Themex_one_sixth_last( $atts, $content = null ) {
    return '<div class="twocol column last">'.do_shortcode($content).'</div><div class="clear"></div>';
 }
 
-add_shortcode('one_fourth', 'themex_one_fourth');
-function themex_one_fourth( $atts, $content = null ) {
+add_shortcode('one_fourth', 'Themex_one_fourth');
+function Themex_one_fourth( $atts, $content = null ) {
    return '<div class="threecol column">'.do_shortcode($content).'</div>';
 }
 
-add_shortcode('one_fourth_last', 'themex_one_fourth_last');
-function themex_one_fourth_last( $atts, $content = null ) {
+add_shortcode('one_fourth_last', 'Themex_one_fourth_last');
+function Themex_one_fourth_last( $atts, $content = null ) {
    return '<div class="threecol column last">'.do_shortcode($content).'</div><div class="clear"></div>';
 }
 
-add_shortcode('one_third', 'themex_one_third');
-function themex_one_third( $atts, $content = null ) {
+add_shortcode('one_third', 'Themex_one_third');
+function Themex_one_third( $atts, $content = null ) {
    return '<div class="fourcol column">'.do_shortcode($content).'</div>';
 }
 
-add_shortcode('one_third_last', 'themex_one_third_last');
-function themex_one_third_last( $atts, $content = null ) {
+add_shortcode('one_third_last', 'Themex_one_third_last');
+function Themex_one_third_last( $atts, $content = null ) {
    return '<div class="fourcol column last">'.do_shortcode($content).'</div><div class="clear"></div>';
 }
 
-add_shortcode('five_twelfths', 'themex_five_twelfths');
-function themex_five_twelfths( $atts, $content = null ) {
+add_shortcode('five_twelfths', 'Themex_five_twelfths');
+function Themex_five_twelfths( $atts, $content = null ) {
    return '<div class="fivecol column">'.do_shortcode($content).'</div>';
 }
 
-add_shortcode('five_twelfths_last', 'themex_five_twelfths_last');
-function themex_five_twelfths_last( $atts, $content = null ) {
+add_shortcode('five_twelfths_last', 'Themex_five_twelfths_last');
+function Themex_five_twelfths_last( $atts, $content = null ) {
    return '<div class="fivecol column last">'.do_shortcode($content).'</div><div class="clear"></div>';
 }
 
-add_shortcode('one_half', 'themex_one_half');
-function themex_one_half( $atts, $content = null ) {
+add_shortcode('one_half', 'Themex_one_half');
+function Themex_one_half( $atts, $content = null ) {
    return '<div class="sixcol column">'.do_shortcode($content).'</div>';
 }
 
-add_shortcode('one_half_last', 'themex_one_half_last');
-function themex_one_half_last( $atts, $content = null ) {
+add_shortcode('one_half_last', 'Themex_one_half_last');
+function Themex_one_half_last( $atts, $content = null ) {
    return '<div class="sixcol column last">'.do_shortcode($content).'</div><div class="clear"></div>';
 }
 
-add_shortcode('seven_twelfths', 'themex_seven_twelfths');
-function themex_seven_twelfths( $atts, $content = null ) {
+add_shortcode('seven_twelfths', 'Themex_seven_twelfths');
+function Themex_seven_twelfths( $atts, $content = null ) {
    return '<div class="sevencol column">'.do_shortcode($content).'</div>';
 }
 
-add_shortcode('seven_twelfths_last', 'themex_seven_twelfths_last');
-function themex_seven_twelfths_last( $atts, $content = null ) {
+add_shortcode('seven_twelfths_last', 'Themex_seven_twelfths_last');
+function Themex_seven_twelfths_last( $atts, $content = null ) {
    return '<div class="sevencol column last">'.do_shortcode($content).'</div><div class="clear"></div>';
 }
 
-add_shortcode('two_thirds', 'themex_two_thirds');
-function themex_two_thirds( $atts, $content = null ) {
+add_shortcode('two_thirds', 'Themex_two_thirds');
+function Themex_two_thirds( $atts, $content = null ) {
    return '<div class="eightcol column">'.do_shortcode($content).'</div>';
 }
 
-add_shortcode('two_thirds_last', 'themex_two_thirds_last');
-function themex_two_thirds_last( $atts, $content = null ) {
+add_shortcode('two_thirds_last', 'Themex_two_thirds_last');
+function Themex_two_thirds_last( $atts, $content = null ) {
    return '<div class="eightcol column last">'.do_shortcode($content).'</div><div class="clear"></div>';
 }
 
-add_shortcode('three_fourths', 'themex_three_fourths');
-function themex_three_fourths( $atts, $content = null ) {
+add_shortcode('three_fourths', 'Themex_three_fourths');
+function Themex_three_fourths( $atts, $content = null ) {
    return '<div class="ninecol column">'.do_shortcode($content).'</div>';
 }
 
-add_shortcode('three_fourths_last', 'themex_three_fourths_last');
-function themex_three_fourths_last( $atts, $content = null ) {
+add_shortcode('three_fourths_last', 'Themex_three_fourths_last');
+function Themex_three_fourths_last( $atts, $content = null ) {
    return '<div class="ninecol column last">'.do_shortcode($content).'</div><div class="clear"></div>';
 }
 
 //Title
-add_shortcode('title', 'themex_title');
-function themex_title( $atts, $content = null ) {
+add_shortcode('title', 'Themex_title');
+function Themex_title( $atts, $content = null ) {
 	extract(shortcode_atts(array(
 		'size' => 'large',
     ), $atts));
@@ -95,8 +95,8 @@ function themex_title( $atts, $content = null ) {
 }
 
 //Block
-add_shortcode('block', 'themex_block');
-function themex_block( $atts, $content = null ) {
+add_shortcode('block', 'Themex_block');
+function Themex_block( $atts, $content = null ) {
 	extract(shortcode_atts(array(
 		'background' => '',
     ), $atts));
@@ -109,8 +109,8 @@ function themex_block( $atts, $content = null ) {
 }
 
 //Sidebar
-add_shortcode('sidebar', 'themex_sidebar');
-function themex_sidebar( $atts, $content = null ) {
+add_shortcode('sidebar', 'Themex_sidebar');
+function Themex_sidebar( $atts, $content = null ) {
 	extract(shortcode_atts(array(
 		'name' => '',
     ), $atts));
@@ -123,8 +123,8 @@ function themex_sidebar( $atts, $content = null ) {
 }
 
 //Testimonials
-add_shortcode('testimonials','themex_testimonials');
-function themex_testimonials( $atts, $content = null ) {
+add_shortcode('testimonials','Themex_testimonials');
+function Themex_testimonials( $atts, $content = null ) {
 	extract(shortcode_atts(array(
 		'pause' => '0',
 		'speed' => '400',
@@ -149,8 +149,8 @@ function themex_testimonials( $atts, $content = null ) {
 }
 
 //Tours
-add_shortcode('tours','themex_tours');
-function themex_tours( $atts, $content = null ) {
+add_shortcode('tours','Themex_tours');
+function Themex_tours( $atts, $content = null ) {
 	extract(shortcode_atts(array(
 		'number' => '4',
 		'columns' => '4',
@@ -207,8 +207,8 @@ function themex_tours( $atts, $content = null ) {
 }
 
 //Posts
-add_shortcode('posts','themex_posts');
-function themex_posts( $atts, $content = null ) {
+add_shortcode('posts','Themex_posts');
+function Themex_posts( $atts, $content = null ) {
 	extract(shortcode_atts(array(
 		'number' => '1',
 		'order' => 'date',
@@ -237,8 +237,8 @@ function themex_posts( $atts, $content = null ) {
 			$out.='</a></div>';
 		}
 		$out.='<div class="post-content"><h5 class="post-title"><a href="'.get_permalink().'">'.get_the_title().'</a></h5></div>';
-		$out.='<p>'.themex_excerpt(get_the_excerpt()).'</p>';
-		$out.='<div class="post-meta"><a href="'.get_permalink().'" class="button small"><span>'.__('Read More','miracleisland').'</span></a>';
+		$out.='<p>'.Themex_excerpt(get_the_excerpt()).'</p>';
+		$out.='<div class="post-meta"><a href="'.get_permalink().'" class="button small"><span>'.__('Read More','Travel2').'</span></a>';
 		if(comments_open()) {
 			$out.='<div class="post-comment-count">'.get_comments_number('0','1','%').'</div>';
 		}
@@ -253,8 +253,8 @@ function themex_posts( $atts, $content = null ) {
 }
 
 //Gallery
-add_shortcode('galleries','themex_galleries');
-function themex_galleries( $atts, $content = null ) {
+add_shortcode('galleries','Themex_galleries');
+function Themex_galleries( $atts, $content = null ) {
 	extract(shortcode_atts(array(
 		'number' => '3',
 		'columns' => '3',
@@ -319,8 +319,8 @@ function themex_galleries( $atts, $content = null ) {
 }
 
 //Image
-add_shortcode('image','themex_image');
-function themex_image( $atts, $content = null ) {
+add_shortcode('image','Themex_image');
+function Themex_image( $atts, $content = null ) {
 	extract(shortcode_atts(array(
 		'url' => '',
     ), $atts));
@@ -337,14 +337,14 @@ function themex_image( $atts, $content = null ) {
 }
 
 //Itinerary
-add_shortcode('itinerary','themex_itinerary');
-function themex_itinerary( $atts, $content = null ) {
+add_shortcode('itinerary','Themex_itinerary');
+function Themex_itinerary( $atts, $content = null ) {
 	$out='<div class="tour-itinerary"><table>'.do_shortcode($content).'</table></div>';
 	return $out;
 }
 
-add_shortcode('day','themex_itinerary_day');
-function themex_itinerary_day( $atts, $content = null ) {
+add_shortcode('day','Themex_itinerary_day');
+function Themex_itinerary_day( $atts, $content = null ) {
 	extract(shortcode_atts(array(
 		'title' => '&nbsp;',
 		'image' => '',
@@ -364,7 +364,7 @@ function themex_itinerary_day( $atts, $content = null ) {
 }
 
 //Google Map
-function themex_google_map( $atts, $content = null ) {
+function Themex_google_map( $atts, $content = null ) {
     extract(shortcode_atts(array(
 		'latitude' => '37.49',
 		'longitude' => '-77.48',
@@ -389,11 +389,11 @@ function themex_google_map( $atts, $content = null ) {
     return $out;
 }
 
-add_shortcode('map', 'themex_google_map');
+add_shortcode('map', 'Themex_google_map');
 
 //Contact Form
-add_shortcode('contact_form','themex_contact_form');
-function themex_contact_form( $atts, $content = null ) {
+add_shortcode('contact_form','Themex_contact_form');
+function Themex_contact_form( $atts, $content = null ) {
 	ob_start();
 	ThemexForm::renderData('contact_form');
 	$out=ob_get_contents();
@@ -402,8 +402,8 @@ function themex_contact_form( $atts, $content = null ) {
 }
 
 //Search Form
-add_shortcode('search_form','themex_search_form');
-function themex_search_form( $atts, $content = null ) {
+add_shortcode('search_form','Themex_search_form');
+function Themex_search_form( $atts, $content = null ) {
 	ob_start();
 	get_template_part('module','search');
 	$out=ob_get_contents();
@@ -412,8 +412,8 @@ function themex_search_form( $atts, $content = null ) {
 }
 
 //Buttons
-add_shortcode('button','themex_button');
-function themex_button( $atts, $content = null ) {	
+add_shortcode('button','Themex_button');
+function Themex_button( $atts, $content = null ) {	
 	extract(shortcode_atts(array(
 		'url'     	 => '#',
 		'color'   => 'default',
@@ -423,8 +423,8 @@ function themex_button( $atts, $content = null ) {
 }
 
 //Tabs
-add_shortcode('tabs', 'themex_tabs');
-function themex_tabs( $atts, $content = null ) {
+add_shortcode('tabs', 'Themex_tabs');
+function Themex_tabs( $atts, $content = null ) {
     extract(shortcode_atts(array(
         'titles' => '',
 		'type' => 'horizontal'
@@ -462,8 +462,8 @@ function themex_tabs( $atts, $content = null ) {
 }
 
 //Tabs Panes
-add_shortcode('tab', 'themex_tabs_panes');
-function themex_tabs_panes( $atts, $content = null ) {	
+add_shortcode('tab', 'Themex_tabs_panes');
+function Themex_tabs_panes( $atts, $content = null ) {	
 	$ID='';
 	if(isset($GLOBALS['titles'][$GLOBALS['counter']])) {
 		$ID=sanitize_title($GLOBALS['titles'][$GLOBALS['counter']]);
@@ -476,8 +476,8 @@ function themex_tabs_panes( $atts, $content = null ) {
 }
 
 //Toggle
-add_shortcode('toggle', 'themex_toggle');
-function themex_toggle( $atts, $content = null ) {	
+add_shortcode('toggle', 'Themex_toggle');
+function Themex_toggle( $atts, $content = null ) {	
     extract(shortcode_atts(array(
 		'title'    	 => '',
     ), $atts));

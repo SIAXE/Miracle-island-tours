@@ -9,7 +9,7 @@ class ThemexShortcoder {
 	public static function init() {
 	
 		//init shortcode functions
-		require_once(THEMEX_PATH.'extensions/themex-shortcoder/shortcodes.php');
+		require_once(Themex_PATH.'extensions/Themex-shortcoder/shortcodes.php');
 	
 		//get shortcodes config
 		self::$data=ThemexCore::$components['shortcodes'];
@@ -32,13 +32,13 @@ class ThemexShortcoder {
 	
 	//Add plugin
 	public static function addPlugin( $plugin_array ) {
-		$plugin_array['themexShortcoder'] = THEMEX_URI.'extensions/themex-shortcoder/js/plugin.js';
+		$plugin_array['ThemexShortcoder'] = Themex_URI.'extensions/Themex-shortcoder/js/plugin.js';
 		return $plugin_array;
 	}
 	
 	//Add editor button
 	public static function addButton( $buttons ) {
-		array_push( $buttons, '|', 'themex_button' );
+		array_push( $buttons, '|', 'Themex_button' );
 		return $buttons;
 	}
 	
@@ -49,15 +49,15 @@ class ThemexShortcoder {
 		{
 
 			//current shortcode options
-			$out.='<div id="themex_shortcode" class="hidden">'.self::$data[self::$id]['shortcode'].'</div>';
-			$out.='<div id="themex_popup" class="hidden">'.self::$id.'</div>';
+			$out.='<div id="Themex_shortcode" class="hidden">'.self::$data[self::$id]['shortcode'].'</div>';
+			$out.='<div id="Themex_popup" class="hidden">'.self::$id.'</div>';
 			
 			//render each option
 			if(isset(self::$data[self::$id]['options'])) {
 				foreach( self::$data[self::$id]['options'] as $option_id=>$option ) {
 				
 					//add options prefix
-					$option_id='themex_'.$option_id;
+					$option_id='Themex_'.$option_id;
 					
 					//shortcode option start
 					$out.='<tbody>';
@@ -68,16 +68,16 @@ class ThemexShortcoder {
 					switch($option['type']) {
 					
 						case 'text' :
-							$out.='<input type="text" class="themex_form-text themex-input" name="'.$option_id.'" id="'.$option_id.'" value="'.$option['std'].'" />';
+							$out.='<input type="text" class="Themex_form-text Themex-input" name="'.$option_id.'" id="'.$option_id.'" value="'.$option['std'].'" />';
 						break;
 						
 						case 'textarea' :
-							$out.='<textarea rows="10" cols="30" name="'.$option_id.'" id="'.$option_id.'" class="themex_form-textarea themex-input">'.$option['std'].'</textarea>';
+							$out.='<textarea rows="10" cols="30" name="'.$option_id.'" id="'.$option_id.'" class="Themex_form-textarea Themex-input">'.$option['std'].'</textarea>';
 						break;
 							
 						case 'select' :						
 
-							$out.='<select name="'.$option_id.'" id="'.$option_id.'" class="themex_form-select themex-input">';						
+							$out.='<select name="'.$option_id.'" id="'.$option_id.'" class="Themex_form-select Themex-input">';						
 							foreach( $option['options'] as $value=>$name ) {
 								$out.='<option value="'.$value.'">'.$name.'</option>';
 							}						
@@ -112,7 +112,7 @@ class ThemexShortcoder {
 								'type' => 'select',
 								'wrap' => false,
 								'options' => $sidebars,
-								'attributes' => array('class'=>'themex_form-select themex-input'),
+								'attributes' => array('class'=>'Themex_form-select Themex-input'),
 							));
 						break;
 						
@@ -124,7 +124,7 @@ class ThemexShortcoder {
 							}
 						
 							$args=array(
-								'show_option_all'    => __('All Categories','miracleisland'),
+								'show_option_all'    => __('All Categories','Travel2'),
 								'id'                 => $option_id,
 								'hide_empty'         => 0,
 								'echo'               => 0,
@@ -137,7 +137,7 @@ class ThemexShortcoder {
 						case 'select_portfolio_category':
 						
 							$args=array(
-								'show_option_all'    => __('All','miracleisland'),
+								'show_option_all'    => __('All','Travel2'),
 								'id'                 => $option_id,
 								'hide_empty'         => 0,
 								'taxonomy'           => 'portfolio_category',
@@ -151,15 +151,15 @@ class ThemexShortcoder {
 							
 						case 'checkbox' :
 							
-							$out.='<label for="'.$option_id.'" class="themex_form-checkbox">';
-							$out.='<input type="checkbox" class="themex-input" name="'.$option_id.'" id="'.$option_id.'" '.($option['std']?'checked':'').' />';
+							$out.='<label for="'.$option_id.'" class="Themex_form-checkbox">';
+							$out.='<input type="checkbox" class="Themex-input" name="'.$option_id.'" id="'.$option_id.'" '.($option['std']?'checked':'').' />';
 							$out.=' '.$option['checkbox_text'].'</label>';
 							
 						break;
 					}
 					
 					//shortcode option end
-					$out.='<span class="themex_form-desc">'.$option['desc'].'</span>';
+					$out.='<span class="Themex_form-desc">'.$option['desc'].'</span>';
 					$out.='</td>';
 					$out.='</tr>';					
 					$out.='</tbody>';
@@ -176,7 +176,7 @@ class ThemexShortcoder {
 				$out.='<div class="child-clone-rows">';
 				
 				//child shortcode option
-				$out.='<div id="themex_cshortcode" class="hidden">'.self::$data[self::$id]['child_shortcode']['shortcode'].'</div>';
+				$out.='<div id="Themex_cshortcode" class="hidden">'.self::$data[self::$id]['child_shortcode']['shortcode'].'</div>';
 				
 				//row to clone
 				$out.='<div class="child-clone-row">';
@@ -186,7 +186,7 @@ class ThemexShortcoder {
 				foreach(self::$data[self::$id]['child_shortcode']['options'] as $child_option_id=>$child_option) {
 				
 					//add options prefix
-					$child_option_id='themex_'.$child_option_id;
+					$child_option_id='Themex_'.$child_option_id;
 					
 					//shortcode option start
 					$out.='<li class="child-clone-row-form-row">';
@@ -203,16 +203,16 @@ class ThemexShortcoder {
 					switch( $child_option['type'] ) {
 					
 						case 'text':
-							$out.='<input type="text" class="themex_form-text themex-cinput" name="'.$child_option_id.'" id="'.$child_option_id.'" value="'.$child_option['std'].'" />';
+							$out.='<input type="text" class="Themex_form-text Themex-cinput" name="'.$child_option_id.'" id="'.$child_option_id.'" value="'.$child_option['std'].'" />';
 						break;
 							
 						case 'textarea':
-							$out.='<textarea rows="10" cols="30" name="'.$child_option_id.'" id="'.$child_option_id.'" class="themex_form-textarea themex-cinput">'.$child_option['std'].'</textarea>';
+							$out.='<textarea rows="10" cols="30" name="'.$child_option_id.'" id="'.$child_option_id.'" class="Themex_form-textarea Themex-cinput">'.$child_option['std'].'</textarea>';
 						break;
 							
 						case 'select':							
 	
-							$out.='<select name="'.$child_option_id.'" id="'.$child_option_id.'" class="themex_form-select themex-cinput">';
+							$out.='<select name="'.$child_option_id.'" id="'.$child_option_id.'" class="Themex_form-select Themex-cinput">';
 							
 							foreach( $child_option['options'] as $value => $name ) {
 								$out.='<option value="'.$value.'">'.$name.'</option>';
@@ -224,8 +224,8 @@ class ThemexShortcoder {
 							
 						case 'checkbox':
 							
-							$out.='<label for="'.$child_option_id.'" class="themex_form-checkbox">';
-							$out.='<input type="checkbox" class="themex-cinput" name="'.$child_option_id.'" id="'.$child_option_id.'" '.($child_option['std']?'checked':'').' />';
+							$out.='<label for="'.$child_option_id.'" class="Themex_form-checkbox">';
+							$out.='<input type="checkbox" class="Themex-cinput" name="'.$child_option_id.'" id="'.$child_option_id.'" '.($child_option['std']?'checked':'').' />';
 							$out.=' '.$child_option['checkbox_text'].'</label>';				
 							
 						break;
@@ -235,7 +235,7 @@ class ThemexShortcoder {
 				
 				//shortcode option end
 				$out.='</ul>';
-				$out.='<a href="#" class="child-clone-row-remove">'.__('Remove','miracleisland').'</a>';
+				$out.='<a href="#" class="child-clone-row-remove">'.__('Remove','Travel2').'</a>';
 				$out.='</div>';
 				
 				//cloned rows end

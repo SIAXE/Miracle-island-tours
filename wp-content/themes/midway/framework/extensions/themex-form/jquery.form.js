@@ -1,8 +1,8 @@
 jQuery(document).ready(function($){
-	$('.themex-form').submit(function(){
+	$('.Themex-form').submit(function(){
 
 		var form=$(this),
-			message=form.parent().find('.themex-form-message'),
+			message=form.parent().find('.Themex-form-message'),
 			submitButton=form.find('.button'),
 			loader=form.find('.formatted-form-loader'),
 			paymentForm=$('.payment-form');
@@ -21,7 +21,7 @@ jQuery(document).ready(function($){
 			}
 			
 			var data = {
-				action: 'themex_form',
+				action: 'Themex_form',
 				data: serializedValues
 			};
 			

@@ -1,18 +1,18 @@
 <?php
 //Widget Name: Posts Widget
 
-class themex_posts_widget extends WP_Widget {
+class Themex_posts_widget extends WP_Widget {
 
 	//Widget Setup
 	function __construct() {
 		//Basic settings
-		$settings = array( 'classname' => 'widget-selected-posts', 'description' => __('Posts from selected category.', 'miracleisland') );
+		$settings = array( 'classname' => 'widget-selected-posts', 'description' => __('Posts from selected category.', 'Travel2') );
 
 		//Controls
 		$controls = array( 'width' => 300, 'height' => 300, 'id_base' => __CLASS__ );
 
 		//Creation
-		$this->WP_Widget( __CLASS__, __('Selected Posts','miracleisland'), $settings, $controls );
+		$this->WP_Widget( __CLASS__, __('Selected Posts','Travel2'), $settings, $controls );
 	}
 
 	//Widget view
@@ -24,7 +24,7 @@ class themex_posts_widget extends WP_Widget {
 			$instance['number']='3';
 		}
 		
-		$title = empty( $instance['title'] ) ? __( 'Latest Posts','miracleisland' ) : $instance['title'];
+		$title = empty( $instance['title'] ) ? __( 'Latest Posts','Travel2' ) : $instance['title'];
 		$title = apply_filters('widget_title', $title, $instance, $this->id_base);
 		
 		//posts query
@@ -94,18 +94,18 @@ class themex_posts_widget extends WP_Widget {
 		$instance = wp_parse_args( (array)$instance, $defaults ); ?>
 		<!-- Widget Title: Text Input -->
 		<p>
-			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'miracleisland'); ?>:</label>
+			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'Travel2'); ?>:</label>
 			<input class="widefat" type="text" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" />
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Posts Number', 'miracleisland'); ?>:</label>
+			<label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Posts Number', 'Travel2'); ?>:</label>
 			<input class="widefat" type="number" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" value="<?php echo $instance['number']; ?>" />
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e('Posts Category:', 'miracleisland') ?></label>
+			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e('Posts Category:', 'Travel2') ?></label>
 			<?php
 			$args = array(
-				'show_option_all'   => __('All Categories', 'miracleisland'),
+				'show_option_all'   => __('All Categories', 'Travel2'),
 				'hide_empty'         => 0, 
 				'echo'               => 0,
 				'selected'           => $instance['category'],
@@ -122,11 +122,11 @@ class themex_posts_widget extends WP_Widget {
 			?>
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id('order'); ?>"><?php _e('Order By', 'miracleisland'); ?>:</label>
+			<label for="<?php echo $this->get_field_id('order'); ?>"><?php _e('Order By', 'Travel2'); ?>:</label>
 			<select class="widefat" type="order" id="<?php echo $this->get_field_id( 'order' ); ?>" name="<?php echo $this->get_field_name( 'order' ); ?>">
-				<option value="date" <?php if($instance['order']=='date') echo 'selected="selected"'; ?>><?php _e('Date', 'miracleisland') ?></option>
-				<option value="rand" <?php if($instance['order']=='rand') echo 'selected="selected"'; ?>><?php _e('Random', 'miracleisland') ?></option>
-				<option value="comment_count" <?php if($instance['order']=='comment_count') echo 'selected="selected"'; ?>><?php _e('Comments', 'miracleisland') ?></option>
+				<option value="date" <?php if($instance['order']=='date') echo 'selected="selected"'; ?>><?php _e('Date', 'Travel2') ?></option>
+				<option value="rand" <?php if($instance['order']=='rand') echo 'selected="selected"'; ?>><?php _e('Random', 'Travel2') ?></option>
+				<option value="comment_count" <?php if($instance['order']=='comment_count') echo 'selected="selected"'; ?>><?php _e('Comments', 'Travel2') ?></option>
 			</select>
 		</p>
 	<?php

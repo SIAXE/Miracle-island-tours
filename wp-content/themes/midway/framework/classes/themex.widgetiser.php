@@ -98,17 +98,17 @@ class ThemexWidgetiser {
 		self::refresh();	
 		
 		//area name option
-		$name_option=array(	'name' => __('Sidebar Name','miracleisland'),
-							'id' => 'themex_widgetiser_area_name',
+		$name_option=array(	'name' => __('Sidebar Name','Travel2'),
+							'id' => 'Themex_widgetiser_area_name',
 							'type' => 'text',
-							'after' => '<div class="themex_button add_sidebar">'.__('Add Sidebar','miracleisland').'</div>');
+							'after' => '<div class="Themex_button add_sidebar">'.__('Add Sidebar','Travel2').'</div>');
 			
-		$out='<div class="themex_widgetiser">'.ThemexInterface::renderOption($name_option,true);
+		$out='<div class="Themex_widgetiser">'.ThemexInterface::renderOption($name_option,true);
 		
 		if(is_array(self::$data)) {
 			foreach(self::$data as $area_id=>$area) {
 
-				$out.='<div class="themex_section" id="'.$area_id.'"><h3>'.$area['name'].'</h3>';
+				$out.='<div class="Themex_section" id="'.$area_id.'"><h3>'.$area['name'].'</h3>';
 				
 				$option=array(  'id' => self::$id.'['.$area_id.'][name]',
 										'type' => 'hidden',
@@ -117,32 +117,32 @@ class ThemexWidgetiser {
 				$out.=ThemexInterface::renderOption($option);	
 				
 				//area pages
-				$out.='<div class="themex_left_col"><div class="themex_button add_page">'.__('Add Page','miracleisland').'</div>';
+				$out.='<div class="Themex_left_col"><div class="Themex_button add_page">'.__('Add Page','Travel2').'</div>';
 				if(isset($area['pages']) && is_array($area['pages'])) {
 					foreach($area['pages'] as $key=>$value) {
 						$option=array(  'id' => self::$id.'['.$area_id.'][pages]['.$key.']',
 										'type' => 'select_page',
 										'default' => $value,
-										'after' => '<div class="themex_icon remove_page"></div>');
+										'after' => '<div class="Themex_icon remove_page"></div>');
 						$out.=ThemexInterface::renderOption($option);							
 					}
 				}
 				$out.='</div>';
 				
 				//area categories
-				$out.='<div class="themex_right_col"><div class="themex_button add_category">'.__('Add Category','miracleisland').'</div>';
+				$out.='<div class="Themex_right_col"><div class="Themex_button add_category">'.__('Add Category','Travel2').'</div>';
 				if(isset($area['categories']) && is_array($area['categories'])) {
 					foreach($area['categories'] as $key=>$value) {
 						$option=array(  'id' => self::$id.'['.$area_id.'][categories]['.$key.']',
 										'type' => 'select_category',
 										'default' => $value,
-										'after' => '<div class="themex_icon remove_category"></div>');
+										'after' => '<div class="Themex_icon remove_category"></div>');
 						
 						$out.=ThemexInterface::renderOption($option);
 				
 					}
 				}
-				$out.='</div><div class="clear"><div class="themex_button remove_sidebar">'.__('Remove Sidebar','miracleisland').'</div></div></div>';
+				$out.='</div><div class="clear"><div class="Themex_button remove_sidebar">'.__('Remove Sidebar','Travel2').'</div></div></div>';
 
 			}
 		}
@@ -221,7 +221,7 @@ class ThemexWidgetiser {
 		self::$data[$area_id]=$attributes;
 
         //area name option
-		$name_option=array(	'name' => __('Sidebar Name','miracleisland'),
+		$name_option=array(	'name' => __('Sidebar Name','Travel2'),
 							'id' => self::$id.'['.$area_id.'][name]',
 							'default' => self::$data[$area_id]['name'],
 							'type' => 'text');
@@ -229,7 +229,7 @@ class ThemexWidgetiser {
 		self::save();
 		
 		//server response
-		echo '<div class="themex_section hidden" id="'.$area_id.'"><h3>'.$area_name.'</h3><div class="themex_left_col"><div class="themex_button add_page">'.__('Add Page','miracleisland').'</div></div><div class="themex_right_col"><div class="themex_button add_category">'.__('Add Category','miracleisland').'</div></div><div class="clear"><div class="themex_button remove_sidebar">'.__('Remove Sidebar','miracleisland').'</div></div></div>';
+		echo '<div class="Themex_section hidden" id="'.$area_id.'"><h3>'.$area_name.'</h3><div class="Themex_left_col"><div class="Themex_button add_page">'.__('Add Page','Travel2').'</div></div><div class="Themex_right_col"><div class="Themex_button add_category">'.__('Add Category','Travel2').'</div></div><div class="clear"><div class="Themex_button remove_sidebar">'.__('Remove Sidebar','Travel2').'</div></div></div>';
 
 	}
 	
@@ -257,14 +257,14 @@ class ThemexWidgetiser {
 		if($type=='pages') {
 			$option=array(  'id' => self::$id.'['.$area_id.'][pages]['.$child_id.']',
 							'type' => 'select_page',
-							'after' => '<div class="themex_icon themex_action remove_page"></div>',
+							'after' => '<div class="Themex_icon Themex_action remove_page"></div>',
 							'hidden' => true);	
 			echo ThemexInterface::renderOption($option);
 		
 		} else if($type=='categories') {
 			$option=array(  'id' => self::$id.'['.$area_id.'][categories]['.$child_id.']',
 							'type' => 'select_category' ,
-							'after' => '<div class="themex_icon themex_action remove_category"></div>',
+							'after' => '<div class="Themex_icon Themex_action remove_category"></div>',
 							'hidden' => true);	
 			echo ThemexInterface::renderOption($option);
 						

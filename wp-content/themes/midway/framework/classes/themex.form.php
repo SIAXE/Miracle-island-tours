@@ -9,8 +9,8 @@ class ThemexForm {
 	public static function init() {
 		
 		//ajax actions
-		add_action('wp_ajax_themex_form', array(__CLASS__,'processData'));
-		add_action('wp_ajax_nopriv_themex_form', array(__CLASS__,'processData'));
+		add_action('wp_ajax_Themex_form', array(__CLASS__,'processData'));
+		add_action('wp_ajax_nopriv_Themex_form', array(__CLASS__,'processData'));
 	
 	}
 
@@ -64,13 +64,13 @@ class ThemexForm {
 	
 		//get module stored data
 		self::refresh();
-		$out='<div class="themex_form">';
+		$out='<div class="Themex_form">';
 		
 		//description option
 		$out.=ThemexInterface::renderOption(array(
 				'type' => 'textarea',
 				'id' => self::$id.'['.$slug.'][description]',
-				'name' => __('Form Description','miracleisland'),
+				'name' => __('Form Description','Travel2'),
 				'default' => isset(self::$data[$slug]['description'])?self::$data[$slug]['description']:'',
 			)
 		);
@@ -79,7 +79,7 @@ class ThemexForm {
 		$out.=ThemexInterface::renderOption(array(
 				'type' => 'textarea',
 				'id' => self::$id.'['.$slug.'][message]',
-				'name' => __('Success Message','miracleisland'),
+				'name' => __('Success Message','Travel2'),
 				'default' => isset(self::$data[$slug]['message'])?self::$data[$slug]['message']:'',
 			)
 		);
@@ -89,7 +89,7 @@ class ThemexForm {
 					'type' => 'checkbox',
 					'id' => self::$id.'['.$slug.'][captcha]',
 					'default' => isset(self::$data[$slug]['captcha'])?self::$data[$slug]['captcha']:'false',
-					'name' => __('Enable Captcha Protection','miracleisland')
+					'name' => __('Enable Captcha Protection','Travel2')
 				)
 		);
 		
@@ -98,22 +98,22 @@ class ThemexForm {
 		
 			foreach(self::$data[$slug]['fields'] as $field_id=>$field) {
 			
-				$out.='<div class="themex_section" id="'.$field_id.'">';
+				$out.='<div class="Themex_section" id="'.$field_id.'">';
 				
 				//field type
 				$out.=ThemexInterface::renderOption(array(
 						'type' => 'select',
-						'name' => __('Field Type','miracleisland'),
+						'name' => __('Field Type','Travel2'),
 						'id' => self::$id.'['.$slug.'][fields]['.$field_id.'][type]',
 						'default' => ThemexCore::getArrayValue(self::$data[$slug]['fields'][$field_id],'type',''),
 						'options' => array(
-							'text'=>__('Text','miracleisland'),
-							'message'=>__('Message','miracleisland'),
-							'checkbox'=>__('Checkbox','miracleisland'),
-							'number'=>__('Number','miracleisland'),
-							'date'=>__('Date','miracleisland'),
-							'email'=>__('Email','miracleisland'),
-							'select'=>__('Select','miracleisland'),							
+							'text'=>__('Text','Travel2'),
+							'message'=>__('Message','Travel2'),
+							'checkbox'=>__('Checkbox','Travel2'),
+							'number'=>__('Number','Travel2'),
+							'date'=>__('Date','Travel2'),
+							'email'=>__('Email','Travel2'),
+							'select'=>__('Select','Travel2'),							
 						),
 					)
 				);
@@ -121,7 +121,7 @@ class ThemexForm {
 				//field label
 				$out.=ThemexInterface::renderOption(array(
 						'type' => 'text',
-						'name' => __('Field Label','miracleisland'),
+						'name' => __('Field Label','Travel2'),
 						'id' => self::$id.'['.$slug.'][fields]['.$field_id.'][label]',
 						'default' => ThemexCore::getArrayValue(self::$data[$slug]['fields'][$field_id],'label',''),
 					)
@@ -130,16 +130,16 @@ class ThemexForm {
 				//field options
 				$out.=ThemexInterface::renderOption(array(
 						'type' => 'text',
-						'description' => __('Enter in comma separated options.','miracleisland'),
+						'description' => __('Enter in comma separated options.','Travel2'),
 						'id' => self::$id.'['.$slug.'][fields]['.$field_id.'][options]',
 						'default' => ThemexCore::getArrayValue(self::$data[$slug]['fields'][$field_id],'options',''),
 						'hidden' => true,
-						'name' => __('Field Options','miracleisland')
+						'name' => __('Field Options','Travel2')
 					)
 				);	
 				
 				//actions
-				$out.='<div class="themex_icon add_field" data-slug="'.$slug.'"></div><div class="themex_icon remove_field" data-slug="'.$slug.'" data-id="'.$field_id.'"></div>';
+				$out.='<div class="Themex_icon add_field" data-slug="'.$slug.'"></div><div class="Themex_icon remove_field" data-slug="'.$slug.'" data-id="'.$field_id.'"></div>';
 				
 				//close section
 				$out.='</div>';
@@ -152,22 +152,22 @@ class ThemexForm {
 			//generate field id
 			$field_id=uniqid();
 			
-			$out.='<div class="themex_section" id="'.$field_id.'">';
+			$out.='<div class="Themex_section" id="'.$field_id.'">';
 		
 			//field type
 			$out.=ThemexInterface::renderOption(array(
 						'type' => 'select',
-						'name' => __('Field Type','miracleisland'),
+						'name' => __('Field Type','Travel2'),
 						'id' => self::$id.'['.$slug.'][fields]['.$field_id.'][type]',
 						'std' => isset(self::$data[$slug]['fields'][$field_id]['type'])?self::$data[$slug]['fields'][$field_id]['type']:'text',
 						'options' => array(
-							'text'=>__('Text','miracleisland'),
-							'message'=>__('Message','miracleisland'),
-							'checkbox'=>__('Checkbox','miracleisland'),
-							'number'=>__('Number','miracleisland'),
-							'date'=>__('Date','miracleisland'),
-							'email'=>__('Email','miracleisland'),
-							'select'=>__('Select','miracleisland'),							
+							'text'=>__('Text','Travel2'),
+							'message'=>__('Message','Travel2'),
+							'checkbox'=>__('Checkbox','Travel2'),
+							'number'=>__('Number','Travel2'),
+							'date'=>__('Date','Travel2'),
+							'email'=>__('Email','Travel2'),
+							'select'=>__('Select','Travel2'),							
 						),		
 					)
 				);
@@ -176,7 +176,7 @@ class ThemexForm {
 			$out.=ThemexInterface::renderOption(array(
 						'type' => 'text',
 						'id' => self::$id.'['.$slug.'][fields]['.$field_id.'][label]',
-						'name' => __('Field Label','miracleisland'),
+						'name' => __('Field Label','Travel2'),
 					)
 				);
 				
@@ -184,14 +184,14 @@ class ThemexForm {
 			$out.=ThemexInterface::renderOption(array(
 					'type' => 'text',
 					'id' => self::$id.'['.$slug.'][fields]['.$field_id.'][options]',
-					'description' => __('Enter in comma separated options.','miracleisland'),
+					'description' => __('Enter in comma separated options.','Travel2'),
 					'hidden' => true,
-					'name' => __('Field Options','miracleisland')
+					'name' => __('Field Options','Travel2')
 				)
 			);
 				
 			//actions
-			$out.='<div class="themex_icon add_field" data-slug="'.$slug.'"></div><div class="themex_icon remove_field" data-slug="'.$slug.'" data-id="'.$field_id.'"></div>';
+			$out.='<div class="Themex_icon add_field" data-slug="'.$slug.'"></div><div class="Themex_icon remove_field" data-slug="'.$slug.'" data-id="'.$field_id.'"></div>';
 				
 			//close section
 			$out.='</div>';
@@ -215,11 +215,11 @@ class ThemexForm {
 		self::refresh();
 		
 		//enqueue script
-		wp_enqueue_script( 'themex_form', THEMEX_URI.'extensions/themex-form/jquery.form.js' );
+		wp_enqueue_script( 'Themex_form', Themex_URI.'extensions/Themex-form/jquery.form.js' );
 		
 		$date_format=ThemexCore::getOption('date_format','m/d/Y')=='m/d/Y'?'mm/dd/yy':'dd/mm/yy';
-		$out='<div class="'.$slug.' formatted-form" id="'.$slug.'"><div class="themex-form-message"></div>';		
-		$out.='<form class="themex-form" name="'.$slug.'" >';
+		$out='<div class="'.$slug.' formatted-form" id="'.$slug.'"><div class="Themex-form-message"></div>';		
+		$out.='<form class="Themex-form" name="'.$slug.'" >';
 		
 		//description
 		if(isset(self::$data[$slug]['description'])) {
@@ -290,13 +290,13 @@ class ThemexForm {
 		}
 		
 		if(isset(self::$data[$slug]['captcha']) && self::$data[$slug]['captcha']=='true') {
-			$out.='<div class="captcha" id="themex_form_captcha">';			
-			$out.='<img src="'.THEMEX_URI.'extensions/themex-form/captcha.php" alt="" />';
-			$out.='<input name="themex_form_captcha" type="text" id="themex_form_captcha" size="6" value="" />';
+			$out.='<div class="captcha" id="Themex_form_captcha">';			
+			$out.='<img src="'.Themex_URI.'extensions/Themex-form/captcha.php" alt="" />';
+			$out.='<input name="Themex_form_captcha" type="text" id="Themex_form_captcha" size="6" value="" />';
 			$out.='</div>';
 		}
 		
-		$out.='<div class="clear"></div><a class="submit button" href="#" data-slug="'.$slug.'"><span>'.__('Submit','miracleisland').'</span></a>';
+		$out.='<div class="clear"></div><a class="submit button" href="#" data-slug="'.$slug.'"><span>'.__('Submit','Travel2').'</span></a>';
 		$out.='<div class="formatted-form-loader"></div><div class="clear"></div>';		
 		$out.='<input type="hidden" class="date-format" value="'.$date_format.'" />'.$after.'</form></div>';
 		
@@ -314,7 +314,7 @@ class ThemexForm {
 	
 		//get captcha
 		session_start();
-		$posted_code=md5($data['themex_form_captcha']);
+		$posted_code=md5($data['Themex_form_captcha']);
 		$session_code = $_SESSION['captcha'];
 		
 		//check errors		
@@ -323,20 +323,20 @@ class ThemexForm {
 			
 			//check captcha
 			if($session_code != $posted_code && self::$data[$data['slug']]['captcha']=='true') {
-				$errors.='<li>'.__('The verification code you entered is incorrect','miracleisland').'.</li>';
+				$errors.='<li>'.__('The verification code you entered is incorrect','Travel2').'.</li>';
 			}
 			
 			//check fields
 			foreach(self::$data[$data['slug']]['fields'] as $field_id=>$field) {
 				$value=$data[$field_id];
 				if(trim($value)=='' && $field['type']!='checkbox') {
-					$errors.='<li>"'.$field['label'].'" '.__('field is required','miracleisland').'</li>';
+					$errors.='<li>"'.$field['label'].'" '.__('field is required','Travel2').'</li>';
 				}
 				if($field['type']=='number' && !is_numeric($value) && $value!='') {
-					$errors.='<li>"'.$field['label'].'" '.__('field can only contain numbers','miracleisland').'.</li>';
+					$errors.='<li>"'.$field['label'].'" '.__('field can only contain numbers','Travel2').'.</li>';
 				}
 				if($field['type']=='email' && !preg_match("/^([a-zA-Z0-9_\.-]+)@([a-zA-Z0-9_\.-]+)\.([a-zA-Z\.]{2,6})$/",$value) && $value!='') {
-					$errors.='<li>'.__('You have entered an invalid email address','miracleisland').'.</li>';
+					$errors.='<li>'.__('You have entered an invalid email address','Travel2').'.</li>';
 				}
 			}
 		}
@@ -350,15 +350,15 @@ class ThemexForm {
 			$message='';			
 			if(is_array(self::$data[$data['slug']]['fields'])) {
 				if(isset($data[$data['slug'].'_tour_id'])) {					
-					$message.=__('Tour','miracleisland').': '.get_the_title(intval($data[$data['slug'].'_tour_id'])).PHP_EOL;					
+					$message.=__('Tour','Travel2').': '.get_the_title(intval($data[$data['slug'].'_tour_id'])).PHP_EOL;					
 				}				
 					
 				foreach(self::$data[$data['slug']]['fields'] as $field_id=>$field) {
 					if($field['type']=='checkbox') {						
 						if($data[$field_id]=='true') {
-							$data[$field_id]=__('Yes', 'miracleisland');
+							$data[$field_id]=__('Yes', 'Travel2');
 						} else {
-							$data[$field_id]=__('No', 'miracleisland');
+							$data[$field_id]=__('No', 'Travel2');
 						}
 					}
 				
@@ -387,11 +387,11 @@ class ThemexForm {
 		$headers .= "Content-Type: text/html; charset=ISO-8859-1".PHP_EOL;
 		
 		//subject
-		$subject=__('Feedback','miracleisland');
+		$subject=__('Feedback','Travel2');
 		if($slug=='booking_form') {
-			$subject=__('Booking','miracleisland');
+			$subject=__('Booking','Travel2');
 		} else if ($slug=='question_form') {
-			$subject=__('Question','miracleisland');
+			$subject=__('Question','Travel2');
 		}
 		
 		//address
@@ -415,22 +415,22 @@ class ThemexForm {
 		self::save();
 				
 		//server response
-		$out='<div class="themex_section hidden" id="'.$field_id.'">';
+		$out='<div class="Themex_section hidden" id="'.$field_id.'">';
 	
 		//field type
 		$out.=ThemexInterface::renderOption(array(
 					'type' => 'select',
 					'id' => self::$id.'['.$slug.'][fields]['.$field_id.'][type]',
 					'std' => self::$data[$slug]['fields'][$field_id]['type'],
-					'name' => __('Field Type','miracleisland'),
+					'name' => __('Field Type','Travel2'),
 					'options' => array(
-						'text'=>__('Text','miracleisland'),
-						'message'=>__('Message','miracleisland'),
-						'checkbox'=>__('Checkbox','miracleisland'),
-						'number'=>__('Number','miracleisland'),
-						'date'=>__('Date','miracleisland'),
-						'email'=>__('Email','miracleisland'),
-						'select'=>__('Select','miracleisland'),
+						'text'=>__('Text','Travel2'),
+						'message'=>__('Message','Travel2'),
+						'checkbox'=>__('Checkbox','Travel2'),
+						'number'=>__('Number','Travel2'),
+						'date'=>__('Date','Travel2'),
+						'email'=>__('Email','Travel2'),
+						'select'=>__('Select','Travel2'),
 					),
 				)
 			);
@@ -439,7 +439,7 @@ class ThemexForm {
 		$out.=ThemexInterface::renderOption(array(
 					'type' => 'text',
 					'id' => self::$id.'['.$slug.'][fields]['.$field_id.'][label]',
-					'name' => __('Field Label','miracleisland')
+					'name' => __('Field Label','Travel2')
 				)
 			);
 			
@@ -449,13 +449,13 @@ class ThemexForm {
 				'id' => self::$id.'['.$slug.'][fields]['.$field_id.'][options]',
 				'default' => self::$data[$slug]['fields'][$field_id]['options'],
 				'parent' => array(self::$id.'['.$slug.']['.$field_id.'][type]','email'),
-				'description' => __('Enter in comma separated options.','miracleisland'),
-				'name' => __('Field Options','miracleisland')			
+				'description' => __('Enter in comma separated options.','Travel2'),
+				'name' => __('Field Options','Travel2')			
 			)
 		);
 			
 		//action buttons
-		$out.='<div class="themex_icon add_field" data-slug="'.$slug.'"></div><div class="themex_icon remove_field" data-slug="'.$slug.'"></div>';
+		$out.='<div class="Themex_icon add_field" data-slug="'.$slug.'"></div><div class="Themex_icon remove_field" data-slug="'.$slug.'"></div>';
 			
 		//close section
 		$out.='</div>';			

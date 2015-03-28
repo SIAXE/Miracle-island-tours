@@ -10,8 +10,8 @@ $layout=ThemexCore::getOption('tours_layout','fullwidth');
 $view=ThemexCore::getOption('tours_view','grid');
 $GLOBALS['row_limit']=$layout!='left' && $layout!='right' ? 4 : 3;
 $GLOBALS['row_class']=$GLOBALS['row_limit']==4 ? 'three' : 'four';
-$GLOBALS['booking']=get_option('themex_tours_booking');
-$GLOBALS['questions']=get_option('themex_tours_questions');
+$GLOBALS['booking']=get_option('Themex_tours_booking');
+$GLOBALS['questions']=get_option('Themex_tours_questions');
 $GLOBALS['date_format']=ThemexCore::getOption('date_format','m/d/Y');
 $page_limit=ThemexCore::getOption('tours_limit','12');
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -22,7 +22,7 @@ $args=array(
 	'posts_per_page'=>intval($page_limit),
 	'paged'=>$paged,
 	'meta_key'=>'_thumbnail_id',
-	'post__in'=>themex_tours_query(),
+	'post__in'=>Themex_tours_query(),
 );
 
 query_posts($args);
@@ -59,15 +59,15 @@ if($layout=='left') {
 			}
 		} else {
 		?>
-		<h3><?php _e('No tours found. Try a different search?','miracleisland'); ?></h3>
-		<p><?php _e('Sorry, no tours matched your search.','miracleisland'); ?> <?php _e('View','miracleisland'); ?> <a href="<?php echo home_url(); ?>/?s="><?php _e('all tours','miracleisland'); ?></a> <?php _e('or try adjusting the search parameters','miracleisland'); ?>.</p><br />
+		<h3><?php _e('No tours found. Try a different search?','Travel2'); ?></h3>
+		<p><?php _e('Sorry, no tours matched your search.','Travel2'); ?> <?php _e('View','Travel2'); ?> <a href="<?php echo home_url(); ?>/?s="><?php _e('all tours','Travel2'); ?></a> <?php _e('or try adjusting the search parameters','Travel2'); ?>.</p><br />
 		<?php }	?>
 		<?php if($view=='grid') { ?>
 		<div class="clear"></div>
 		<?php }	?>
 	</div><!-- items list -->	
 	<?php 
-	themex_pagination(); 
+	Themex_pagination(); 
 	wp_reset_query();
 	get_template_part('module','forms');
 	?>

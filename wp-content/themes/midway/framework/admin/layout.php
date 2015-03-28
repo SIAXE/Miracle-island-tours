@@ -1,19 +1,19 @@
-<div class="themex_panel" id="themex_panel">
-	<div class="themex_header">
-		<h1><?php _e('Theme Options','miracleisland'); ?></h1>
-		<div class="themex_main_button save_options disabled"><?php _e('Save Changes','miracleisland'); ?></div>
+<div class="Themex_panel" id="Themex_panel">
+	<div class="Themex_header">
+		<h1><?php _e('Theme Options','Travel2'); ?></h1>
+		<div class="Themex_main_button save_options disabled"><?php _e('Save Changes','Travel2'); ?></div>
 	</div>
-		<div class="themex_pages">
-			<form name="themex_options" id="themex_options">
+		<div class="Themex_pages">
+			<form name="Themex_options" id="Themex_options">
 			<?php self::renderPages(); ?>
 			</form>
 		</div>
-		<div class="themex_menu">
+		<div class="Themex_menu">
 			<?php self::renderMenu(); ?>
 		</div>
-		<div class="themex_footer">
-			<div class="themex_main_button reset_options"><?php _e('Reset Options','miracleisland'); ?></div>
-			<div class="themex_main_button save_options disabled"><?php _e('Save Changes','miracleisland'); ?></div>
+		<div class="Themex_footer">
+			<div class="Themex_main_button reset_options"><?php _e('Reset Options','Travel2'); ?></div>
+			<div class="Themex_main_button save_options disabled"><?php _e('Save Changes','Travel2'); ?></div>
 		</div>
-	<div class="themex_popup"></div>
+	<div class="Themex_popup"></div>
 </div>

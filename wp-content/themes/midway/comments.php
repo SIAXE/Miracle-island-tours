@@ -1,6 +1,6 @@
 <?php if(comments_open()) { ?>
 <div class="post-comments">
-	<div class="block-title"><h1><?php _e('Comments','miracleisland'); ?></h1></div>
+	<div class="block-title"><h1><?php _e('Comments','Travel2'); ?></h1></div>
 	<?php
 	if (!empty($_SERVER['SCRIPT_FILENAME']) && 'template-comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
 		die ('Please do not load this page directly.');
@@ -9,7 +9,7 @@
 	 ?>
 	<div class="comment-list">
 		<ol id="comments">
-			<?php wp_list_comments('avatar_size=75&callback=themex_comment'); ?>
+			<?php wp_list_comments('avatar_size=75&callback=Themex_comment'); ?>
 		</ol>
 	</div><!--/ comments-->
 	<div class="pagination">
@@ -19,7 +19,7 @@
 	<div class="eightcol">
 	<?php 
 	$defaults = array(
-		'comment_field'        => '<div class="field-wrapper"><textarea id="comment" placeholder="'.__('Comment','miracleisland').'" name="comment" cols="45" rows="8" aria-required="true"></textarea></div>',
+		'comment_field'        => '<div class="field-wrapper"><textarea id="comment" placeholder="'.__('Comment','Travel2').'" name="comment" cols="45" rows="8" aria-required="true"></textarea></div>',
 		'comment_notes_before' => '',
 		'comment_notes_after'  => '',
 		'title_reply'          => '',

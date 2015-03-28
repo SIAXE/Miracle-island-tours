@@ -1,7 +1,7 @@
 (function ()
 {
 	//create shortcoder plugin
-	tinymce.create("tinymce.plugins.themexShortcoder",
+	tinymce.create("tinymce.plugins.ThemexShortcoder",
 	{
 		init: function ( ed, url )
 		{
@@ -10,20 +10,20 @@
 				var popup = params.identifier;
 				
 				//load thickbox popup
-				tb_show("Insert Shortcode", themexUri+"extensions/themex-shortcoder/popup.php?popup=" + popup + "&width=" + 800);
+				tb_show("Insert Shortcode", ThemexUri+"extensions/Themex-shortcoder/popup.php?popup=" + popup + "&width=" + 800);
 			});
 		},
 		createControl: function ( btn, e )
 		{
-			if ( btn == "themex_button" )
+			if ( btn == "Themex_button" )
 			{	
 				var a = this;
 					
 				//add button
-				btn = e.createMenuButton("themex_button",
+				btn = e.createMenuButton("Themex_button",
 				{
 					title: "Insert Shortcode",
-					image: themexUri+"extensions/themex-shortcoder/images/icon.png",
+					image: ThemexUri+"extensions/Themex-shortcoder/images/icon.png",
 					icons: false
 				});
 				
@@ -81,5 +81,5 @@
 	});
 	
 	//add shortcoder plugin
-	tinymce.PluginManager.add("themexShortcoder", tinymce.plugins.themexShortcoder);
+	tinymce.PluginManager.add("ThemexShortcoder", tinymce.plugins.ThemexShortcoder);
 })();

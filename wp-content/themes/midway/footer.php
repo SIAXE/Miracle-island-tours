@@ -10,10 +10,10 @@
 			<div class="row">
 				<div class="copyright">
 				<?php 
-				if(get_option('themex_copyright_text')) {
-					echo themex_html(ThemexCore::getOption('copyright_text'));
+				if(get_option('Themex_copyright_text')) {
+					echo Themex_html(ThemexCore::getOption('copyright_text'));
 				} else {
-					echo 'miracleisland Travel &copy; 2012';
+					echo 'Travel2 Travel &copy; 2012';
 				}
 				?>
 				</div>
@@ -21,7 +21,7 @@
 				<div class="clear"></div>
 			</div>		
 		</div><!-- footer -->
-		<?php themex_background(THEME_URI.'images/patterns/pattern_1.jpg', 'bottom-substrate'); ?>
+		<?php Themex_background(THEME_URI.'images/patterns/pattern_1.jpg', 'bottom-substrate'); ?>
 	</div><!-- global -->
 <?php wp_footer(); ?>
 </body>

@@ -13,7 +13,7 @@
 			<div class="block-title"><h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1></div>
 			<?php the_excerpt(); ?>
 			<div class="post-meta">
-				<a href="<?php the_permalink(); ?>" class="button small"><span><?php _e('Read More','miracleisland'); ?></span></a>
+				<a href="<?php the_permalink(); ?>" class="button small"><span><?php _e('Read More','Travel2'); ?></span></a>
 				<?php if(comments_open()) { ?>
 				<div class="post-comment-count"><?php comments_number('0','1','%'); ?></div>
 				<?php } ?>

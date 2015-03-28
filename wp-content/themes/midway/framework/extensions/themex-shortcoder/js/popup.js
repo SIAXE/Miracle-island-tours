@@ -1,29 +1,29 @@
 jQuery(document).ready(function($) {
-    var themexPopup = {
+    var ThemexPopup = {
 	
     	loadVals: function()
     	{
-    		var shortcode = $('#themex_shortcode').text(),
+    		var shortcode = $('#Themex_shortcode').text(),
     			uShortcode = shortcode;
     		
     		//get shortcode options
-    		$('.themex-input, #themex_page, #themex_category, #themex_destination, #themex_type').each(function() {
+    		$('.Themex-input, #Themex_page, #Themex_category, #Themex_destination, #Themex_type').each(function() {
     			var input = $(this),
     				id = input.attr('id'),
-    				id = id.replace('themex_', ''),
+    				id = id.replace('Themex_', ''),
     				re = new RegExp("{{"+id+"}}","g");
     				
     			uShortcode = uShortcode.replace(re, input.val());
     		});
     		
     		//add shortcode
-    		$('#themex_ushortcode').remove();
-    		$('#themex-shortcode-form-table').prepend('<div id="themex_ushortcode" class="hidden">' + uShortcode + '</div>');
+    		$('#Themex_ushortcode').remove();
+    		$('#Themex-shortcode-form-table').prepend('<div id="Themex_ushortcode" class="hidden">' + uShortcode + '</div>');
     	},
 		
     	cLoadVals: function()
     	{
-    		var shortcode = $('#themex_cshortcode').text(),
+    		var shortcode = $('#Themex_cshortcode').text(),
     			pShortcode = '';
     			shortcodes = '';
     		
@@ -32,10 +32,10 @@ jQuery(document).ready(function($) {
     			var row = $(this),
     				rShortcode = shortcode;
     			
-    			$('.themex-cinput', this).each(function() {
+    			$('.Themex-cinput', this).each(function() {
     				var input = $(this),
     					id = input.attr('id'),
-    					id = id.replace('themex_', ''),
+    					id = id.replace('Themex_', ''),
     					re = new RegExp("{{"+id+"}}","g");
     					
     				rShortcode = rShortcode.replace(re, input.val());
@@ -45,16 +45,16 @@ jQuery(document).ready(function($) {
     		});
     		
     		//add shortcode
-    		$('#themex_cshortcodes').remove();
-    		$('.child-clone-rows').prepend('<div id="themex_cshortcodes" class="hidden">' + shortcodes + '</div>');
+    		$('#Themex_cshortcodes').remove();
+    		$('.child-clone-rows').prepend('<div id="Themex_cshortcodes" class="hidden">' + shortcodes + '</div>');
     		
     		//insert into parent shortcode
     		this.loadVals();
-    		pShortcode = $('#themex_ushortcode').text().replace('{{child_shortcode}}', shortcodes);
+    		pShortcode = $('#Themex_ushortcode').text().replace('{{child_shortcode}}', shortcodes);
     		
     		//add parent shortcode
-    		$('#themex_ushortcode').remove();
-    		$('#themex-shortcode-form-table').prepend('<div id="themex_ushortcode" class="hidden">' + pShortcode + '</div>');
+    		$('#Themex_ushortcode').remove();
+    		$('#Themex-shortcode-form-table').prepend('<div id="Themex_ushortcode" class="hidden">' + pShortcode + '</div>');
     	},
 		
     	children: function()
@@ -91,7 +91,7 @@ jQuery(document).ready(function($) {
     	{
 			var	ajaxCont = $('#TB_ajaxContent'),
 				tbWindow = $('#TB_window'),
-				tzPopup = $('#themex-popup')
+				tzPopup = $('#Themex-popup')
 			
 			ajaxCont.css({
 				paddingTop: 0,
@@ -110,37 +110,37 @@ jQuery(document).ready(function($) {
 		
     	load: function()
     	{
-    		var	themexPopup = this,
-    			popup = $('#themex-popup'),
-    			form = $('#themex-shortcode-form', popup),
-    			shortcode = $('#themex_shortcode', form).text(),
-    			popupType = $('#themex_popup', form).text(),
+    		var	ThemexPopup = this,
+    			popup = $('#Themex-popup'),
+    			form = $('#Themex-shortcode-form', popup),
+    			shortcode = $('#Themex_shortcode', form).text(),
+    			popupType = $('#Themex_popup', form).text(),
     			uShortcode = '';
     		
     		//resize TB
-    		themexPopup.resizeTB();
-    		$(window).resize(function() { themexPopup.resizeTB() });
+    		ThemexPopup.resizeTB();
+    		$(window).resize(function() { ThemexPopup.resizeTB() });
     		
     		//initialise TB
-    		themexPopup.loadVals();
-    		themexPopup.children();
-    		themexPopup.cLoadVals();
+    		ThemexPopup.loadVals();
+    		ThemexPopup.children();
+    		ThemexPopup.cLoadVals();
     		
     		//update on children change
-    		$('.themex-cinput', form).live('change', function() {
-    			themexPopup.cLoadVals();
+    		$('.Themex-cinput', form).live('change', function() {
+    			ThemexPopup.cLoadVals();
     		});
     		
     		//update on parent change
-    		$('.themex-input', form).change(function() {
-    			themexPopup.loadVals();
+    		$('.Themex-input', form).change(function() {
+    			ThemexPopup.loadVals();
     		});
     		
     		//update on insert click
-    		$('.themex-insert', form).click(function() {    		 			
+    		$('.Themex-insert', form).click(function() {    		 			
     			if(window.tinyMCE)
 				{
-					window.tinyMCE.execInstanceCommand('content', 'mceInsertContent', false, $('#themex_ushortcode', form).html());
+					window.tinyMCE.execInstanceCommand('content', 'mceInsertContent', false, $('#Themex_ushortcode', form).html());
 					tb_remove();
 				}
     		});
@@ -148,7 +148,7 @@ jQuery(document).ready(function($) {
 	}
     
     //load popup
-    $('#themex-popup').livequery( function() { 
-		themexPopup.load(); 
+    $('#Themex-popup').livequery( function() { 
+		ThemexPopup.load(); 
 	});
 });

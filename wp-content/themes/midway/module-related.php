@@ -1,5 +1,5 @@
 <div class="related-tours">
-	<div class="block-title"><h1><?php _e('Related Tours','miracleisland'); ?></h1></div>
+	<div class="block-title"><h1><?php _e('Related Tours','Travel2'); ?></h1></div>
 	<?php
 	$order=ThemexCore::getOption('tours_related_order','rand');
 	$taxonomies=array($order);
@@ -26,9 +26,9 @@
 
 			while ($query->have_posts() && $post_count<4) {
 				$query->the_post(); 
-				$destinations=themex_category($post->ID, 'destination');	
-				$types=themex_category($post->ID, 'type');
-				$duration=themex_duration($post->ID);
+				$destinations=Themex_category($post->ID, 'destination');	
+				$types=Themex_category($post->ID, 'type');
+				$duration=Themex_duration($post->ID);
 				?>
 				<div class="column threecol <?php if($post_count==3) echo 'last'; ?>">
 					<div class="tour-thumb-container">

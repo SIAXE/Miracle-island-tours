@@ -34,7 +34,7 @@ if($query->have_posts()) {
 				<div class="featured-image-caption visible-caption"><h4><?php the_content(); ?></h4></div>
 				<?php } ?>
 				<?php } else if(($video_code=get_post_meta($post->ID,'_slide_video',true))!='') { ?>
-				<div class="embedded-video"><?php echo themex_html($video_code); ?></div>
+				<div class="embedded-video"><?php echo Themex_html($video_code); ?></div>
 				<?php } ?>
 				</li>
 			<?php } ?>									

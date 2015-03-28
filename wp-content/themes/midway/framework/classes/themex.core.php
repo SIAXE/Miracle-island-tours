@@ -30,7 +30,7 @@ class ThemexCore {
 		self::initComponents();
 		
 		//add main AJAX action
-		add_action('wp_ajax_themex_action', array($this,'changeOptions'));
+		add_action('wp_ajax_Themex_action', array($this,'changeOptions'));
 
 		//add metabox data save action
 		add_action('save_post', array($this,'savePost'));
@@ -51,7 +51,7 @@ class ThemexCore {
 			//check php version
 			if(version_compare( PHP_VERSION, '5', '<')) {
 				switch_theme( 'twentyten', 'twentyten' );
-				wp_die(__('Your PHP version is too old, this theme requires PHP 5.0 and higher.','miracleisland').'<br /><a href="'.admin_url( 'themes.php' ).'">'.__('Return to WP Admin','miracleisland').' &larr;</a>');
+				wp_die(__('Your PHP version is too old, this theme requires PHP 5.0 and higher.','Travel2').'<br /><a href="'.admin_url( 'themes.php' ).'">'.__('Return to WP Admin','Travel2').' &larr;</a>');
 			}
 			
 			//rewrite all rules
@@ -188,7 +188,7 @@ class ThemexCore {
 		
 			//require module class
 			$module_name=substr(strtolower(implode('.',preg_split('/(?=[A-Z])/',$class))),1);
-			require_once(THEMEX_PATH.'classes/'.$module_name.'.php');
+			require_once(Themex_PATH.'classes/'.$module_name.'.php');
 			
 			//init module
 			if(method_exists($class,'init')) {
@@ -244,7 +244,7 @@ class ThemexCore {
 					}
 					
 					//server response					
-					_e('All changes have been saved.','miracleisland');
+					_e('All changes have been saved.','Travel2');
 					
 				break;
 				
@@ -267,7 +267,7 @@ class ThemexCore {
 					}
 					
 					//server response
-					_e('All options have been reset.','miracleisland');
+					_e('All options have been reset.','Travel2');
 						
 				break;		
 				
@@ -290,7 +290,7 @@ class ThemexCore {
 		}
 
 		//verify nonce
-		if (isset($_POST['themex_nonce']) && !wp_verify_nonce($_POST['themex_nonce'], $post_id)) {
+		if (isset($_POST['Themex_nonce']) && !wp_verify_nonce($_POST['Themex_nonce'], $post_id)) {
 			return $post_id;
 		}
 		
@@ -360,7 +360,7 @@ class ThemexCore {
 	//Register built-in widget
 	public static function registerWidget($widget) {
 			
-		require_once(THEMEX_PATH.'widgets/'.$widget.'.php');
+		require_once(Themex_PATH.'widgets/'.$widget.'.php');
 		register_widget($widget);
 		
 	}
@@ -387,7 +387,7 @@ class ThemexCore {
 	
 	//Get theme option
 	public static function getOption($id, $default=null) {
-		$option=get_option('themex_'.$id);
+		$option=get_option('Themex_'.$id);
 		if(!$option && !is_null($default)) {
 			return $default;
 		}
@@ -396,12 +396,12 @@ class ThemexCore {
 	
 	//Delete option with framework prefix
 	public static function deleteOption($id) {
-		return delete_option('themex_'.$id);
+		return delete_option('Themex_'.$id);
 	}
 	
 	//Update option with framework prefix
 	public static function updateOption($id,$value) {
-		return update_option('themex_'.$id,$value);
+		return update_option('Themex_'.$id,$value);
 	}
 	
 }

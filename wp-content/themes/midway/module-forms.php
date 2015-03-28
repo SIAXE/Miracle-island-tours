@@ -8,7 +8,7 @@
 		<?php ThemexForm::renderData('question_form','<input type="hidden" id="question_form_tour_id" value="" />'); ?>
 	</div><!-- question form -->
 	<?php if(isset($_SESSION['payment_id'])) { ?>
-	<?php if(themex_verify_payment()) { ?>
+	<?php if(Themex_verify_payment()) { ?>
 	<div class="verification-form popup-form" id="verification-form">
 		<div class="block-title"><h4><?php echo $_POST['transaction_subject']; ?></h4></div>
 		<p><?php echo ThemexForm::$data['booking_form']['message']; ?></p>
@@ -18,7 +18,7 @@
 		<input type="hidden" name="cmd" value="_xclick" />
 		<input type="hidden" name="business" value="<?php echo ThemexCore::getOption('booking_email'); ?>" />
 		<input type="hidden" name="item_name" id="item_name" value="" />
-		<input type="hidden" value="<?php _e('Tour Booking', 'miracleisland'); ?>" id="item_name_postfix"/>
+		<input type="hidden" value="<?php _e('Tour Booking', 'Travel2'); ?>" id="item_name_postfix"/>
 		<input type="hidden" name="item_number" id="item_number" value="1" />
 		<input type="hidden" name="amount" value="<?php echo ThemexCore::getOption('booking_price'); ?>" />
 		<input type="hidden" name="page_style" value="Primary" />

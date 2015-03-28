@@ -34,7 +34,7 @@ if($layout=='left') {
 						<?php if(comments_open()) { ?>
 						<div class="post-comment-count"><?php comments_number('0','1','%'); ?></div>
 						<?php } ?>
-						<div class="post-info"><?php the_time(ThemexCore::getOption('date_format','m/d/Y')); ?> <?php _e('in','miracleisland'); ?> <?php the_category(', '); ?></div>
+						<div class="post-info"><?php the_time(ThemexCore::getOption('date_format','m/d/Y')); ?> <?php _e('in','Travel2'); ?> <?php the_category(', '); ?></div>
 						<div class="post-tags"><?php the_tags('','',''); ?></div>
 						<div class="clear"></div>
 					</div>

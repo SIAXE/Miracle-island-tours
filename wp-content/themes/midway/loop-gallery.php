@@ -18,7 +18,7 @@ if($video_code!='') {
 	</div>
 	<div class="hidden">					
 		<?php if($video_code!='') { ?>
-		<div class="gallery-video" id="gallery-<?php echo $post->ID; ?>"><div class="embedded-video"><?php echo themex_html($video_code); ?></div></div>
+		<div class="gallery-video" id="gallery-<?php echo $post->ID; ?>"><div class="embedded-video"><?php echo Themex_html($video_code); ?></div></div>
 		<?php 
 		} else {
 			foreach($gallery as $image) {

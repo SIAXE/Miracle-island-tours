@@ -1,5 +1,5 @@
 <div class="row subheader">
-	<?php if(get_option('themex_header_layout')=='fullwidth') { ?>
+	<?php if(get_option('Themex_header_layout')=='fullwidth') { ?>
 	<div class="subheader-block"><?php get_template_part('module','slider'); ?></div>				
 	<?php } else { ?>
 	<div class="threecol column subheader-block">

@@ -40,7 +40,7 @@ query_posts(array(
 	<div class="clear"></div>
 </div><!--/ items grid-->
 <?php 
-themex_pagination(); 
+Themex_pagination(); 
 wp_reset_query();
 ?>
 <?php get_footer(); ?>

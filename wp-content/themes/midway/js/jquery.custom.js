@@ -224,8 +224,8 @@ jQuery(document).ready(function($) {
 			paymentForm=$('.payment-form');
 			
 		popupForm.find('.block-title h4').text(title);
-		popupForm.find('.themex-form').show();
-		popupForm.find('.themex-form-message').hide();
+		popupForm.find('.Themex-form').show();
+		popupForm.find('.Themex-form-message').hide();
 		popupForm.find('input#question_form_tour_id, input#booking_form_tour_id').val(id);
 		if(paymentForm.length) {
 			paymentForm.find('#item_name').val(title+' '+paymentForm.find('#item_name_postfix').val());
@@ -256,7 +256,7 @@ jQuery(document).ready(function($) {
 	function subscribe() {
 		var email=$('#subscribe_form input#email').val();
 		var data = {
-			action: 'themex_subscribe',
+			action: 'Themex_subscribe',
 			email: email
 		};
 		
