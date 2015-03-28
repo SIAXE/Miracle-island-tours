@@ -47,23 +47,23 @@ class ThemexInterface {
 		//delete button
 		if (current_user_can('delete_post', $attachment_id)) {
 			if ( !EMPTY_TRASH_DAYS ) {
-				$delete_button="<a href='".wp_nonce_url( "post.php?action=delete&amp;post=$attachment_id", 'delete-attachment_'.$attachment_id )."' id='del[$attachment_id]' class='delete'>".__( 'Delete Permanently' , 'travel2' ).'</a>';
+				$delete_button="<a href='".wp_nonce_url( "post.php?action=delete&amp;post=$attachment_id", 'delete-attachment_'.$attachment_id )."' id='del[$attachment_id]' class='delete'>".__( 'Delete Permanently' , 'miracleisland' ).'</a>';
 			} elseif ( !MEDIA_TRASH ) {
-				$delete_button="<a href='#' class='del-link' onclick=\"document.getElementById('del_attachment_$attachment_id').style.display='block';return false;\">".__( 'Delete' , 'travel2' )."</a>
-				 <div id='del_attachment_$attachment_id' class='del-attachment' style='display:none;'>".sprintf( __( 'You are about to delete <strong>%s</strong>.' , 'travel2' ), $filename )."
-				 <a href='".wp_nonce_url( "post.php?action=delete&amp;post=$attachment_id", 'delete-attachment_'.$attachment_id )."' id='del[$attachment_id]' class='button'>".__( 'Continue' , 'travel2' )."</a>
-				 <a href='#' class='button' onclick=\"this.parentNode.style.display='none';return false;\">".__( 'Cancel' , 'travel2' )."</a>
+				$delete_button="<a href='#' class='del-link' onclick=\"document.getElementById('del_attachment_$attachment_id').style.display='block';return false;\">".__( 'Delete' , 'miracleisland' )."</a>
+				 <div id='del_attachment_$attachment_id' class='del-attachment' style='display:none;'>".sprintf( __( 'You are about to delete <strong>%s</strong>.' , 'miracleisland' ), $filename )."
+				 <a href='".wp_nonce_url( "post.php?action=delete&amp;post=$attachment_id", 'delete-attachment_'.$attachment_id )."' id='del[$attachment_id]' class='button'>".__( 'Continue' , 'miracleisland' )."</a>
+				 <a href='#' class='button' onclick=\"this.parentNode.style.display='none';return false;\">".__( 'Cancel' , 'miracleisland' )."</a>
 				 </div>";
 			} else {
-				$delete_button="<a href='".wp_nonce_url( "post.php?action=trash&amp;post=$attachment_id", 'trash-attachment_'.$attachment_id )."' id='del[$attachment_id]' class='delete'>".__( 'Move to Trash' , 'travel2' )."</a>
-				<a href='".wp_nonce_url( "post.php?action=untrash&amp;post=$attachment_id", 'untrash-attachment_'.$attachment_id )."' id='undo[$attachment_id]' class='undo hidden'>".__( 'Undo' , 'travel2' )."</a>";
+				$delete_button="<a href='".wp_nonce_url( "post.php?action=trash&amp;post=$attachment_id", 'trash-attachment_'.$attachment_id )."' id='del[$attachment_id]' class='delete'>".__( 'Move to Trash' , 'miracleisland' )."</a>
+				<a href='".wp_nonce_url( "post.php?action=untrash&amp;post=$attachment_id", 'untrash-attachment_'.$attachment_id )."' id='undo[$attachment_id]' class='undo hidden'>".__( 'Undo' , 'miracleisland' )."</a>";
 			}
 		} else {
 			$delete='';
 		}
 		
 		//send to editor button
-		$send_button="<input type='submit' class='button' name='send[$attachment_id]' value='".esc_attr__( 'Insert This Item' , 'travel2' )."' />";
+		$send_button="<input type='submit' class='button' name='send[$attachment_id]' value='".esc_attr__( 'Insert This Item' , 'miracleisland' )."' />";
 		$send_button.="<input type='radio' checked='checked' value='full' id='image-size-full-$attachment_id' name='attachments[$attachment_id][image-size]' style='display:none;' />";
 		$send_button.="<input type='hidden' value='' name='attachments[$attachment_id][post_title]' id='attachments[$attachment_id][post_title]' />";
 		$send_button.="<input type='hidden' value='$attachment[url]' class='themex_image_url' name='attachments[$attachment_id][url]' id='attachments[$attachment_id][url]' />";
@@ -78,7 +78,7 @@ class ThemexInterface {
 	public static function addAdminPage() {
 		
 		//add page to menu
-		add_submenu_page( 'themes.php', __('Theme Options','travel2'), __('Theme Options','travel2'), 'administrator', 'theme-options', array(__CLASS__,'renderPage') );
+		add_submenu_page( 'themes.php', __('Theme Options','miracleisland'), __('Theme Options','miracleisland'), 'administrator', 'theme-options', array(__CLASS__,'renderPage') );
 		
 	}
 
@@ -286,25 +286,25 @@ class ThemexInterface {
 			case 'date':			
 				wp_enqueue_script('jquery-ui-datepicker');
 				$out.='<input type="text" id="'.$option['id'].'" name="'.$option['id'].'" class="datepicker" value="'.$value.'" '.$attributes.' />';
-				$out.='<input type="hidden" class="date-day-1" value="'.__('Su', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-day-2" value="'.__('Mo', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-day-3" value="'.__('Tu', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-day-4" value="'.__('We', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-day-5" value="'.__('Th', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-day-6" value="'.__('Fr', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-day-7" value="'.__('Sa', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-month-1" value="'.__('January', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-month-2" value="'.__('February', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-month-3" value="'.__('March', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-month-4" value="'.__('April', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-month-5" value="'.__('May', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-month-6" value="'.__('June', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-month-7" value="'.__('July', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-month-8" value="'.__('August', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-month-9" value="'.__('September', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-month-10" value="'.__('October', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-month-11" value="'.__('November', 'travel2').'" />';
-				$out.='<input type="hidden" class="date-month-12" value="'.__('December', 'travel2').'" />';				
+				$out.='<input type="hidden" class="date-day-1" value="'.__('Su', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-day-2" value="'.__('Mo', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-day-3" value="'.__('Tu', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-day-4" value="'.__('We', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-day-5" value="'.__('Th', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-day-6" value="'.__('Fr', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-day-7" value="'.__('Sa', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-month-1" value="'.__('January', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-month-2" value="'.__('February', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-month-3" value="'.__('March', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-month-4" value="'.__('April', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-month-5" value="'.__('May', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-month-6" value="'.__('June', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-month-7" value="'.__('July', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-month-8" value="'.__('August', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-month-9" value="'.__('September', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-month-10" value="'.__('October', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-month-11" value="'.__('November', 'miracleisland').'" />';
+				$out.='<input type="hidden" class="date-month-12" value="'.__('December', 'miracleisland').'" />';				
 			break;
 			
 			case 'hidden':
@@ -339,7 +339,7 @@ class ThemexInterface {
 				}	
 				$args=array(
 					'hide_empty'         => 0,
-					'show_option_all'    => __('All Categories','travel2'),
+					'show_option_all'    => __('All Categories','miracleisland'),
 					'echo'               => 0,
 					'selected'           => $value,
 					'hierarchical'       => 0, 
@@ -946,7 +946,7 @@ class ThemexInterface {
 			//uploader
 			case 'uploader':
 				$out.='<input name="'.$option['id'].'" id="'.$option['id'].'" type="text" value="'.$value.'" '.$attributes.' />';
-				$out.='<div class="themex_button upload_button">'.__('Browse','travel2').'</div>';
+				$out.='<div class="themex_button upload_button">'.__('Browse','miracleisland').'</div>';
 			break;
 			
 			//image selector
@@ -1003,15 +1003,15 @@ class ThemexInterface {
 			case 'gallery':				
 				parse_str(html_entity_decode(urldecode($value)),$value_arr);
 			
-				$out.='<a class="repeatable-add button" style="float:left;" href="#">'.__('Add Field','travel2').'</a>';								
+				$out.='<a class="repeatable-add button" style="float:left;" href="#">'.__('Add Field','miracleisland').'</a>';								
 				if ($value) {
 					$i = 0;	
 					foreach($value_arr as $row) {						
-						$out.='<tr class="repeatable-field '.$option['id'].'" style="border-top:1px solid #eeeeee;"><th style="width:25%"></th><td><input placeholder="'.__('URL','travel2').'" type="text" name="'.$option['id'].'['.$i.']" id="'.$option['id'].'['.$i.']" class="'.$option['class'].'" value="'.$row.'" style="width:70%; margin-right: 20px; float:left;" /><a style="float: left;" href="#" class="button image-button repeatable-upload">'.__('Browse','travel2').'</a><a style="float:left;margin-left:10px;" class="repeatable-remove button" href="#">'.__('Remove','travel2').'</a></td></tr>';
+						$out.='<tr class="repeatable-field '.$option['id'].'" style="border-top:1px solid #eeeeee;"><th style="width:25%"></th><td><input placeholder="'.__('URL','miracleisland').'" type="text" name="'.$option['id'].'['.$i.']" id="'.$option['id'].'['.$i.']" class="'.$option['class'].'" value="'.$row.'" style="width:70%; margin-right: 20px; float:left;" /><a style="float: left;" href="#" class="button image-button repeatable-upload">'.__('Browse','miracleisland').'</a><a style="float:left;margin-left:10px;" class="repeatable-remove button" href="#">'.__('Remove','miracleisland').'</a></td></tr>';
 						$i++;
 					}
 				} else {
-						$out.='<tr class="repeatable-field '.$option['id'].'" style="border-top:1px solid #eeeeee;"><th style="width:25%"></th><td><input placeholder="'.__('URL','travel2').'" type="text" name="'.$option['id'].'[0]" id="'.$option['id'].'[0]" class="'.$option['class'].'" value="" style="width:70%; margin-right: 20px; float:left;" /><a style="float: left;" href="#" class="button image-button repeatable-upload">'.__('Browse','travel2').'</a><a style="float:left;margin-left:10px;" class="repeatable-remove button" href="#">'.__('Remove','travel2').'</a></td></tr>';
+						$out.='<tr class="repeatable-field '.$option['id'].'" style="border-top:1px solid #eeeeee;"><th style="width:25%"></th><td><input placeholder="'.__('URL','miracleisland').'" type="text" name="'.$option['id'].'[0]" id="'.$option['id'].'[0]" class="'.$option['class'].'" value="" style="width:70%; margin-right: 20px; float:left;" /><a style="float: left;" href="#" class="button image-button repeatable-upload">'.__('Browse','miracleisland').'</a><a style="float:left;margin-left:10px;" class="repeatable-remove button" href="#">'.__('Remove','miracleisland').'</a></td></tr>';
 				}
 			break;
 			
@@ -1019,7 +1019,7 @@ class ThemexInterface {
 			case 'days':				
 				parse_str(html_entity_decode(urldecode($value)),$value_arr);
 			
-				$out.='<a class="repeatable-add button" style="float:left;" href="#">'.__('Add Field','travel2').'</a>';								
+				$out.='<a class="repeatable-add button" style="float:left;" href="#">'.__('Add Field','miracleisland').'</a>';								
 				if ($value) {
 					$i = 0;	
 					foreach($value_arr as $row) {
@@ -1031,20 +1031,20 @@ class ThemexInterface {
 						'after'=>'</div>',
 						'default'=>$row,
 						'options'=>array(
-							'date'=>__('Departure Date','travel2'),							
-							'1'=>__('Monday','travel2'),
-							'2'=>__('Tuesday','travel2'),
-							'3'=>__('Wednesday','travel2'),
-							'4'=>__('Thursday','travel2'),
-							'5'=>__('Friday','travel2'),
-							'6'=>__('Saturday','travel2'),
-							'7'=>__('Sunday','travel2'),
+							'date'=>__('Departure Date','miracleisland'),							
+							'1'=>__('Monday','miracleisland'),
+							'2'=>__('Tuesday','miracleisland'),
+							'3'=>__('Wednesday','miracleisland'),
+							'4'=>__('Thursday','miracleisland'),
+							'5'=>__('Friday','miracleisland'),
+							'6'=>__('Saturday','miracleisland'),
+							'7'=>__('Sunday','miracleisland'),
 						),
 						'attributes'=>array(
 							'name'=>$option['id'].'['.$i.']',
 						),
 					));
-						$out.='<a style="float:left;margin-left:10px;" class="repeatable-remove button" href="#">'.__('Remove','travel2').'</a></td></tr>';
+						$out.='<a style="float:left;margin-left:10px;" class="repeatable-remove button" href="#">'.__('Remove','miracleisland').'</a></td></tr>';
 						$i++;
 					}
 				} else {
@@ -1055,20 +1055,20 @@ class ThemexInterface {
 						'before'=>'<div style="width:40%;float:left;margin-right:40px;">',
 						'after'=>'</div>',
 						'options'=>array(
-							'date'=>__('Departure Date','travel2'),							
-							'monday'=>__('Monday','travel2'),
-							'tuesday'=>__('Tuesday','travel2'),
-							'wednesday'=>__('Wednesday','travel2'),
-							'thursday'=>__('Thursday','travel2'),
-							'friday'=>__('Friday','travel2'),
-							'saturday'=>__('Saturday','travel2'),
-							'sunday'=>__('Sunday','travel2'),
+							'date'=>__('Departure Date','miracleisland'),							
+							'monday'=>__('Monday','miracleisland'),
+							'tuesday'=>__('Tuesday','miracleisland'),
+							'wednesday'=>__('Wednesday','miracleisland'),
+							'thursday'=>__('Thursday','miracleisland'),
+							'friday'=>__('Friday','miracleisland'),
+							'saturday'=>__('Saturday','miracleisland'),
+							'sunday'=>__('Sunday','miracleisland'),
 						),
 						'attributes'=>array(
 							'name'=>$option['id'].'[0]',
 						),
 					));
-					$out.='<a style="float:left;margin-left:10px;" class="repeatable-remove button" href="#">'.__('Remove','travel2').'</a></td></tr>';
+					$out.='<a style="float:left;margin-left:10px;" class="repeatable-remove button" href="#">'.__('Remove','miracleisland').'</a></td></tr>';
 				}
 			break;
 			
@@ -1076,15 +1076,15 @@ class ThemexInterface {
 			case 'links':		
 				parse_str(html_entity_decode(urldecode($value)),$value_arr);
 
-				$out.='<a class="repeatable-add button" style="float:left;" href="#">'.__('Add Field','travel2').'</a>';								
+				$out.='<a class="repeatable-add button" style="float:left;" href="#">'.__('Add Field','miracleisland').'</a>';								
 				if ($value) {
 					$i = 0;	
 					foreach($value_arr as $row) {						
-						$out.='<tr class="repeatable-field '.$option['id'].'" style="border-top:1px solid #eeeeee;"><th style="width:25%"></th><td><input placeholder="'.__('Label','travel2').'" type="text" name="'.$option['id'].'['.$i.'][label]" id="'.$option['id'].'['.$i.'][label]" class="'.$option['class'].'" value="'.$row['label'].'" style="width:35%; margin-right: 20px; float:left;" /><input placeholder="'.__('URL','travel2').'" type="text" name="'.$option['id'].'['.$i.'][url]" id="'.$option['id'].'['.$i.'][url]" class="'.$option['class'].'" value="'.$row['url'].'" size="30" style="width:40%; margin-right: 20px; float:left;" /><a style="float:left;" class="repeatable-remove button" href="#">'.__('Remove','travel2').'</a></td></tr>';
+						$out.='<tr class="repeatable-field '.$option['id'].'" style="border-top:1px solid #eeeeee;"><th style="width:25%"></th><td><input placeholder="'.__('Label','miracleisland').'" type="text" name="'.$option['id'].'['.$i.'][label]" id="'.$option['id'].'['.$i.'][label]" class="'.$option['class'].'" value="'.$row['label'].'" style="width:35%; margin-right: 20px; float:left;" /><input placeholder="'.__('URL','miracleisland').'" type="text" name="'.$option['id'].'['.$i.'][url]" id="'.$option['id'].'['.$i.'][url]" class="'.$option['class'].'" value="'.$row['url'].'" size="30" style="width:40%; margin-right: 20px; float:left;" /><a style="float:left;" class="repeatable-remove button" href="#">'.__('Remove','miracleisland').'</a></td></tr>';
 						$i++;
 					}
 				} else {
-					$out.='<tr class="repeatable-field '.$option['id'].'" style="border-top:1px solid #eeeeee;"><th style="width:25%"></th><td><input placeholder="'.__('Label','travel2').'" type="text" name="'.$option['id'].'[0][label]" id="'.$option['id'].'[0][label]" class="'.$option['class'].'" value="" style="width:35%; margin-right: 20px; float:left;" /><input placeholder="'.__('URL','travel2').'" type="text" name="'.$option['id'].'[0][url]" id="'.$option['id'].'[0][url]" class="'.$option['class'].'" value="" size="30" style="width:40%; margin-right: 20px; float:left;" /><a style="float:left;" class="repeatable-remove button" href="#">'.__('Remove','travel2').'</a></td></tr>';
+					$out.='<tr class="repeatable-field '.$option['id'].'" style="border-top:1px solid #eeeeee;"><th style="width:25%"></th><td><input placeholder="'.__('Label','miracleisland').'" type="text" name="'.$option['id'].'[0][label]" id="'.$option['id'].'[0][label]" class="'.$option['class'].'" value="" style="width:35%; margin-right: 20px; float:left;" /><input placeholder="'.__('URL','miracleisland').'" type="text" name="'.$option['id'].'[0][url]" id="'.$option['id'].'[0][url]" class="'.$option['class'].'" value="" size="30" style="width:40%; margin-right: 20px; float:left;" /><a style="float:left;" class="repeatable-remove button" href="#">'.__('Remove','miracleisland').'</a></td></tr>';
 				}
 			break;
 			

@@ -238,7 +238,7 @@ function themex_posts( $atts, $content = null ) {
 		}
 		$out.='<div class="post-content"><h5 class="post-title"><a href="'.get_permalink().'">'.get_the_title().'</a></h5></div>';
 		$out.='<p>'.themex_excerpt(get_the_excerpt()).'</p>';
-		$out.='<div class="post-meta"><a href="'.get_permalink().'" class="button small"><span>'.__('Read More','travel2').'</span></a>';
+		$out.='<div class="post-meta"><a href="'.get_permalink().'" class="button small"><span>'.__('Read More','miracleisland').'</span></a>';
 		if(comments_open()) {
 			$out.='<div class="post-comment-count">'.get_comments_number('0','1','%').'</div>';
 		}

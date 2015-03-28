@@ -59,8 +59,8 @@ if($layout=='left') {
 			}
 		} else {
 		?>
-		<h3><?php _e('No tours found. Try a different search?','travel2'); ?></h3>
-		<p><?php _e('Sorry, no tours matched your search.','travel2'); ?> <?php _e('View','travel2'); ?> <a href="<?php echo home_url(); ?>/?s="><?php _e('all tours','travel2'); ?></a> <?php _e('or try adjusting the search parameters','travel2'); ?>.</p><br />
+		<h3><?php _e('No tours found. Try a different search?','miracleisland'); ?></h3>
+		<p><?php _e('Sorry, no tours matched your search.','miracleisland'); ?> <?php _e('View','miracleisland'); ?> <a href="<?php echo home_url(); ?>/?s="><?php _e('all tours','miracleisland'); ?></a> <?php _e('or try adjusting the search parameters','miracleisland'); ?>.</p><br />
 		<?php }	?>
 		<?php if($view=='grid') { ?>
 		<div class="clear"></div>

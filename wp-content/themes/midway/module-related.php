@@ -1,5 +1,5 @@
 <div class="related-tours">
-	<div class="block-title"><h1><?php _e('Related Tours','travel2'); ?></h1></div>
+	<div class="block-title"><h1><?php _e('Related Tours','miracleisland'); ?></h1></div>
 	<?php
 	$order=ThemexCore::getOption('tours_related_order','rand');
 	$taxonomies=array($order);

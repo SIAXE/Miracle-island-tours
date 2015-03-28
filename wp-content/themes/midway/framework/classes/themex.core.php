@@ -51,7 +51,7 @@ class ThemexCore {
 			//check php version
 			if(version_compare( PHP_VERSION, '5', '<')) {
 				switch_theme( 'twentyten', 'twentyten' );
-				wp_die(__('Your PHP version is too old, this theme requires PHP 5.0 and higher.','travel2').'<br /><a href="'.admin_url( 'themes.php' ).'">'.__('Return to WP Admin','travel2').' &larr;</a>');
+				wp_die(__('Your PHP version is too old, this theme requires PHP 5.0 and higher.','miracleisland').'<br /><a href="'.admin_url( 'themes.php' ).'">'.__('Return to WP Admin','miracleisland').' &larr;</a>');
 			}
 			
 			//rewrite all rules
@@ -244,7 +244,7 @@ class ThemexCore {
 					}
 					
 					//server response					
-					_e('All changes have been saved.','travel2');
+					_e('All changes have been saved.','miracleisland');
 					
 				break;
 				
@@ -267,7 +267,7 @@ class ThemexCore {
 					}
 					
 					//server response
-					_e('All options have been reset.','travel2');
+					_e('All options have been reset.','miracleisland');
 						
 				break;		
 				

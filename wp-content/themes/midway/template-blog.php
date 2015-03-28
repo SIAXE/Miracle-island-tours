@@ -38,8 +38,8 @@ if($layout=='left') {
 		}
 	} else {
 	?>
-	<h3><?php _e('No posts found. Try a different search?','travel2'); ?></h3>
-	<p><?php _e('Sorry, no posts matched your search. Try again with some different keywords.','travel2'); ?></p><br />
+	<h3><?php _e('No posts found. Try a different search?','miracleisland'); ?></h3>
+	<p><?php _e('Sorry, no posts matched your search. Try again with some different keywords.','miracleisland'); ?></p><br />
 	<?php }	?>
 	</div><!-- items list -->
 	<?php 

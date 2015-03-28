@@ -1,13 +1,13 @@
 @charset "utf-8";
 
 /*
-Theme Name: Travel2
-Theme URI: http://themextemplates.com/demo/travel2
+Theme Name: miracleisland
+Theme URI: http://themextemplates.com/demo/miracleisland
 License: GNU General Public License and Themeforest License
-License URI: travel2
+License URI: miracleisland
 Description: Premium Travel WordPress Theme.
 Author: Themex
-Author URI: travel2
+Author URI: miracleisland
 Version: 1.9
 Tags: travel, trip, tour, journal, nature, ecological, cruise, holiday, booking
 */
@@ -2354,5 +2354,5 @@ textarea,
 .select-box,
 .header .menu ul ul,
 .header .menu > ul > li > a {
-	behavior:url(wp-content/themes/travel2/framework/extensions/pie/PIE.php);
+	behavior:url(wp-content/themes/miracleisland/framework/extensions/pie/PIE.php);
 }

@@ -18,7 +18,7 @@
 		<input type="hidden" name="cmd" value="_xclick" />
 		<input type="hidden" name="business" value="<?php echo ThemexCore::getOption('booking_email'); ?>" />
 		<input type="hidden" name="item_name" id="item_name" value="" />
-		<input type="hidden" value="<?php _e('Tour Booking', 'travel2'); ?>" id="item_name_postfix"/>
+		<input type="hidden" value="<?php _e('Tour Booking', 'miracleisland'); ?>" id="item_name_postfix"/>
 		<input type="hidden" name="item_number" id="item_number" value="1" />
 		<input type="hidden" name="amount" value="<?php echo ThemexCore::getOption('booking_price'); ?>" />
 		<input type="hidden" name="page_style" value="Primary" />

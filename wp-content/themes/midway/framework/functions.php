@@ -59,8 +59,8 @@ function themex_comment($comment, $args, $depth) {
 //Custom Comments Form
 function themex_comment_form_fields($fields) {
 	unset($fields['url']);
-	$fields['author']='<div class="column sixcol"><div class="field-wrapper"><input id="author" name="author" type="text" value="" placeholder="'.__('Name','travel2').'" size="30" aria-required="true" /></div></div>';
-	$fields['email']='<div class="column sixcol last"><div class="field-wrapper"><input id="email" name="email" type="text" value="" placeholder="'.__('Email','travel2').'" size="30" aria-required="true" /></div></div><div class="clear"></div>';
+	$fields['author']='<div class="column sixcol"><div class="field-wrapper"><input id="author" name="author" type="text" value="" placeholder="'.__('Name','miracleisland').'" size="30" aria-required="true" /></div></div>';
+	$fields['email']='<div class="column sixcol last"><div class="field-wrapper"><input id="email" name="email" type="text" value="" placeholder="'.__('Email','miracleisland').'" size="30" aria-required="true" /></div></div><div class="clear"></div>';
 	return $fields;
 }
 add_filter('comment_form_default_fields','themex_comment_form_fields');
@@ -132,9 +132,9 @@ function themex_duration($id) {
 	$out='';
 	if($duration!='' && $duration!='0') {
 		if($duration==1) {
-			$out=$duration.' '.__('day','travel2');
+			$out=$duration.' '.__('day','miracleisland');
 		} else {
-			$out=$duration.' '.__('days','travel2');
+			$out=$duration.' '.__('days','miracleisland');
 		}
 	}
 	return $out;
@@ -176,13 +176,13 @@ function themex_days($days) {
 		
 		foreach($days_arr as $day_name) {	
 			switch ($day_name) {				
-				case '1' : $out.=__('Monday','travel2').', '; break;
-				case '2' : $out.=__('Tuesday','travel2').', '; break;
-				case '3' : $out.=__('Wednesday','travel2').', '; break;
-				case '4' : $out.=__('Thursday','travel2').', '; break;
-				case '5' : $out.=__('Friday','travel2').', '; break;
-				case '6' : $out.=__('Saturday','travel2').', '; break;
-				case '7' : $out.=__('Sunday','travel2').', '; break;
+				case '1' : $out.=__('Monday','miracleisland').', '; break;
+				case '2' : $out.=__('Tuesday','miracleisland').', '; break;
+				case '3' : $out.=__('Wednesday','miracleisland').', '; break;
+				case '4' : $out.=__('Thursday','miracleisland').', '; break;
+				case '5' : $out.=__('Friday','miracleisland').', '; break;
+				case '6' : $out.=__('Saturday','miracleisland').', '; break;
+				case '7' : $out.=__('Sunday','miracleisland').', '; break;
 			}
 		}
 		
@@ -427,7 +427,7 @@ function themex_payment_security() {
 //Verify Payment
 function themex_verify_payment() {
 	if(isset($_GET['payment_id']) && $_GET['payment_id']==$_SESSION['payment_id'] && isset($_POST['verify_sign'])) {	
-		$message=$_SESSION['payment_message'].__('Payer Email', 'travel2').': '.$_POST['payer_email'];
+		$message=$_SESSION['payment_message'].__('Payer Email', 'miracleisland').': '.$_POST['payer_email'];
 		ThemexForm::refresh();
 		ThemexForm::sendEmail($message, 'booking_form');	
 		session_destroy();

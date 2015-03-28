@@ -42,12 +42,12 @@ parse_str(get_post_meta($post->ID,'_tour_images',true), $gallery);
 		</div>
 		<?php if($duration!='' || $price!='' || $destinations!='' || $departure_date!='') { ?>
 		<ul class="tour-meta">
-			<?php if($destinations!='') { ?><li><div class="colored-icon icon-2"></div><strong><?php _e('Destination','travel2'); ?>:</strong> <?php echo $destinations; ?></li><?php } ?>
-			<?php if($duration!='') { ?><li><div class="colored-icon icon-1"><span></span></div><strong><?php _e('Duration','travel2'); ?>:</strong> <?php echo $duration; ?></li><?php } ?>
-			<?php if($departure_date!='' && $days=='') { ?><li><div class="colored-icon icon-6"><span></span></div><strong><?php _e('Departs','travel2'); ?>:</strong> <?php echo $departure_date; ?></li><?php } ?>
-			<?php if($arrival_date!='' && $days=='') { ?><li><div class="colored-icon icon-7"><span></span></div><strong><?php _e('Arrives','travel2'); ?>:</strong> <?php echo $arrival_date; ?></li><?php } ?>
-			<?php if($days!='') { ?><li><div class="colored-icon icon-6"><span></span></div><strong><?php _e('Runs On','travel2'); ?>:</strong> <?php echo $days; ?></li><?php } ?>
-			<?php if($price!='') { ?><li><div class="colored-icon icon-3"><span></span></div><strong><?php _e('Price','travel2'); ?>:</strong> <?php echo $price; ?></li><?php } ?>
+			<?php if($destinations!='') { ?><li><div class="colored-icon icon-2"></div><strong><?php _e('Destination','miracleisland'); ?>:</strong> <?php echo $destinations; ?></li><?php } ?>
+			<?php if($duration!='') { ?><li><div class="colored-icon icon-1"><span></span></div><strong><?php _e('Duration','miracleisland'); ?>:</strong> <?php echo $duration; ?></li><?php } ?>
+			<?php if($departure_date!='' && $days=='') { ?><li><div class="colored-icon icon-6"><span></span></div><strong><?php _e('Departs','miracleisland'); ?>:</strong> <?php echo $departure_date; ?></li><?php } ?>
+			<?php if($arrival_date!='' && $days=='') { ?><li><div class="colored-icon icon-7"><span></span></div><strong><?php _e('Arrives','miracleisland'); ?>:</strong> <?php echo $arrival_date; ?></li><?php } ?>
+			<?php if($days!='') { ?><li><div class="colored-icon icon-6"><span></span></div><strong><?php _e('Runs On','miracleisland'); ?>:</strong> <?php echo $days; ?></li><?php } ?>
+			<?php if($price!='') { ?><li><div class="colored-icon icon-3"><span></span></div><strong><?php _e('Price','miracleisland'); ?>:</strong> <?php echo $price; ?></li><?php } ?>
 		</ul>
 		<?php } ?>
 		<?php if(is_single()) { ?>
@@ -57,12 +57,12 @@ parse_str(get_post_meta($post->ID,'_tour_images',true), $gallery);
 		<?php } ?>		
 		<?php if($GLOBALS['booking']!='true') { ?>
 			<?php if($post->_tour_booking) { ?>
-			<a target="_blank" href="<?php echo $post->_tour_booking; ?>" class="button small tour-button"><span><?php _e('Book Now','travel2'); ?></span></a>
+			<a target="_blank" href="<?php echo $post->_tour_booking; ?>" class="button small tour-button"><span><?php _e('Book Now','miracleisland'); ?></span></a>
 			<?php } else { ?>
-			<a href="#booking-form" data-id="<?php echo $post->ID; ?>" data-title="<?php the_title(); ?>" class="button small fancybox tour-button"><span><?php _e('Book Now','travel2'); ?></span></a>
+			<a href="#booking-form" data-id="<?php echo $post->ID; ?>" data-title="<?php the_title(); ?>" class="button small fancybox tour-button"><span><?php _e('Book Now','miracleisland'); ?></span></a>
 			<?php } ?>
 		<?php } ?>
-		<?php if($GLOBALS['questions']!='true') { ?><a href="#question-form" data-id="<?php echo $post->ID; ?>" data-title="<?php the_title(); ?>" class="button grey small fancybox tour-button"><span><?php _e('Ask a Question','travel2'); ?></span></a><?php } ?>
+		<?php if($GLOBALS['questions']!='true') { ?><a href="#question-form" data-id="<?php echo $post->ID; ?>" data-title="<?php the_title(); ?>" class="button grey small fancybox tour-button"><span><?php _e('Ask a Question','miracleisland'); ?></span></a><?php } ?>
 	</div>		
 	<div class="clear"></div>
 </div>

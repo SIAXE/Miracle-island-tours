@@ -124,7 +124,7 @@ class ThemexShortcoder {
 							}
 						
 							$args=array(
-								'show_option_all'    => __('All Categories','travel2'),
+								'show_option_all'    => __('All Categories','miracleisland'),
 								'id'                 => $option_id,
 								'hide_empty'         => 0,
 								'echo'               => 0,
@@ -137,7 +137,7 @@ class ThemexShortcoder {
 						case 'select_portfolio_category':
 						
 							$args=array(
-								'show_option_all'    => __('All','travel2'),
+								'show_option_all'    => __('All','miracleisland'),
 								'id'                 => $option_id,
 								'hide_empty'         => 0,
 								'taxonomy'           => 'portfolio_category',
@@ -235,7 +235,7 @@ class ThemexShortcoder {
 				
 				//shortcode option end
 				$out.='</ul>';
-				$out.='<a href="#" class="child-clone-row-remove">'.__('Remove','travel2').'</a>';
+				$out.='<a href="#" class="child-clone-row-remove">'.__('Remove','miracleisland').'</a>';
 				$out.='</div>';
 				
 				//cloned rows end

@@ -13,7 +13,7 @@
 				if(get_option('themex_copyright_text')) {
 					echo themex_html(ThemexCore::getOption('copyright_text'));
 				} else {
-					echo 'Travel2 Travel &copy; 2012';
+					echo 'miracleisland Travel &copy; 2012';
 				}
 				?>
 				</div>

@@ -6,13 +6,13 @@ class themex_twitter_widget extends WP_Widget {
 	//Widget Setup
 	function __construct() {
 		//Basic settings
-		$settings = array( 'classname' => 'widget-twitter', 'description' => __('A widget that displays your latest tweets.', 'travel2') );
+		$settings = array( 'classname' => 'widget-twitter', 'description' => __('A widget that displays your latest tweets.', 'miracleisland') );
 
 		//Controls
 		$controls = array( 'width' => 300, 'height' => 300, 'id_base' => __CLASS__ );
 
 		//Creation
-		$this->WP_Widget( __CLASS__, __('Latest Tweets','travel2'), $settings, $controls );
+		$this->WP_Widget( __CLASS__, __('Latest Tweets','miracleisland'), $settings, $controls );
 	}
 
 	//Widget view
@@ -51,15 +51,15 @@ class themex_twitter_widget extends WP_Widget {
 		$instance = wp_parse_args( (array)$instance, $defaults ); ?>
 		<!-- Widget Title: Text Input -->
 		<p>
-			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'travel2'); ?>:</label>
+			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'miracleisland'); ?>:</label>
 			<input class="widefat" type="text" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" />
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id('username'); ?>"><?php _e('Username', 'travel2'); ?>:</label>
+			<label for="<?php echo $this->get_field_id('username'); ?>"><?php _e('Username', 'miracleisland'); ?>:</label>
 			<input class="widefat" type="text" id="<?php echo $this->get_field_id( 'username' ); ?>" name="<?php echo $this->get_field_name( 'username' ); ?>" value="<?php echo $instance['username']; ?>" />
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Tweets Number', 'travel2'); ?>:</label>
+			<label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Tweets Number', 'miracleisland'); ?>:</label>
 			<input class="widefat" type="text" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" value="<?php echo $instance['number']; ?>" />
 		</p>
 	<?php

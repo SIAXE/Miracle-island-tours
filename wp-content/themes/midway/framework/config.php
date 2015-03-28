@@ -27,30 +27,30 @@ $config = array (
 		//Theme Textdomains
 		'textdomains' => array(
 			array(
-				'slug' => 'travel2',
+				'slug' => 'miracleisland',
 				'path' => THEME_PATH.'languages',
 			),			
 		),
 		
 		//Editor styles
 		'editor_styles' => array(
-			'styled-list list-1'=>__('List Style','travel2').' 1',
-			'styled-list list-2'=>__('List Style','travel2').' 2',
-			'styled-list list-3'=>__('List Style','travel2').' 3',
-			'styled-list list-4'=>__('List Style','travel2').' 4',
-			'styled-list list-5'=>__('List Style','travel2').' 5',
+			'styled-list list-1'=>__('List Style','miracleisland').' 1',
+			'styled-list list-2'=>__('List Style','miracleisland').' 2',
+			'styled-list list-3'=>__('List Style','miracleisland').' 3',
+			'styled-list list-4'=>__('List Style','miracleisland').' 4',
+			'styled-list list-5'=>__('List Style','miracleisland').' 5',
 		),
 	
 		//Menus
 		'custom_menus' => array (
 			array(
 				'slug' => 'main_menu',
-				'name' => __('Main Menu','travel2'),
+				'name' => __('Main Menu','miracleisland'),
 			),
 			
 			array(
 				'slug' => 'footer_menu',
-				'name' => __('Footer Menu','travel2'),
+				'name' => __('Footer Menu','miracleisland'),
 			),
 		),
 	
@@ -214,16 +214,16 @@ $config = array (
 			array (
 				'id' => 'tour',
 				'labels' => array (
-					'name' => __('Tours','travel2'),
-					'singular_name' => __( 'Tour','travel2' ),
-					'add_new' => __('Add New','travel2'),
-					'add_new_item' => __('Add New Tour','travel2'),
-					'edit_item' => __('Edit Tour','travel2'),
-					'new_item' => __('New Tour','travel2'),
-					'view_item' => __('View Tour','travel2'),
-					'search_items' => __('Search Tours','travel2'),
-					'not_found' =>  __('No Tours Found','travel2'),
-					'not_found_in_trash' => __('No Tours Found in Trash','travel2'), 
+					'name' => __('Tours','miracleisland'),
+					'singular_name' => __( 'Tour','miracleisland' ),
+					'add_new' => __('Add New','miracleisland'),
+					'add_new_item' => __('Add New Tour','miracleisland'),
+					'edit_item' => __('Edit Tour','miracleisland'),
+					'new_item' => __('New Tour','miracleisland'),
+					'view_item' => __('View Tour','miracleisland'),
+					'search_items' => __('Search Tours','miracleisland'),
+					'not_found' =>  __('No Tours Found','miracleisland'),
+					'not_found_in_trash' => __('No Tours Found in Trash','miracleisland'), 
 					'parent_item_colon' => ''
 				 ),
 				'public' => true,
@@ -235,23 +235,23 @@ $config = array (
 				'hierarchical' => false,
 				'menu_position' => null,
 				'supports' => array('title','editor','thumbnail','excerpt','revisions'),
-				'rewrite' => array('slug' => __('tour', 'travel2')),
+				'rewrite' => array('slug' => __('tour', 'miracleisland')),
 			),
 			
 			//Gallery
 			array (
 				'id' => 'gallery',
 				'labels' => array (
-					'name' => __('Galleries','travel2'),
-					'singular_name' => __( 'Gallery','travel2' ),
-					'add_new' => __('Add New','travel2'),
-					'add_new_item' => __('Add New Gallery','travel2'),
-					'edit_item' => __('Edit Gallery','travel2'),
-					'new_item' => __('New Gallery','travel2'),
-					'view_item' => __('View Gallery','travel2'),
-					'search_items' => __('Search Galleries','travel2'),
-					'not_found' =>  __('No Galleries Found','travel2'),
-					'not_found_in_trash' => __('No Galleries Found in Trash','travel2'), 
+					'name' => __('Galleries','miracleisland'),
+					'singular_name' => __( 'Gallery','miracleisland' ),
+					'add_new' => __('Add New','miracleisland'),
+					'add_new_item' => __('Add New Gallery','miracleisland'),
+					'edit_item' => __('Edit Gallery','miracleisland'),
+					'new_item' => __('New Gallery','miracleisland'),
+					'view_item' => __('View Gallery','miracleisland'),
+					'search_items' => __('Search Galleries','miracleisland'),
+					'not_found' =>  __('No Galleries Found','miracleisland'),
+					'not_found_in_trash' => __('No Galleries Found in Trash','miracleisland'), 
 					'parent_item_colon' => ''
 				 ),
 				'public' => true,
@@ -263,23 +263,23 @@ $config = array (
 				'hierarchical' => false,
 				'menu_position' => null,
 				'supports' => array('title','thumbnail', 'editor'),	
-				'rewrite' => array('slug' => __('gallery', 'travel2')),
+				'rewrite' => array('slug' => __('gallery', 'miracleisland')),
 			),
 			
 			//Testimonial
 			array (
 				'id' => 'testimonial',
 				'labels' => array (
-					'name' => __('Testimonials','travel2'),
-					'singular_name' => __( 'Testimonial','travel2' ),
-					'add_new' => __('Add New','travel2'),
-					'add_new_item' => __('Add New Testimonial','travel2'),
-					'edit_item' => __('Edit Testimonial','travel2'),
-					'new_item' => __('New Testimonial','travel2'),
-					'view_item' => __('View Testimonial','travel2'),
-					'search_items' => __('Search Testimonials','travel2'),
-					'not_found' =>  __('No Testimonials Found','travel2'),
-					'not_found_in_trash' => __('No Testimonials Found in Trash','travel2'),
+					'name' => __('Testimonials','miracleisland'),
+					'singular_name' => __( 'Testimonial','miracleisland' ),
+					'add_new' => __('Add New','miracleisland'),
+					'add_new_item' => __('Add New Testimonial','miracleisland'),
+					'edit_item' => __('Edit Testimonial','miracleisland'),
+					'new_item' => __('New Testimonial','miracleisland'),
+					'view_item' => __('View Testimonial','miracleisland'),
+					'search_items' => __('Search Testimonials','miracleisland'),
+					'not_found' =>  __('No Testimonials Found','miracleisland'),
+					'not_found_in_trash' => __('No Testimonials Found in Trash','miracleisland'),
 					'parent_item_colon' => ''
 				 ),
 				'public' => true,
@@ -297,16 +297,16 @@ $config = array (
 			array (
 				'id' => 'slide',
 				'labels' => array (
-					'name' => __('Slides','travel2'),
-					'singular_name' => __( 'Slide','travel2' ),
-					'add_new' => __('Add New','travel2'),
-					'add_new_item' => __('Add New Slide','travel2'),
-					'edit_item' => __('Edit Slide','travel2'),
-					'new_item' => __('New Slide','travel2'),
-					'view_item' => __('View Slide','travel2'),
-					'search_items' => __('Search Slides','travel2'),
-					'not_found' =>  __('No Slides Found','travel2'),
-					'not_found_in_trash' => __('No Slides Found in Trash','travel2'), 
+					'name' => __('Slides','miracleisland'),
+					'singular_name' => __( 'Slide','miracleisland' ),
+					'add_new' => __('Add New','miracleisland'),
+					'add_new_item' => __('Add New Slide','miracleisland'),
+					'edit_item' => __('Edit Slide','miracleisland'),
+					'new_item' => __('New Slide','miracleisland'),
+					'view_item' => __('View Slide','miracleisland'),
+					'search_items' => __('Search Slides','miracleisland'),
+					'not_found' =>  __('No Slides Found','miracleisland'),
+					'not_found_in_trash' => __('No Slides Found in Trash','miracleisland'), 
 					'parent_item_colon' => ''
 				 ),
 				'public' => true,
@@ -330,20 +330,20 @@ $config = array (
 					'show_in_nav_menus' => true,					
 					'show_admin_column' => true,
 					'labels' => array(
-	                    'name' 				=> __( 'Destinations', 'travel2'),
-	                    'singular_name' 	=> __( 'Destination', 'travel2'),
-						'menu_name'			=> __( 'Destinations', 'travel2' ),
-	                    'search_items' 		=> __( 'Search Destinations', 'travel2'),
-	                    'all_items' 		=> __( 'All Destinations', 'travel2'),
-	                    'parent_item' 		=> __( 'Parent Destination', 'travel2'),
-	                    'parent_item_colon' => __( 'Parent Destination', 'travel2'),
-	                    'edit_item' 		=> __( 'Edit Destination', 'travel2'),
-	                    'update_item' 		=> __( 'Update Destination', 'travel2'),
-	                    'add_new_item' 		=> __( 'Add New Destination', 'travel2'),
-	                    'new_item_name' 	=> __( 'New Destination Name', 'travel2')
+	                    'name' 				=> __( 'Destinations', 'miracleisland'),
+	                    'singular_name' 	=> __( 'Destination', 'miracleisland'),
+						'menu_name'			=> __( 'Destinations', 'miracleisland' ),
+	                    'search_items' 		=> __( 'Search Destinations', 'miracleisland'),
+	                    'all_items' 		=> __( 'All Destinations', 'miracleisland'),
+	                    'parent_item' 		=> __( 'Parent Destination', 'miracleisland'),
+	                    'parent_item_colon' => __( 'Parent Destination', 'miracleisland'),
+	                    'edit_item' 		=> __( 'Edit Destination', 'miracleisland'),
+	                    'update_item' 		=> __( 'Update Destination', 'miracleisland'),
+	                    'add_new_item' 		=> __( 'Add New Destination', 'miracleisland'),
+	                    'new_item_name' 	=> __( 'New Destination Name', 'miracleisland')
 	            	),
 					'rewrite' => array(
-						'slug' => __('destinations', 'travel2'),
+						'slug' => __('destinations', 'miracleisland'),
 						'hierarchical' => true
 					)
 				)
@@ -355,20 +355,20 @@ $config = array (
 					'show_in_nav_menus' => true,					
 					'show_admin_column' => true,
 					'labels' => array(
-	                    'name' 				=> __( 'Types', 'travel2'),
-	                    'singular_name' 	=> __( 'Type', 'travel2'),
-						'menu_name'			=> __( 'Types', 'travel2' ),
-	                    'search_items' 		=> __( 'Search Types', 'travel2'),
-	                    'all_items' 		=> __( 'All Types', 'travel2'),
-	                    'parent_item' 		=> __( 'Parent Type', 'travel2'),
-	                    'parent_item_colon' => __( 'Parent Type', 'travel2'),
-	                    'edit_item' 		=> __( 'Edit Type', 'travel2'),
-	                    'update_item' 		=> __( 'Update Type', 'travel2'),
-	                    'add_new_item' 		=> __( 'Add New Type', 'travel2'),
-	                    'new_item_name' 	=> __( 'New Type Name', 'travel2')
+	                    'name' 				=> __( 'Types', 'miracleisland'),
+	                    'singular_name' 	=> __( 'Type', 'miracleisland'),
+						'menu_name'			=> __( 'Types', 'miracleisland' ),
+	                    'search_items' 		=> __( 'Search Types', 'miracleisland'),
+	                    'all_items' 		=> __( 'All Types', 'miracleisland'),
+	                    'parent_item' 		=> __( 'Parent Type', 'miracleisland'),
+	                    'parent_item_colon' => __( 'Parent Type', 'miracleisland'),
+	                    'edit_item' 		=> __( 'Edit Type', 'miracleisland'),
+	                    'update_item' 		=> __( 'Update Type', 'miracleisland'),
+	                    'add_new_item' 		=> __( 'Add New Type', 'miracleisland'),
+	                    'new_item_name' 	=> __( 'New Type Name', 'miracleisland')
 	            	),
 					'rewrite' => array(
-						'slug' => __('types', 'travel2'),
+						'slug' => __('types', 'miracleisland'),
 						'hierarchical' => true
 					)
 				)
@@ -380,20 +380,20 @@ $config = array (
 					'show_in_nav_menus' => true,
 					'show_admin_column' => true,
 					'labels' => array(
-	                    'name' 				=> __( 'Gallery Categories', 'travel2'),
-	                    'singular_name' 	=> __( 'Gallery Category', 'travel2'),
-						'menu_name'			=> __( 'Categories', 'travel2' ),
-	                    'search_items' 		=> __( 'Search Gallery Categories', 'travel2'),
-	                    'all_items' 		=> __( 'All Gallery Categories', 'travel2'),
-	                    'parent_item' 		=> __( 'Parent Gallery Category', 'travel2'),
-	                    'parent_item_colon' => __( 'Parent Gallery Category', 'travel2'),
-	                    'edit_item' 		=> __( 'Edit Gallery Category', 'travel2'),
-	                    'update_item' 		=> __( 'Update Gallery Category', 'travel2'),
-	                    'add_new_item' 		=> __( 'Add New Gallery Category', 'travel2'),
-	                    'new_item_name' 	=> __( 'New Gallery Category Name', 'travel2')
+	                    'name' 				=> __( 'Gallery Categories', 'miracleisland'),
+	                    'singular_name' 	=> __( 'Gallery Category', 'miracleisland'),
+						'menu_name'			=> __( 'Categories', 'miracleisland' ),
+	                    'search_items' 		=> __( 'Search Gallery Categories', 'miracleisland'),
+	                    'all_items' 		=> __( 'All Gallery Categories', 'miracleisland'),
+	                    'parent_item' 		=> __( 'Parent Gallery Category', 'miracleisland'),
+	                    'parent_item_colon' => __( 'Parent Gallery Category', 'miracleisland'),
+	                    'edit_item' 		=> __( 'Edit Gallery Category', 'miracleisland'),
+	                    'update_item' 		=> __( 'Update Gallery Category', 'miracleisland'),
+	                    'add_new_item' 		=> __( 'Add New Gallery Category', 'miracleisland'),
+	                    'new_item_name' 	=> __( 'New Gallery Category Name', 'miracleisland')
 	            	),
 					'rewrite' => array(
-						'slug' => __('categories', 'travel2'),
+						'slug' => __('categories', 'miracleisland'),
 						'hierarchical' => true
 					)
 				)
@@ -406,28 +406,28 @@ $config = array (
 			//Page
 			array(
 				'id' => 'page_metabox',
-				'title' =>  __('Page Options', 'travel2'),
+				'title' =>  __('Page Options', 'miracleisland'),
 				'page' => 'page',
 				'context' => 'normal',
 				'priority' => 'high',
 				'options' => array(						
-					array(	'name' => __('Page Background','travel2'),
+					array(	'name' => __('Page Background','miracleisland'),
 							'id' => 'background',
 							'type' => 'uploader'),
 					
-					array(	'name' => __('Tours Destination','travel2'),
+					array(	'name' => __('Tours Destination','miracleisland'),
 							'id' => 'tours_destination',
 							'type' => 'select_category',
 							'attributes' => array('class'=>'template-tours-child child-option hidden'),
 							'taxonomy' => 'tour_destination'),
 					
-					array(	'name' => __('Tours Type','travel2'),
+					array(	'name' => __('Tours Type','miracleisland'),
 							'id' => 'tours_type',
 							'type' => 'select_category',
 							'attributes' => array('class'=>'template-tours-child child-option hidden'),
 							'taxonomy' => 'tour_type'),
 							
-					array(	'name' => __('Galleries Category','travel2'),
+					array(	'name' => __('Galleries Category','miracleisland'),
 							'id' => 'galleries_category',
 							'type' => 'select_category',
 							'attributes' => array('class'=>'template-gallery-child child-option hidden'),
@@ -438,19 +438,19 @@ $config = array (
 			//Slides
 			array(
 				'id' => 'slide_metabox',
-				'title' =>  __('Slide Options', 'travel2'),
+				'title' =>  __('Slide Options', 'miracleisland'),
 				'page' => 'slide',
 				'context' => 'normal',
 				'priority' => 'high',
 				'options' => array(
 				
-					array(	'name' => __('Image Link','travel2'),
-							'desc' => __('Link for the slide image.','travel2'),
+					array(	'name' => __('Image Link','miracleisland'),
+							'desc' => __('Link for the slide image.','miracleisland'),
 							'id' => 'link',
 							'type' => 'text'),
 
-					array(	'name' => __('Video Code','travel2'),
-							'desc' => __('Paste embedded video code here.','travel2'),
+					array(	'name' => __('Video Code','miracleisland'),
+							'desc' => __('Paste embedded video code here.','miracleisland'),
 							'id' => 'video',
 							'type' => 'textarea'),
 
@@ -460,37 +460,37 @@ $config = array (
 			//Tours
 			array(
 				'id' => 'tour_metabox',
-				'title' =>  __('Tour Options', 'travel2'),
+				'title' =>  __('Tour Options', 'miracleisland'),
 				'page' => 'tour',
 				'context' => 'normal',
 				'priority' => 'high',				
 				'options' => array(
-					array(	'name' => __('Price','travel2'),
-							'desc' => __('Tour minimum price.','travel2'),
+					array(	'name' => __('Price','miracleisland'),
+							'desc' => __('Tour minimum price.','miracleisland'),
 							'id' => 'price',
 							'type' => 'number'),					
-					array(	'name' => __('Duration','travel2'),
-							'desc' => __('Tour duration (days).','travel2'),
+					array(	'name' => __('Duration','miracleisland'),
+							'desc' => __('Tour duration (days).','miracleisland'),
 							'id' => 'duration',
 							'type' => 'text'),
-					array(	'name' => __('Daparts','travel2'),
-							'desc' => __('Tour departure date.','travel2'),
+					array(	'name' => __('Daparts','miracleisland'),
+							'desc' => __('Tour departure date.','miracleisland'),
 							'id' => 'departure_date',
 							'type' => 'date'),
-					array(	'name' => __('Arrives','travel2'),
-							'desc' => __('Tour arrival date.','travel2'),
+					array(	'name' => __('Arrives','miracleisland'),
+							'desc' => __('Tour arrival date.','miracleisland'),
 							'id' => 'arrival_date',
 							'type' => 'date'),
-					array(	'name' => __('Booking Link','travel2'),
-							'desc' => __('Link to book the tour.','travel2'),
+					array(	'name' => __('Booking Link','miracleisland'),
+							'desc' => __('Link to book the tour.','miracleisland'),
 							'id' => 'booking',
 							'type' => 'text'),
-					array(	'name' => __('Runs On','travel2'),
-							'desc' => __('List of the week days.','travel2'),
+					array(	'name' => __('Runs On','miracleisland'),
+							'desc' => __('List of the week days.','miracleisland'),
 							'id' => 'days',
 							'type' => 'days'),					
-					array(	'name' => __('Gallery Images','travel2'),
-							'desc' => __('Add images for this tour.','travel2'),
+					array(	'name' => __('Gallery Images','miracleisland'),
+							'desc' => __('Add images for this tour.','miracleisland'),
 							'id' => 'images',
 							'type' => 'gallery'),
 				),
@@ -499,17 +499,17 @@ $config = array (
 			//Galleries
 			array(
 				'id' => 'gallery_metabox',
-				'title' =>  __('Gallery Options', 'travel2'),
+				'title' =>  __('Gallery Options', 'miracleisland'),
 				'page' => 'gallery',
 				'context' => 'normal',
 				'priority' => 'high',				
 				'options' => array(
-					array(	'name' => __('Gallery Images','travel2'),
-							'desc' => __('Add images for this gallery.','travel2'),
+					array(	'name' => __('Gallery Images','miracleisland'),
+							'desc' => __('Add images for this gallery.','miracleisland'),
 							'id' => 'images',
 							'type' => 'gallery'),
-					array(	'name' => __('Video Code','travel2'),
-							'desc' => __('Paste embedded video code here.','travel2'),
+					array(	'name' => __('Video Code','miracleisland'),
+							'desc' => __('Paste embedded video code here.','miracleisland'),
 							'id' => 'video',
 							'type' => 'textarea'),
 				),
@@ -522,39 +522,39 @@ $config = array (
 			'column' => array(
 				'options' => array(),
 				'shortcode' => '{{child_shortcode}}',
-				'popup_title' => __('Insert Columns Shortcode', 'travel2'),
+				'popup_title' => __('Insert Columns Shortcode', 'miracleisland'),
 				'child_shortcode' => array(
 					'options' => array(
 						'column' => array(
 							'type' => 'select',
-							'label' => __('Column Width', 'travel2'),
+							'label' => __('Column Width', 'miracleisland'),
 							'options' => array(
-								'one_sixth' => __('One Sixth', 'travel2'),
-								'one_sixth_last' => __('One Sixth Last', 'travel2'),
-								'one_fourth' => __('One Fourth', 'travel2'),
-								'one_fourth_last' => __('One Fourth Last', 'travel2'),
-								'one_third' => __('One Third', 'travel2'),
-								'one_third_last' => __('One Third Last', 'travel2'),
-								'five_twelfths' => __('Five Twelfths', 'travel2'),
-								'five_twelfths_last' => __('Five Twelfths Last', 'travel2'),
-								'one_half' => __('One Half', 'travel2'),
-								'one_half_last' => __('One Half Last', 'travel2'),
-								'seven_twelfths' => __('Seven Twelfths', 'travel2'),
-								'seven_twelfths_last' => __('Seven Twelfths Last', 'travel2'),
-								'two_thirds' => __('Two Thirds', 'travel2'),
-								'two_thirds_last' => __('Two Thirds Last', 'travel2'),
-								'three_fourths' => __('Three Fourths', 'travel2'),
-								'three_fourths_last' => __('Three Fourths Last', 'travel2'),
+								'one_sixth' => __('One Sixth', 'miracleisland'),
+								'one_sixth_last' => __('One Sixth Last', 'miracleisland'),
+								'one_fourth' => __('One Fourth', 'miracleisland'),
+								'one_fourth_last' => __('One Fourth Last', 'miracleisland'),
+								'one_third' => __('One Third', 'miracleisland'),
+								'one_third_last' => __('One Third Last', 'miracleisland'),
+								'five_twelfths' => __('Five Twelfths', 'miracleisland'),
+								'five_twelfths_last' => __('Five Twelfths Last', 'miracleisland'),
+								'one_half' => __('One Half', 'miracleisland'),
+								'one_half_last' => __('One Half Last', 'miracleisland'),
+								'seven_twelfths' => __('Seven Twelfths', 'miracleisland'),
+								'seven_twelfths_last' => __('Seven Twelfths Last', 'miracleisland'),
+								'two_thirds' => __('Two Thirds', 'miracleisland'),
+								'two_thirds_last' => __('Two Thirds Last', 'miracleisland'),
+								'three_fourths' => __('Three Fourths', 'miracleisland'),
+								'three_fourths_last' => __('Three Fourths Last', 'miracleisland'),
 							)
 						),
 						'content' => array(
 							'std' => '',
 							'type' => 'textarea',
-							'label' => __('Column Content', 'travel2'),
+							'label' => __('Column Content', 'miracleisland'),
 						)
 					),
 					'shortcode' => '[{{column}}]{{content}}[/{{column}}] ',
-					'clone_button' => __('Add Columns Shortcode', 'travel2')
+					'clone_button' => __('Add Columns Shortcode', 'miracleisland')
 				)
 			),
 		
@@ -564,16 +564,16 @@ $config = array (
 					'background' => array(
 						'std' => '',
 						'type' => 'text',
-						'label' => __('Block Background', 'travel2'),
+						'label' => __('Block Background', 'miracleisland'),
 					),
 					'content' => array(
 						'std' => '',
 						'type' => 'textarea',
-						'label' => __('Block Content', 'travel2'),
+						'label' => __('Block Content', 'miracleisland'),
 					),
 				),
 				'shortcode' => '[block background="{{background}}"]{{content}}[/block]',			
-				'popup_title' => __('Insert Block Shortcode', 'travel2')
+				'popup_title' => __('Insert Block Shortcode', 'miracleisland')
 			),			
 			
 			//Title
@@ -582,11 +582,11 @@ $config = array (
 					'content' => array(
 						'std' => '',
 						'type' => 'text',
-						'label' => __('Title Text', 'travel2'),
+						'label' => __('Title Text', 'miracleisland'),
 					),
 				),
 				'shortcode' => '[title]{{content}}[/title]',			
-				'popup_title' => __('Insert Title Shortcode', 'travel2')
+				'popup_title' => __('Insert Title Shortcode', 'miracleisland')
 			),
 			
 			//Image
@@ -595,16 +595,16 @@ $config = array (
 					'content' => array(
 						'std' => '',
 						'type' => 'textarea',
-						'label' => __('Image URL', 'travel2'),
+						'label' => __('Image URL', 'miracleisland'),
 					),
 					'url' => array(
 						'std' => '',
 						'type' => 'text',
-						'label' => __('Link URL', 'travel2'),
+						'label' => __('Link URL', 'miracleisland'),
 					),					
 				),
 				'shortcode' => '[image url="{{url}}"]{{content}}[/image]',	
-				'popup_title' => __('Insert Image Shortcode', 'travel2')
+				'popup_title' => __('Insert Image Shortcode', 'miracleisland')
 			),
 			
 			//Button
@@ -612,34 +612,34 @@ $config = array (
 				'options' => array(
 					'color' => array(
 						'type' => 'select',
-						'label' => __('Button Color', 'travel2'),
+						'label' => __('Button Color', 'miracleisland'),
 						'options' => array(
-							'default' => __('Default', 'travel2'),
-							'grey' => __('Grey', 'travel2'),						
+							'default' => __('Default', 'miracleisland'),
+							'grey' => __('Grey', 'miracleisland'),						
 						)
 					),
 					'size' => array(
 						'type' => 'select',
-						'label' => __('Button Size', 'travel2'),
+						'label' => __('Button Size', 'miracleisland'),
 						'options' => array(
-							'small' => __('Small', 'travel2'),
-							'medium' => __('Medium', 'travel2'),
-							'large' => __('Large', 'travel2')
+							'small' => __('Small', 'miracleisland'),
+							'medium' => __('Medium', 'miracleisland'),
+							'large' => __('Large', 'miracleisland')
 						)
 					),
 					'url' => array(
 						'std' => '',
 						'type' => 'text',
-						'label' => __('Button URL', 'travel2'),
+						'label' => __('Button URL', 'miracleisland'),
 					),
 					'content' => array(
 						'std' => '',
 						'type' => 'text',
-						'label' => __('Button Text', 'travel2'),
+						'label' => __('Button Text', 'miracleisland'),
 					)
 				),
 				'shortcode' => '[button url="{{url}}" size="{{size}}"]{{content}}[/button]',
-				'popup_title' => __('Insert Button Shortcode', 'travel2')
+				'popup_title' => __('Insert Button Shortcode', 'miracleisland')
 			),
 			
 			//Posts
@@ -648,24 +648,24 @@ $config = array (
 					'number' => array(
 						'std' => '1',
 						'type' => 'text',
-						'label' => __('Posts Number', 'travel2'),
+						'label' => __('Posts Number', 'miracleisland'),
 					),
 					'category' => array(
 						'type' => 'select_category',
-						'label' => __('Posts Category', 'travel2'),
+						'label' => __('Posts Category', 'miracleisland'),
 						'taxonomy' => 'category',
 					),
 					'order' => array(
 						'type' => 'select',
-						'label' => __('Posts Order', 'travel2'),
+						'label' => __('Posts Order', 'miracleisland'),
 						'options' => array(
-							'date' => __('Date', 'travel2'),
-							'rand' => __('Random', 'travel2'),
+							'date' => __('Date', 'miracleisland'),
+							'rand' => __('Random', 'miracleisland'),
 						),
 					),					
 				),
 				'shortcode' => '[posts number="{{number}}" order="{{order}}" category="{{category}}"]',		
-				'popup_title' => __('Insert Posts Shortcode', 'travel2')
+				'popup_title' => __('Insert Posts Shortcode', 'miracleisland')
 			),	
 			
 			//Tours
@@ -673,39 +673,39 @@ $config = array (
 				'options' => array(
 					'type' => array(
 						'type' => 'select_category',
-						'label' => __('Tours Type', 'travel2'),
+						'label' => __('Tours Type', 'miracleisland'),
 						'taxonomy' => 'tour_type',
 					),
 					'destination' => array(
 						'type' => 'select_category',
-						'label' => __('Tours Destination', 'travel2'),
+						'label' => __('Tours Destination', 'miracleisland'),
 						'taxonomy' => 'tour_destination',
 					),
 					'number' => array(
 						'std' => '4',
 						'type' => 'text',
-						'label' => __('Tours Number', 'travel2'),
+						'label' => __('Tours Number', 'miracleisland'),
 					),					
 					'order' => array(
 						'type' => 'select',
-						'label' => __('Tours Order', 'travel2'),
+						'label' => __('Tours Order', 'miracleisland'),
 						'options' => array(
-							'date' => __('Date', 'travel2'),
-							'title' => __('Title', 'travel2'),
-							'rand' => __('Random', 'travel2'),
+							'date' => __('Date', 'miracleisland'),
+							'title' => __('Title', 'miracleisland'),
+							'rand' => __('Random', 'miracleisland'),
 						)
 					),
 					'columns' => array(
 						'type' => 'select',
-						'label' => __('Columns Number', 'travel2'),
+						'label' => __('Columns Number', 'miracleisland'),
 						'options' => array(
-							'3' => __('Three', 'travel2'),
-							'4' => __('Four', 'travel2'),
+							'3' => __('Three', 'miracleisland'),
+							'4' => __('Four', 'miracleisland'),
 						)
 					),
 				),
 				'shortcode' => '[tours type="{{type}}" destination="{{destination}}" number="{{number}}" columns="{{columns}}" order="{{order}}"]',		
-				'popup_title' => __('Insert Tours Shortcode', 'travel2')
+				'popup_title' => __('Insert Tours Shortcode', 'miracleisland')
 			),
 			
 			//Galleries
@@ -713,42 +713,42 @@ $config = array (
 				'options' => array(
 					'caption' => array(
 						'type' => 'select',
-						'label' => __('Gallery Caption', 'travel2'),
+						'label' => __('Gallery Caption', 'miracleisland'),
 						'options' => array(
-							'visible' => __('Visible', 'travel2'),
-							'hidden' => __('Hidden', 'travel2'),
-							'none' => __('None', 'travel2'),
+							'visible' => __('Visible', 'miracleisland'),
+							'hidden' => __('Hidden', 'miracleisland'),
+							'none' => __('None', 'miracleisland'),
 						)
 					),
 					'category' => array(
 						'type' => 'select_category',
-						'label' => __('Galleries Category', 'travel2'),
+						'label' => __('Galleries Category', 'miracleisland'),
 						'taxonomy' => 'gallery_category',
 					),
 					'number' => array(
 						'std' => '4',
 						'type' => 'text',
-						'label' => __('Galleries Number', 'travel2'),
+						'label' => __('Galleries Number', 'miracleisland'),
 					),					
 					'order' => array(
 						'type' => 'select',
-						'label' => __('Galleries Order', 'travel2'),
+						'label' => __('Galleries Order', 'miracleisland'),
 						'options' => array(
-							'date' => __('Date', 'travel2'),
-							'rand' => __('Random', 'travel2'),
+							'date' => __('Date', 'miracleisland'),
+							'rand' => __('Random', 'miracleisland'),
 						)
 					),
 					'columns' => array(
 						'type' => 'select',
-						'label' => __('Columns Number', 'travel2'),
+						'label' => __('Columns Number', 'miracleisland'),
 						'options' => array(
-							'3' => __('Three', 'travel2'),
-							'4' => __('Four', 'travel2'),
+							'3' => __('Three', 'miracleisland'),
+							'4' => __('Four', 'miracleisland'),
 						)
 					),
 				),
 				'shortcode' => '[galleries category="{{category}}" number="{{number}}" columns="{{columns}}" order="{{order}}" caption="{{caption}}"]',
-				'popup_title' => __('Insert Galleries Shortcode', 'travel2')
+				'popup_title' => __('Insert Galleries Shortcode', 'miracleisland')
 			),
 						
 			//Testimonials
@@ -757,56 +757,56 @@ $config = array (
 					'number' => array(
 						'std' => '3',
 						'type' => 'text',
-						'label' => __('Testimonials Number', 'travel2'),
+						'label' => __('Testimonials Number', 'miracleisland'),
 					),
 					'order' => array(
 						'type' => 'select',
-						'label' => __('Testimonials Order', 'travel2'),
+						'label' => __('Testimonials Order', 'miracleisland'),
 						'options' => array(
-							'date' => __('Date', 'travel2'),
-							'rand' => __('Random', 'travel2'),
+							'date' => __('Date', 'miracleisland'),
+							'rand' => __('Random', 'miracleisland'),
 						)
 					),
 					'pause' => array(
 						'std' => '0',
 						'type' => 'text',
-						'label' => __('Slider Pause', 'travel2'),
+						'label' => __('Slider Pause', 'miracleisland'),
 					),
 					'speed' => array(
 						'std' => '400',
 						'type' => 'text',
-						'label' => __('Transition Speed', 'travel2'),
+						'label' => __('Transition Speed', 'miracleisland'),
 					),
 				),
 				'shortcode' => '[testimonials number="{{number}}" order="{{order}}" pause="{{pause}}" speed="{{speed}}"]',		
-				'popup_title' => __('Insert Testimonials Shortcode', 'travel2')
+				'popup_title' => __('Insert Testimonials Shortcode', 'miracleisland')
 			),	
 			
 			//Itinerary
 			'itinerary' => array(
 				'options' => array(),
 				'shortcode' => '[itinerary]{{child_shortcode}}[/itinerary]',
-				'popup_title' => __('Insert Itinerary Shortcode', 'travel2'),
+				'popup_title' => __('Insert Itinerary Shortcode', 'miracleisland'),
 				'child_shortcode' => array(					
 					'options' => array(
 						'title' => array(
 							'std' => '',
 							'type' => 'text',
-							'label' => __('Day Title', 'travel2'),
+							'label' => __('Day Title', 'miracleisland'),
 						),
 						'image' => array(
 							'std' => '',
 							'type' => 'text',
-							'label' => __('Day Image', 'travel2'),
+							'label' => __('Day Image', 'miracleisland'),
 						),
 						'content' => array(
 							'std' => '',
 							'type' => 'textarea',
-							'label' => __('Day Content', 'travel2'),
+							'label' => __('Day Content', 'miracleisland'),
 						)
 					),
 					'shortcode' => '[day title="{{title}}" image="{{image}}"]{{content}}[/day]',
-					'clone_button' => __('Add New Day', 'travel2')
+					'clone_button' => __('Add New Day', 'miracleisland')
 				)
 			),
 			
@@ -816,50 +816,50 @@ $config = array (
 				'options' => array(
 					'align' => array(
 						'type' => 'select',
-						'label' => __('Align', 'travel2'),
+						'label' => __('Align', 'miracleisland'),
 						'options' => array(
-							'none' => __('None', 'travel2'),
-							'top' => __('Top', 'travel2'),
-							'bottom' => __('Bottom', 'travel2'),
+							'none' => __('None', 'miracleisland'),
+							'top' => __('Top', 'miracleisland'),
+							'bottom' => __('Bottom', 'miracleisland'),
 						)
 					),
 					'latitude' => array(
 						'type' => 'text',
-						'label' => __('Latitude', 'travel2'),
+						'label' => __('Latitude', 'miracleisland'),
 					),
 					'longitude' => array(
 						'type' => 'text',
-						'label' => __('Longitude', 'travel2'),
+						'label' => __('Longitude', 'miracleisland'),
 					),
 					'zoom' => array(
 						'type' => 'text',
-						'label' => __('Zoom', 'travel2'),
+						'label' => __('Zoom', 'miracleisland'),
 					),
 					'height' => array(
 						'type' => 'text',
 						'std' => '250',
-						'label' => __('Height', 'travel2'),
+						'label' => __('Height', 'miracleisland'),
 					),
 					'description' => array(
 						'type' => 'textarea',
 						'std' => '',
-						'label' => __('Description', 'travel2'),
+						'label' => __('Description', 'miracleisland'),
 					),
 				),
 				'shortcode' => '[map align="{{align}}" latitude="{{latitude}}" longitude="{{longitude}}" zoom="{{zoom}}" description="{{description}}" height="{{height}}"][/map]',
-				'popup_title' => __('Insert Map Shortcode', 'travel2')
+				'popup_title' => __('Insert Map Shortcode', 'miracleisland')
 			),
 			
 			//Search Form
 			'search_form' => array(
 				'shortcode' => '[search_form]',
-				'popup_title' => __('Insert Search Form Shortcode', 'travel2')
+				'popup_title' => __('Insert Search Form Shortcode', 'miracleisland')
 			),
 			
 			//Contact Form
 			'contact_form' => array(
 				'shortcode' => '[contact_form]',
-				'popup_title' => __('Insert Contact Form Shortcode', 'travel2')
+				'popup_title' => __('Insert Contact Form Shortcode', 'miracleisland')
 			),
 			
 			//Sidebar
@@ -867,11 +867,11 @@ $config = array (
 				'options' => array(
 					'name' => array(
 						'type' => 'sidebars',
-						'label' => __('Name', 'travel2'),
+						'label' => __('Name', 'miracleisland'),
 					),
 				),
 				'shortcode' => '[sidebar name="{{name}}"]',
-				'popup_title' => __('Insert Sidebar Shortcode', 'travel2')
+				'popup_title' => __('Insert Sidebar Shortcode', 'miracleisland')
 			),
 			
 			//Tabs
@@ -879,30 +879,30 @@ $config = array (
 				'options' => array(
 					'type' => array(
 							'type' => 'select',
-							'label' => __('Tabs Type', 'travel2'),
+							'label' => __('Tabs Type', 'miracleisland'),
 							'options' => array(
-								'horizontal' => __('Horizontal', 'travel2'),
-								'vertical' => __('Vertical', 'travel2'),
+								'horizontal' => __('Horizontal', 'miracleisland'),
+								'vertical' => __('Vertical', 'miracleisland'),
 						)
 					),
 					'titles' => array(
 						'type' => 'text',
-						'label' => __('Tab Titles', 'travel2'),
-						'desc' => __('Enter the comma separated tab titles.', 'travel2')
+						'label' => __('Tab Titles', 'miracleisland'),
+						'desc' => __('Enter the comma separated tab titles.', 'miracleisland')
 					),		
 				),
 				'shortcode' => '[tabs type="{{type}}" titles="{{titles}}"]{{child_shortcode}}[/tabs]',
-				'popup_title' => __('Insert Tabs Shortcode', 'travel2'),
+				'popup_title' => __('Insert Tabs Shortcode', 'miracleisland'),
 				'child_shortcode' => array(
 					'options' => array(
 						'content' => array(
 							'std' => '',
 							'type' => 'textarea',
-							'label' => __('Tab Content', 'travel2'),
+							'label' => __('Tab Content', 'miracleisland'),
 						)
 					),
 					'shortcode' => '[tab]{{content}}[/tab]',
-					'clone_button' => __('Add Tab', 'travel2')
+					'clone_button' => __('Add Tab', 'miracleisland')
 				)
 			),
 			
@@ -911,18 +911,18 @@ $config = array (
 				'options' => array(
 					'title' => array(
 						'type' => 'text',
-						'label' => __('Toggle Title', 'travel2'),
+						'label' => __('Toggle Title', 'miracleisland'),
 						'std' => ''
 					),
 					'content' => array(
 						'std' => '',
 						'type' => 'textarea',
-						'label' => __('Toggle Content', 'travel2'),
+						'label' => __('Toggle Content', 'miracleisland'),
 					)
 					
 				),
 				'shortcode' => '[toggle title="{{title}}"]{{content}}[/toggle]',
-				'popup_title' => __('Insert Toggle Shortcode', 'travel2')
+				'popup_title' => __('Insert Toggle Shortcode', 'miracleisland')
 			),
 		
 		),		
@@ -985,38 +985,38 @@ $config = array (
 	'options' => array (
 			
 		//General Settings
-		array(	'name' => __('General','travel2'),
+		array(	'name' => __('General','miracleisland'),
 				'type' => 'page'),
 				
-		array(	'name' => __('Site Favicon','travel2'),
-				'description' => __('Upload an image for your site favicon.','travel2'),
+		array(	'name' => __('Site Favicon','miracleisland'),
+				'description' => __('Upload an image for your site favicon.','miracleisland'),
 				'id' => 'favicon',
 				'type' => 'uploader'),
 				
-		array(	'name' => __('Site Logo Type','travel2'),
+		array(	'name' => __('Site Logo Type','miracleisland'),
 				'id' => 'logo_type',
-				'options' => array('image' => __('Image','travel2'), 'text' => __('Text','travel2')),
+				'options' => array('image' => __('Image','miracleisland'), 'text' => __('Text','miracleisland')),
 				'type' => 'select'),
 				
-		array(	'name' => __('Site Logo Image','travel2'),
-				'description' => __('Upload an image for your site logo.','travel2'),
+		array(	'name' => __('Site Logo Image','miracleisland'),
+				'description' => __('Upload an image for your site logo.','miracleisland'),
 				'id' => 'logo_image',
 				'type' => 'uploader',
 				'parent' => array('logo_type','0')),
 				
-		array(	'name' => __('Site Logo Text','travel2'),
-				'description' => __('Enter the text for your site logo.','travel2'),
+		array(	'name' => __('Site Logo Text','miracleisland'),
+				'description' => __('Enter the text for your site logo.','miracleisland'),
 				'id' => 'logo_text',
 				'type' => 'text',
 				'parent' => array('logo_type','1')),
 				
-		array(	'name' => __('Login Logo Image','travel2'),
-				'description' => __('Upload an image to show on the login page.','travel2'),
+		array(	'name' => __('Login Logo Image','miracleisland'),
+				'description' => __('Upload an image to show on the login page.','miracleisland'),
 				'id' => 'login_logo',
 				'type' => 'uploader'),
 				
-		array(	'name' => __('Date Format','travel2'),
-				'description' => __('Choose the date format for all post types and comments.','travel2'),
+		array(	'name' => __('Date Format','miracleisland'),
+				'description' => __('Choose the date format for all post types and comments.','miracleisland'),
 				'id' => 'date_format',
 				'options' => array(
 					'm/d/Y'=>'MM/DD/YY',
@@ -1024,45 +1024,45 @@ $config = array (
 				),
 				'type' => 'select'),
 				
-		array(	'name' => __('Copyright Text','travel2'),
-				'description' => __('Enter the copyright text to be displayed in the footer.','travel2'),
+		array(	'name' => __('Copyright Text','miracleisland'),
+				'description' => __('Enter the copyright text to be displayed in the footer.','miracleisland'),
 				'id' => 'copyright_text',
 				'default' => '',
 				'type' => 'textarea'),
 				
-		array(	'name' => __('Tracking Code','travel2'),
-				'description' => __('Add tracking analytics code here.','travel2'),
+		array(	'name' => __('Tracking Code','miracleisland'),
+				'description' => __('Add tracking analytics code here.','miracleisland'),
 				'id' => 'tracking_code',
 				'default' => '',
 				'type' => 'textarea'),				
 				
 		//Styling
-		array(	'name' => __('Styling','travel2'),
+		array(	'name' => __('Styling','miracleisland'),
 				'type' => 'page'),
 				
-		array(	'name' => __('Custom CSS','travel2'),
-				'description' => __('Write CSS rules here to overwrite the default styles.','travel2'),
+		array(	'name' => __('Custom CSS','miracleisland'),
+				'description' => __('Write CSS rules here to overwrite the default styles.','miracleisland'),
 				'default' => '',
 				'id' => 'css',
 				'type' => 'textarea'),
 				
-		array(	'name' => __('Primary Theme Color','travel2'),
+		array(	'name' => __('Primary Theme Color','miracleisland'),
 				'default' => '#FF9000',
 				'id' => 'primary_color',
 				'type' => 'color'),
 				
-		array(	'name' => __('Secondary Theme Color','travel2'),
+		array(	'name' => __('Secondary Theme Color','miracleisland'),
 				'default' => '#FFFFFF',
 				'id' => 'secondary_color',
 				'type' => 'color'),
 				
-		array(	'name' => __('Background Type','travel2'),
+		array(	'name' => __('Background Type','miracleisland'),
 				'id' => 'background_type',
-				'options' => array('default' => __('Default','travel2'), 'custom' => __('Custom','travel2')),
-				'description' => __('Choose from the default patterns or upload your own image.','travel2'),
+				'options' => array('default' => __('Default','miracleisland'), 'custom' => __('Custom','miracleisland')),
+				'description' => __('Choose from the default patterns or upload your own image.','miracleisland'),
 				'type' => 'select'),
 				
-		array(	'name' => __('Background Pattern','travel2'),
+		array(	'name' => __('Background Pattern','miracleisland'),
 				'id' => 'background_pattern',
 				'options' => array(
 									THEME_URI.'images/patterns/pattern_1.png'=>THEME_URI.'images/patterns/pattern_1_thumb.png', 
@@ -1085,17 +1085,17 @@ $config = array (
 				'type' => 'select_image',				
 				'parent' => array('background_type','0')),
 				
-		array(	'name' => __('Background Image','travel2'),
+		array(	'name' => __('Background Image','miracleisland'),
 				'id' => 'background_image',
 				'type' => 'uploader',
 				'parent' => array('background_type','1')),
 				
-		array(	'name' => __('Tiled Background','travel2'),
+		array(	'name' => __('Tiled Background','miracleisland'),
 					'id' => 'background_fullwidth',
-					'description' => __('Check this to use tiled background instead of full width image.','travel2'),
+					'description' => __('Check this to use tiled background instead of full width image.','miracleisland'),
 					'type' => 'checkbox'),
 					
-		array(	'name' => __('Heading Font','travel2'),					
+		array(	'name' => __('Heading Font','miracleisland'),					
 				'id' => 'heading_font',
 				'default' => 'Signika',
 				'options' => array(
@@ -1104,7 +1104,7 @@ $config = array (
 				),
 				'type' => 'select_font'),
 				
-		array(	'name' => __('Content Font','travel2'),
+		array(	'name' => __('Content Font','miracleisland'),
 				'id' => 'content_font',
 				'default' => 'Open Sans',
 				'options' => array(
@@ -1114,10 +1114,10 @@ $config = array (
 				'type' => 'select_font'),
 				
 		//Header
-		array(	'name' => __('Header','travel2'),
+		array(	'name' => __('Header','miracleisland'),
 				'type' => 'page'),
 				
-			array(	'name' => __('Header Layout','travel2'),
+			array(	'name' => __('Header Layout','miracleisland'),
 				'id' => 'header_layout',
 				'options' => array(
 					'separated'=>THEMEX_URI.'admin/images/layouts/7.png',
@@ -1125,88 +1125,88 @@ $config = array (
 				),
 				'type' => 'select_image'),
 				
-			array(	'name' => __('Header Text','travel2'),
-				'description' => __('Enter the text to be displayed at the social links.','travel2'),
+			array(	'name' => __('Header Text','miracleisland'),
+				'description' => __('Enter the text to be displayed at the social links.','miracleisland'),
 				'id' => 'header_text',
 				'default' => '',
 				'type' => 'textarea'),
 				
-			array(	'name' => __('Slider','travel2'),
+			array(	'name' => __('Slider','miracleisland'),
 				'type' => 'section'),
 				
-				array(	'name' => __('Slider Type','travel2'),
+				array(	'name' => __('Slider Type','miracleisland'),
 					'id' => 'slider_type',
-					'options' => array('fade' => __('Fade Slider','travel2'), 'motion' => __('Motion Slider','travel2')),
+					'options' => array('fade' => __('Fade Slider','miracleisland'), 'motion' => __('Motion Slider','miracleisland')),
 					'type' => 'select'),
 					
-			array(	'name' => __('Slider Pause','travel2'),
+			array(	'name' => __('Slider Pause','miracleisland'),
 					'default' => '0',
 					'id' => 'slider_pause',
 					'attributes' => array('min_value' => '0', 'max_value' => '20000', 'unit' => 'ms'),
 					'type' => 'slider'),
 					
-			array(	'name' => __('Transition Speed','travel2'),
+			array(	'name' => __('Transition Speed','miracleisland'),
 					'default' => '400',
 					'id' => 'slider_speed',
 					'attributes' => array('min_value' => '100', 'max_value' => '1000', 'unit' => 'ms'),
 					'type' => 'slider'),
 				
-			array(	'name' => __('Social Links','travel2'),
+			array(	'name' => __('Social Links','miracleisland'),
 				'type' => 'section'),
 				
-			array(	'name' => __('RSS Link','travel2'),
+			array(	'name' => __('RSS Link','miracleisland'),
 					'id' => 'rss_link',
 					'type' => 'text'),
 					
-			array(	'name' => __('Facebook Link','travel2'),
+			array(	'name' => __('Facebook Link','miracleisland'),
 					'id' => 'facebook_link',
 					'type' => 'text'),
 					
-			array(	'name' => __('Twitter Link','travel2'),
+			array(	'name' => __('Twitter Link','miracleisland'),
 					'id' => 'twitter_link',
 					'type' => 'text'),
 					
-			array(	'name' => __('Google Link','travel2'),
+			array(	'name' => __('Google Link','miracleisland'),
 					'id' => 'google_link',
 					'type' => 'text'),
 
-			array(	'name' => __('Flickr Link','travel2'),
+			array(	'name' => __('Flickr Link','miracleisland'),
 					'id' => 'flickr_link',
 					'type' => 'text'),
 					
-			array(	'name' => __('Tumblr Link','travel2'),
+			array(	'name' => __('Tumblr Link','miracleisland'),
 					'id' => 'tumblr_link',
 					'type' => 'text'),
 
-			array(	'name' => __('LinkedIn Link','travel2'),
+			array(	'name' => __('LinkedIn Link','miracleisland'),
 					'id' => 'linkedin_link',
 					'type' => 'text'),		
 					
-			array(	'name' => __('YouTube Link','travel2'),
+			array(	'name' => __('YouTube Link','miracleisland'),
 					'id' => 'youtube_link',
 					'type' => 'text'),
 					
-			array(	'name' => __('Vimeo Link','travel2'),
+			array(	'name' => __('Vimeo Link','miracleisland'),
 					'id' => 'vimeo_link',
 					'type' => 'text'),
 					
-			array(	'name' => __('Skype Link','travel2'),
+			array(	'name' => __('Skype Link','miracleisland'),
 					'id' => 'skype_link',
 					'type' => 'text'),
 					
-			array(	'name' => __('Blogger Link','travel2'),
+			array(	'name' => __('Blogger Link','miracleisland'),
 					'id' => 'blogger_link',
 					'type' => 'text'),
 					
-			array(	'name' => __('StumbleUpon Link','travel2'),
+			array(	'name' => __('StumbleUpon Link','miracleisland'),
 					'id' => 'stumbleupon_link',
 					'type' => 'text'),			
 					
 		//Tours
-		array(	'name' => __('Tours','travel2'),
+		array(	'name' => __('Tours','miracleisland'),
 				'type' => 'page'),
 				
-			array(	'name' => __('Tours Layout','travel2'),
+			array(	'name' => __('Tours Layout','miracleisland'),
 				'id' => 'tours_layout',
 				'options' => array(
 					'right'=>THEMEX_URI.'admin/images/layouts/3.png',
@@ -1215,54 +1215,54 @@ $config = array (
 				),
 				'type' => 'select_image'),
 				
-			array(	'name' => __('Tours View','travel2'),
+			array(	'name' => __('Tours View','miracleisland'),
 					'id' => 'tours_view',
-					'options' => array('grid' => __('Grid','travel2'), 'list' => __('List','travel2')),
+					'options' => array('grid' => __('Grid','miracleisland'), 'list' => __('List','miracleisland')),
 					'type' => 'select'),
 					
-			array(	'name' => __('Tours Per Page','travel2'),
+			array(	'name' => __('Tours Per Page','miracleisland'),
 				'id' => 'tours_limit',
 				'default' => '12',
 				'type' => 'number'),
 				
-			array(	'name' => __('Price Currency','travel2'),
+			array(	'name' => __('Price Currency','miracleisland'),
 					'id' => 'tours_currency',
 					'default' => '$',
-					'description' => __('Set price currency symbol.','travel2'),
+					'description' => __('Set price currency symbol.','miracleisland'),
 					'type' => 'text'),
 					
-			array(	'name' => __('Currency Position','travel2'),
+			array(	'name' => __('Currency Position','miracleisland'),
 					'id' => 'tours_currency_position',
-					'options' => array('left' => __('Left','travel2'), 'right' => __('Right','travel2')),
+					'options' => array('left' => __('Left','miracleisland'), 'right' => __('Right','miracleisland')),
 					'type' => 'select'),			
 				
-			array(	'name' => __('Related Tours Order','travel2'),
+			array(	'name' => __('Related Tours Order','miracleisland'),
 					'id' => 'tours_related_order',
 					'options' => array(
-						'rand' => __('Random','travel2'), 
-						'type' => __('Type','travel2'), 'destination' => __('Destination','travel2')
+						'rand' => __('Random','miracleisland'), 
+						'type' => __('Type','miracleisland'), 'destination' => __('Destination','miracleisland')
 					),
 					'type' => 'select'),
 					
-			array(	'name' => __('Hide Related Tours','travel2'),
+			array(	'name' => __('Hide Related Tours','miracleisland'),
 					'id' => 'tours_related',
 					'type' => 'checkbox'),
 
-			array(	'name' => __('Disable Booking','travel2'),
+			array(	'name' => __('Disable Booking','miracleisland'),
 					'id' => 'tours_booking',
-					'description' => __('Check this to disable booking form.','travel2'),
+					'description' => __('Check this to disable booking form.','miracleisland'),
 					'type' => 'checkbox'),
 					
-			array(	'name' => __('Disable Questions','travel2'),
+			array(	'name' => __('Disable Questions','miracleisland'),
 					'id' => 'tours_questions',
-					'description' => __('Check this to disable question form.','travel2'),
+					'description' => __('Check this to disable question form.','miracleisland'),
 					'type' => 'checkbox'),
 					
 		//Gallery
-		array(	'name' => __('Galleries','travel2'),
+		array(	'name' => __('Galleries','miracleisland'),
 				'type' => 'page'),
 				
-				array(	'name' => __('Galleries Layout','travel2'),
+				array(	'name' => __('Galleries Layout','miracleisland'),
 				'id' => 'galleries_layout',
 				'options' => array(
 					'four'=>THEMEX_URI.'admin/images/layouts/5.png',
@@ -1270,146 +1270,146 @@ $config = array (
 				),
 				'type' => 'select_image'),
 				
-				array(	'name' => __('Galleries Per Page','travel2'),
+				array(	'name' => __('Galleries Per Page','miracleisland'),
 				'id' => 'galleries_limit',
 				'default' => '12',
 				'type' => 'number'),
 				
-				array(	'name' => __('Galleries Caption','travel2'),
+				array(	'name' => __('Galleries Caption','miracleisland'),
 					'id' => 'galleries_caption',
 					'options' => array(
-						'visible' => __('Visible', 'travel2'),
-						'hidden' => __('Hidden', 'travel2'),
-						'none' => __('None', 'travel2'),
+						'visible' => __('Visible', 'miracleisland'),
+						'hidden' => __('Hidden', 'miracleisland'),
+						'none' => __('None', 'miracleisland'),
 					),
 					'type' => 'select'),
 				
 		//Search Form
-		array(	'name' => __('Search Form','travel2'),
+		array(	'name' => __('Search Form','miracleisland'),
 				'type' => 'page'),
 				
-			array(	'name' => __('Form Title','travel2'),
+			array(	'name' => __('Form Title','miracleisland'),
 					'id' => 'search_form_title',
 					'default' => '',
 					'type' => 'text'),
 				
-			array(	'name' => __('Hide Destination Field','travel2'),
+			array(	'name' => __('Hide Destination Field','miracleisland'),
 					'id' => 'search_form_destination',
 					'type' => 'checkbox'),
 					
-			array(	'name' => __('Hide Type Field','travel2'),
+			array(	'name' => __('Hide Type Field','miracleisland'),
 					'id' => 'search_form_type',
 					'type' => 'checkbox'),
 					
-			array(	'name' => __('Hide Date Fields','travel2'),
+			array(	'name' => __('Hide Date Fields','miracleisland'),
 					'id' => 'search_form_date',
 					'type' => 'checkbox'),
 					
-			array(	'name' => __('Hide Price Field','travel2'),
+			array(	'name' => __('Hide Price Field','miracleisland'),
 					'id' => 'search_form_price',
 					'type' => 'checkbox'),
 					
 		//Booking Payments
-		array(	'name' => __('Booking Payment','travel2'),
+		array(	'name' => __('Booking Payment','miracleisland'),
 				'type' => 'page'),
 				
-			array(	'name' => __('Enable Booking Payment','travel2'),
+			array(	'name' => __('Enable Booking Payment','miracleisland'),
 						'id' => 'booking_payment',
 						'type' => 'checkbox'),				
 				
-			array(	'name' => __('Payment Language','travel2'),
+			array(	'name' => __('Payment Language','miracleisland'),
 				'id' => 'booking_language',
 				'options' => array(
-					'AU' => __('Australian','travel2'), 
-					'CN' => __('Chinese','travel2'),
-					'EN' => __('English','travel2'), 
-					'FR' => __('French','travel2'),
-					'DE' => __('German','travel2'), 
-					'IT' => __('Italian','travel2'),
-					'JP' => __('Japanese','travel2'), 
-					'PL' => __('Polish','travel2'),
-					'ES' => __('Spanish','travel2'),
+					'AU' => __('Australian','miracleisland'), 
+					'CN' => __('Chinese','miracleisland'),
+					'EN' => __('English','miracleisland'), 
+					'FR' => __('French','miracleisland'),
+					'DE' => __('German','miracleisland'), 
+					'IT' => __('Italian','miracleisland'),
+					'JP' => __('Japanese','miracleisland'), 
+					'PL' => __('Polish','miracleisland'),
+					'ES' => __('Spanish','miracleisland'),
 				),
 				'type' => 'select'),
 				
-			array(	'name' => __('Payment Currency','travel2'),
+			array(	'name' => __('Payment Currency','miracleisland'),
 				'id' => 'booking_currency',
 				'options' => array(
-					'AUD' => __('Australian Dollar','travel2'), 
-					'CAD' => __('Canadian Dollar','travel2'),
-					'EUR' => __('Euro','travel2'),
-					'GBP' => __('British Pound','travel2'),
-					'JPY' => __('Japanese Yen','travel2'), 
-					'USD' => __('United States Dollar','travel2'),
-					'NZD' => __('New Zealand Dollar','travel2'),
-					'CHF' => __('Swiss Franc','travel2'),
-					'HKD' => __('Hong Kong Dollar','travel2'),
-					'SGD' => __('Singapore Dollar','travel2'),
-					'SEK' => __('Swedish Krona','travel2'),
-					'DKK' => __('Danish Krone','travel2'),
-					'PLN' => __('Polish Zloty','travel2'),
-					'NOK' => __('Norwegian Krone','travel2'),
-					'HUF' => __('Hungarian Forint','travel2'),
-					'CZK' => __('Czech Koruna','travel2'),
-					'ILS' => __('Israeli Shekel','travel2'),
-					'MXN' => __('Mexican Peso','travel2'),
-					'BRL' => __('Brazilian Real','travel2'),
-					'MYR' => __('Malaysian Ringgit','travel2'),
-					'PHP' => __('Philippine Peso','travel2'),
-					'TWD' => __('New Taiwan Dollar','travel2'),
-					'THB' => __('Thai Baht','travel2'),
-					'TRY' => __('Turkish Lira','travel2'),
+					'AUD' => __('Australian Dollar','miracleisland'), 
+					'CAD' => __('Canadian Dollar','miracleisland'),
+					'EUR' => __('Euro','miracleisland'),
+					'GBP' => __('British Pound','miracleisland'),
+					'JPY' => __('Japanese Yen','miracleisland'), 
+					'USD' => __('United States Dollar','miracleisland'),
+					'NZD' => __('New Zealand Dollar','miracleisland'),
+					'CHF' => __('Swiss Franc','miracleisland'),
+					'HKD' => __('Hong Kong Dollar','miracleisland'),
+					'SGD' => __('Singapore Dollar','miracleisland'),
+					'SEK' => __('Swedish Krona','miracleisland'),
+					'DKK' => __('Danish Krone','miracleisland'),
+					'PLN' => __('Polish Zloty','miracleisland'),
+					'NOK' => __('Norwegian Krone','miracleisland'),
+					'HUF' => __('Hungarian Forint','miracleisland'),
+					'CZK' => __('Czech Koruna','miracleisland'),
+					'ILS' => __('Israeli Shekel','miracleisland'),
+					'MXN' => __('Mexican Peso','miracleisland'),
+					'BRL' => __('Brazilian Real','miracleisland'),
+					'MYR' => __('Malaysian Ringgit','miracleisland'),
+					'PHP' => __('Philippine Peso','miracleisland'),
+					'TWD' => __('New Taiwan Dollar','miracleisland'),
+					'THB' => __('Thai Baht','miracleisland'),
+					'TRY' => __('Turkish Lira','miracleisland'),
 				),
 				'type' => 'select'),
 				
-			array(	'name' => __('Payment Amount','travel2'),
+			array(	'name' => __('Payment Amount','miracleisland'),
 				'id' => 'booking_price',
 				'default' => '0',
-				'description' => __('Enter in the booking fee amount.','travel2'),
+				'description' => __('Enter in the booking fee amount.','miracleisland'),
 				'type' => 'number'),
 				
-			array(	'name' => __('PayPal Account','travel2'),
+			array(	'name' => __('PayPal Account','miracleisland'),
 				'id' => 'booking_email',
 				'default' => '',
-				'description' => __('Enter in your PayPal account email address.','travel2'),
+				'description' => __('Enter in your PayPal account email address.','miracleisland'),
 				'type' => 'text'),
 			
 		//Booking Form
-		array(	'name' => __('Booking Form','travel2'),
+		array(	'name' => __('Booking Form','miracleisland'),
 				'type' => 'page'),	
 
 			array(	'type' => 'themex_form',
 					'id' => 'booking_form' ),			
 					
 		//Question Form
-		array(	'name' => __('Question Form','travel2'),
+		array(	'name' => __('Question Form','miracleisland'),
 				'type' => 'page'),
 				
 			array(	'type' => 'themex_form',
 					'id' => 'question_form' ),
 		
 		//Contact Form
-		array(	'name' => __('Contact Form','travel2'),
+		array(	'name' => __('Contact Form','miracleisland'),
 				'type' => 'page'),
 				
 			array(	'type' => 'themex_form',
 					'id' => 'contact_form' ),	
 
 		//Custom Sidebars
-		array(	'name' => __('Sidebars','travel2'),
+		array(	'name' => __('Sidebars','miracleisland'),
 				'type' => 'page'),
 				
 			array(	'type' => 'themex_widgetiser',
 					'id' => 'themex_widgetiser' ),
 				
 		//Mailing List
-		array(	'name' => __('Mailing List','travel2'),
+		array(	'name' => __('Mailing List','miracleisland'),
 				'type' => 'page'),
 				
 			array(	'name' => '',
 					'id' => 'mailing_list',
 					'default' => '',
-					'description' => __('This is the list of subcribers from Newsletter Widget.','travel2'),
+					'description' => __('This is the list of subcribers from Newsletter Widget.','miracleisland'),
 					'type' => 'textarea'),
 	),
 

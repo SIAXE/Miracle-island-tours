@@ -24,7 +24,7 @@ require_once( $path_to_wp.'/wp-load.php' );
 							<?php if( isset(ThemexShortcoder::$data[ThemexShortcoder::$id]['child_shortcode'])) { ?>
 							<td class="label">&nbsp;</td>
 							<?php } ?>
-							<td class="field"><a href="#" class="button-primary themex-insert"><?php _e('Insert Shortcode','travel2'); ?></a></td>							
+							<td class="field"><a href="#" class="button-primary themex-insert"><?php _e('Insert Shortcode','miracleisland'); ?></a></td>							
 						</tr>
 					</tbody>				
 				</table>
